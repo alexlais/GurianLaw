@@ -1,0 +1,1476 @@
+
+/* --- _FONTS ------------------------------------------------------------ */
+
+@import url('https://fonts.googleapis.com/css?family=Vollkorn|Electrolize|Average');
+
+h1, h2, h3, h4, .telephone, header {
+	font-family: "Vollkorn", Georgia, "Times New Roman", serif;
+	font-weight: normal;}
+.carousel, .cta, nav.main, .highlight h1,
+.promote .cta a:after, .promote h3 a:after,
+.form-group, .btn-submit,  textarea, select,
+input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"] {
+	font-family: "Electrolize", "Share Tech Mono", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;}
+.carousel p.telephone {
+	font-family: "Times New Roman", serif;}
+
+/* copy design */
+.parallax a, .promote .cta a, .promote .cta, .carousel-CTA, .carousel .caption, .btn-submit, address .address-label, nav.main
+	{font-weight: bold;}
+section p, section h4, .promote > ul
+	{margin-bottom: 20px;}
+
+/* --- CLEARING BOOTSTRAP _NONSENSES ---------------------------------------- */
+
+.form-control::-moz-placeholder, .form-control:-ms-input-placeholder, .navbar-default ul.navbar-nav > li > a:focus, .navbar-default ul.navbar-nav > li > a:hover
+	{color:inherit;}
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover
+	{background-color: inherit;
+	 border-color: inherit;}
+.nav li a:focus, .nav li a:hover, .nav li:hover > a
+	{background: inherit;}
+navbar-nav > li > .dropdown-menu
+	{border-top-left-radius: inherit; border-top-right-radius: inherit;}
+.dropdown-menu > li > a {
+	font-weight: inherit;}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
+	background: inherit; color: inherit; text-decoration: inherit;}
+.dropdown-menu {font-size: inherit;}
+
+/* --- _LINE HEIGHT ----------------------------------------------------- */
+
+body, address, h1, span a 						{line-height: inherit;}
+p, li											{line-height:1.55;}
+h2, h3, h3 span 								{line-height: 1.3;}
+h4, .highlight h2, .promote hgroup h3			{line-height: 1.4;}
+.carousel h2, .carousel h3  					{line-height: 1;}
+.carousel h1							  		{line-height: 0.9;}
+.parallax.miami h2 								{line-height: 1.7;}
+.carousel p 									{line-height: 1.3;}
+
+/* --- _FONT_SIZE -------------------------------------------------- */
+
+html, body, h1, h2, h3, h4, p, span, a, ul, li, textarea, select,
+input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"] {
+	font-size: inherit;}
+body {
+	font-size: 1.15em;}
+
+/* --- copy and headings --- ------------- */
+p, ul, .small {
+	font-size: 1em;
+}
+h1, h2 {
+	font-size: 2em;
+}
+.contact h2 {
+	font-size: 3em;
+}
+h3 {
+	font-size: 1.7em;
+}
+h4 {
+	font-size: 1.5em;
+}
+/* --- larger --- -----------------------*/
+.callout, .btn-submit, .form-control {
+	font-size: 1.1em;
+}
+.telephone, .parallax {
+	font-size: 1.3em;
+}
+/* --- smaller --- ----------------------*/
+nav.main, footer.main {
+	font-size: 0.7em;
+}
+.highlight h1, .cta, hgroup, .col-md-3 hgroup, abbr[data-original-title], abbr[title] {
+    font-size: .8em;
+}
+/* --- carousel only --- ----------------*/
+.carousel {
+	font-size: 1.7em;
+}
+.carousel h1 span {
+	font-size: 0.52em;
+}
+a.carousel-CTA {
+	font-size: 0.6em;
+}
+.carousel .small h3 {
+	font-size: 1.8em;
+}
+.carousel .large h1, .carousel .large h2 {
+	font-size: 2.4em;
+}
+/* --- address only (px) --- ----------- */
+address .address-label {
+    font-size: 14px;
+}
+address .content.name {
+    font-size: 26px; line-height: 30px;
+}
+address .content.title {
+	font-size: 13px; line-height: 16px;
+}
+address .content.phone-number {
+	font-size: 30px; line-height: 36px;
+}
+address .content.email {
+	font-size: 16px;
+}
+address .address-label.phone-number {
+	line-height: 30px;
+}
+
+/* --- _COLORS ---------------------------------------------------------------------------------- */
+
+body {
+	color: #999;
+	background-color: #f8f7ed;
+}
+.form-control, input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"],
+textarea, select {
+	color: #999;}
+/* ------------------------- */
+h1, .highlight h2, .highlight h3, .highlight a,
+.carousel, .carousel h1, .carousel h1 span, .carousel h1 abbr, .carousel h2, .carousel h3,
+.carousel-CTA, .carousel-CTA:hover, .carousel-CTA:focus,
+.left-control, .right-control, .left-control:hover, .right-control:hover,
+.left-control:active, .right-control:active, .left-control:after, .right-control:after,
+.highlight .promote .cta a, .promote .cta a:hover,
+.btn-submit, .parallax{
+	color: white;}
+/* ------------------------- */
+h3, h3 a, .promote h3 a:after, address, .form-control:focus {
+	color: #444;}
+a, h3 a:hover, .promote h3 a:hover:after, figure:hover ~ hgroup h3 a, figure:hover ~ hgroup h3 a:after {
+    color: rgb(34, 195, 155);}
+address .content.title, h4 {
+	color: #666;}
+footer.main, footer.main a {
+	color: rgb(125, 49, 3);}
+/* ------------------------- */
+.highlight, .highlight h1, .highlight p:not(callout) {
+    color: rgba(255, 255, 255, 0.8);
+}
+a:hover, .practices h2, .contact h2, address a, .highlight .cta a:hover {
+    color: rgb(31, 173, 138);
+}
+/* nav --------------------- */
+ul.navbar-nav a {
+	color: #666;}
+ul.navbar-nav .dropdown-menu li.active > a {
+    color: #666;}
+ul.navbar-nav a:hover, ul.navbar-nav li:hover > a, ul.navbar-nav .dropdown-menu li.active > a:hover {
+    color: #009973;}
+ul.navbar-nav > li.active > a {
+    color: white;}
+ul.navbar-nav > li.active > a {
+    background: #22c39b;/* NICE GREEN */
+	background: #da2525; /* NICE RED */
+	background: #178267;
+}
+ul.navbar-nav .dropdown-menu {
+    background-color: rgba(255, 255, 255,.95);
+}
+
+/* --- BORDER RADIUS --------------------------------- */
+
+.form-control, .btn-submit 					{border-radius: 3px;}
+.promote .cta a 							{border-radius: 5px;}
+.carousel-CTA, .telephone, .callout 		{border-radius: 8px;}
+
+/* --- _A -------------------------------------------------- */
+a {
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+}
+footer.main a, aside.highlight a, address .email a:hover, .highlight p:not(.cta) a {
+    text-decoration: underline;
+}
+a:focus, a:hover, h3 a:hover, footer.main a:hover, .highlight a:hover {
+    text-decoration: none;
+}
+
+/* --- _CTA ----------------------------------------------- */
+
+.promote .cta, .carousel-CTA  {
+	text-transform: uppercase;
+}
+.promote .cta {
+    padding-top: 20px;
+    margin-bottom: 0;
+    overflow: auto;
+    text-align: right;
+}
+.promote .cta a {
+    text-align: right;
+    display: block;
+    padding: 9px 50px 9px 10px;
+    transition-property: background, color;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.highlight .promote .cta a {
+    padding-top: 10px;
+    display: inline;
+    float: left;
+    white-space: nowrap;
+    border: 1px solid #fff;
+    padding-left: 15px;
+ }
+.promote .cta a:hover {
+    background: #1fad8a;
+}
+.highlight .promote .cta a:hover {
+    background: White;
+}
+.promote .cta a:after, .promote h3 a:after {
+    margin-right: -38px;
+    content:"\a0\2192"; /* "\a0" is used to generate a non braking space in html */
+    padding-right: 15px;
+    transition-property: padding;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+.promote h3 a:after {
+    margin-right: 0;
+}
+.promote .cta a:hover:after, .promote h3 a:hover:after, figure:hover ~ h3 a:after {
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+==============================================================================================================
+
+/* --- _HEADINGS and _PARAGRAPH ------------------------------- */
+p, h1, h2, h3, h4, h5, h6, div, ul, li {
+    cursor: default;
+}
+
+/* -- _H1 ---------------------------------------------------------- */
+.highlight h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+    margin: 10px 0 40px;
+    padding: 0 0 10px;
+    box-shadow: 0 15px 24px -5px rgba(0,0,0,0.075);
+}
+/* -- _H2 ---------------------------------------------------------- */
+h1 + h2 {
+	margin-top: -10px !important;
+}
+h2 {
+    margin: 0 0 20px;
+}
+.parallax h2 {
+	margin-bottom: 60px;
+}
+.parallax.miami h2 {
+    margin: 0;
+	/*
+	text-align: justify;
+    text-justify: distribute;
+    */
+}
+.highlight h2 {
+    margin: 0 0 15px;
+}
+.highlight .promote-left h2 {
+    margin: 0 0 15px;
+}
+.contact h2 {
+    margin: 0;
+}
+/*
+h2 .eyebrow {
+	font-size: 14px;
+	padding-bottom: 5px;
+	letter-spacing: 2px;
+	display: block;
+	text-transform: uppercase;
+    font-family: "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
+}
+*/
+
+/* -- _H3 _H4 ---------------------------------------------------------- */
+
+h3 {
+    margin: 0 0 10px;
+}
+
+/* --- ABBR -------------------------------------------- */
+
+abbr[data-original-title], abbr[title] {
+    border: 0;
+    text-decoration: inherit;
+    cursor: inherit;
+}
+
+
+/* ---- _HIGHLIGHT --------------------------------- */
+
+.highlight {
+    background: #178267; /* aqua */
+}
+/*
+background: #f4f5f0;
+background: #da2525;  nav red
+background: #da8025;
+background: #004e7a;  blue
+background: #F15E05;
+background: #74862d;
+background: #676b47;  brown 103, 107, 71
+background: #6d7722;
+*/
+.highlight.blue, li.active a.page-scroll.blue {
+    background: #004e7a; /* blue */
+}
+.highlight.orange, li.active a.page-scroll.orange {
+    background: #da8025; /* orange */
+}
+.highlight.brown, li.active a.page-scroll.brown {
+    background: #676b47; /* brow */
+}
+.highlight.red, li.active a.page-scroll.red {
+    background: #602020; /* red */
+}
+.contact .highlight {
+  	background-color: #7d3103;
+}
+
+.callout {
+	background-color: rgba(0,0,0,0.1);
+	padding: 20px 30px 10px;
+	margin-bottom: 60px;
+}
+p.callout {
+	padding-bottom: 25px;
+	font-style: italic;
+}
+
+/* --- _PROMOTE ------------------------------- */
+.promote h2, .promote h3 {
+	margin-top: 0.5em;
+}
+.promote .overflow-auto {
+	overflow: auto;
+}
+.promote {
+	overflow: auto;
+	padding-bottom: 40px;
+}
+.promote.first {
+	padding-top: 40px;
+}
+.promote.border {
+    border-top: 1px solid rgba(255, 255, 255, .4);
+    padding-top: 30px;
+}
+.promote ul {
+    padding: 0 0 0 20px;
+}
+.promote ul ul {
+    list-style-type: none;
+    padding: 0 0 6px 15px;
+}
+.promote ul ul li {
+  	text-indent: -17px;
+}
+.promote ul ul li:before {
+  	content: "- ";
+  	padding-right: 5px;
+}
+
+/* --- _IMAGES -------------------------------------------- */
+
+.promote img, .img-responsive {
+    width: 100%;
+}
+.promote.promote-left img {
+	width: 400px;
+    height: auto;
+    float: left;
+    padding: 0 30px 12px 0;
+}
+.promote.promote-right img {
+	width: 400px;
+    height: auto;
+    float: right;
+    padding: 0 0 12px 30px;
+}
+.promote.thumb img {
+	width: 200px;
+}
+.promote figure a {
+    overflow: hidden;
+    display: block;
+}
+/*
+.promote:not(.promote-left,.promote-right) figure, .img-banner {
+    margin-bottom: 30px;
+}
+*/
+.img-banner {
+    margin-bottom: 2em;
+}
+.promote figure a img {
+    transition: all 1s ease-in-out;
+}
+.promote figure a:hover img, figure.hover img {
+    transform: scale(1.2);
+}
+
+/* === _SECTIONS
+============================================================================================================
+============================================================================================================ */
+
+section, aside, article header, article header.practices {
+    padding: 80px 0;
+}
+footer.main aside {
+	padding: 0;
+}
+article header, article section, aside header, article.practices {
+    padding-bottom: 40px;
+}
+aside.contact {
+	padding-bottom: 0;
+	background: white;
+}
+aside.contact header {
+    padding: 20px 0;
+}
+.highlight header {
+    padding-top: 10px;
+}
+.highlight footer {
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    padding: 40px 20px 5px;
+    box-shadow: inset 0 40px 40px -50px rgba(0,0,0,.1);
+}
+
+
+/* --- SCROOL BUG FIX --- */
+
+	.home-page article.practices {
+  		margin-top: 60px;
+	}
+	.home-page nav.main:not(.navbar-fixed-top) + main {
+		margin-top: -60px;
+	}
+
+	/*
+	.home-page nav.main:not(.navbar-fixed-top) {
+	    /* margin-bottom: -50px;
+	    position: relative;
+	    z-index: 2;
+	}
+	*/
+
+
+/* === _CAROUSEL ================================================================================================================
+================================================================================================================ */
+
+.carousel {
+  overflow: hidden;
+}
+
+/* --- CAROUSEL CAPTION AND CONTROLS -------------------- */
+
+.carousel .caption  {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+}
+.sub-page .carousel .caption {
+	bottom: 20%;
+	padding-left: 0;
+}
+.carousel .caption.small {
+	text-align: center;
+}
+/*
+    H1 for first slide
+    H3 for last slide (Contact Us)
+    H2 for all others
+*/
+.carousel h1, .carousel h2, .carousel h3, .carousel p  {
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
+}
+.carousel h1 span, .carousel-CTA  {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.9),  -1px -1px 1px rgba(255, 255, 255,0.8);
+}
+.carousel h1, .carousel h2, .carousel h3  {
+    margin-bottom: 20px;
+    animation-delay: 0.5s;
+}
+.carousel h1 > span {
+    display: block;
+    padding-top: 6px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.carousel h1 span span {
+    padding-top: 6px;
+    border-top: 1px solid rgba(255, 255, 255, .6);
+}
+.carousel p {
+	text-transform: uppercase;
+    animation-delay: 0.75s;
+}
+.carousel-CTA {
+	display: inline-block;
+    padding: 14px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    margin-top: 30px;
+    background: rgba(23, 130, 103, .6);
+    animation-delay: 1s;
+    box-shadow: 1px 1px 1px 3px rgba(0,0,0,0.1) inset, -1px -1px 1px 2px rgba(255, 255, 255,0.5) inset, 1px 1px 1px 1px rgba(0,0,0,0);
+}
+.carousel-CTA:hover {
+    background: rgba(23, 130, 103, 1);
+}
+/* practices button only */
+.carousel-CTA.primary  {
+    background: rgba(218, 37, 37, .6);
+    margin-right: 25px;
+}
+.carousel-CTA.primary:last-child  {
+    margin-right: 0;
+}
+/* practices button only */
+.carousel-CTA.primary:hover  {
+    background: rgba(218, 37, 37, 1);
+}
+.telephone {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    vertical-align: middle;
+    padding: 7px 15px;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, .3);
+}
+.telephone:before {
+    content: "\2706";
+    content: "\260E";
+    padding-right: 10px;
+}
+.left-control, .right-control {
+    position: absolute;
+    top: 46%;
+    z-index: 20;
+}
+.right-control {
+  	right:3px
+}
+.left-control {
+    left:3px
+}
+.right-control:after {
+    content: "\276D";
+}
+.left-control:after {
+    content: "\276C";
+}
+
+/*
+#home-slider .fa-angle-down {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  color: #fff;
+  display: inline-block;
+  width: 24px;
+  margin-left: -12px;
+  font-size: 24px;
+  line-height: 24px;
+  z-index: 999;
+  -webkit-animation: bounce 3000ms infinite;
+  animation: bounce 3000ms infinite;
+}
+*/
+/* --- CAROUSEL FADING ITEMS --------------------- */
+
+.carousel-inner > .item.active, .carousel-inner > .item.next.left, .carousel-inner > .item.prev.right {
+	transform: none;
+}
+
+.carousel-inner {
+	/*
+	position: relative;
+	*/
+  	background: white;
+  	z-index: 2;
+}
+.carousel-inner .item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  background-attachment: fixed;
+}
+.sub-page .carousel .item {
+	height: 500px;
+}
+.carousel-inner .item:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,.2);
+}
+.carousel-inner .active {
+  opacity: 2;
+}
+.carousel-inner .active.left,
+.carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+}
+.carousel-inner .next.left,
+.carousel-inner .prev.right {
+  opacity: 2;
+}
+.carousel-control {
+  z-index: 2;
+}
+
+/* --- PRELOADER & BACKTOTOP ----------------------------------------- */
+
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999999;
+	background: Black;
+}
+.preloader img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 70px;
+	width: 70px;
+	margin-top: -35px;
+	margin-left: -35px;
+	display: inline-block;
+    animation: 2s linear 0s normal none infinite spin;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from { transform:rotate(0deg); }
+    to { transform:rotate(360deg); }
+}
+
+.backtotop img {
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	height: 40px;
+	width: 40px;
+	display: inline-block;
+	z-index: 2;
+}
+
+/* --- PRALLAX -------------------------------------- */
+
+.parallax {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-color: Black;
+}
+.parallax:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.2);
+    background: rgba(34, 195, 155, 0.3);
+    background: rgba(241, 94, 5, 0.6);
+    background: rgba(0,0,0,0.3);
+}
+.parallax.attorney {
+    background-image: url(../images/page0/Attorney_1.jpg);
+}
+.parallax.miami {
+    background-image: url(../images/page0/Miami.jpg);
+}
+.parallax .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* === _NAV _MAINNAV _NAVIGATION ===================================================================================
+==================================================================================================================== */
+
+.navbar-fixed-top 							{position: static;}
+.sub-page .navbar-fixed-top 				{position: fixed !important;}
+.collapse.navbar-collapse 					{float: right;}
+.nav > li > a:focus, .nav > li > a:hover 	{outline:none; outline-offset: 0;}
+ul.navbar-nav li:hover .dropdown-menu 		{display: block;}
+
+nav.main {
+    background-color: white;
+    box-shadow: 0 0 4px 4px rgba(0,0,0,.4);
+    border: 0;
+}
+/* _SUBMENU */
+ul.navbar-nav .dropdown-menu {
+	border: 0;
+    border-bottom: 6px solid #009973;
+    padding: 0;
+    left: -10px;
+    right: auto;
+    top: auto;
+    float: none;
+    /* background-clip: padding-box; */
+    box-shadow: 0 4px 3px 1px rgba(0,0,0,.4);
+    width: 200px;
+   }
+   /*
+   ul.navbar-nav > li > .dropdown-menu {
+	    border-radius: 10px;
+	    border-top-left-radius: 0;
+		border-top-right-radius: 10px;
+	}
+   ul.navbar-nav > li > .dropdown-menu {
+	    border-radius:11px;
+	}
+   ul.navbar-nav > li > .dropdown-menu li:first-child a {
+	    border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+   ul.navbar-nav > li > .dropdown-menu li:last-child a {
+	    border-radius: 0 0 10px 10px;
+	}
+
+/* NAV LINKS */
+ul.navbar-nav li a, ul.navbar-nav .dropdown-menu a {
+	text-transform: uppercase;
+	padding: 20px 10px 18px;
+	transition-property: padding;
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
+}
+ul.navbar-nav .dropdown-menu a {
+	padding: 10px 10px 10px 20px;
+}
+/* _LOGO */
+.navbar-brand {
+    padding: 16px 0 0 10px;
+}
+.navbar-brand img {
+    width: 230px;
+    height: auto;
+}
+
+/* === CONTACT =====================================================================================================
+==================================================================================================================== */
+
+#google-map {
+    height: 300px;
+}
+.form-control {
+    background-color: transparent;
+    border-color: #22c39b;
+    padding: 5px;
+    box-shadow: none;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group.submit {
+}
+.btn-submit {
+    background: rgba(23, 130, 103, 1);
+    border: 1px solid #178267;
+    padding: 6px 30px;
+}
+.form-control:focus {
+	border-color: #22c39b;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(34, 195, 155, 1);
+}
+.btn-submit:hover {
+	background: rgba(23, 130, 103, .1);
+    border: 1px solid #22c39b;
+    background: #22c39b;
+}
+
+/* === _ADDRESS =============================================== */
+
+address {
+    background: #eee;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+address .content.name {
+    border-bottom: 1px solid Gray;
+    display: inline-block;
+    padding-top: 3px;
+}
+address .content.title {
+    text-transform: uppercase;
+	display: block;
+}
+address .number div, address .content.address {
+	overflow: auto;
+}
+address .number div:first-child {
+	margin-top: -3px;
+}
+address .address-label {
+    float: left;
+    min-width: 75px;
+    text-align: right;
+    padding: 2px 12px 0 0;
+}
+address .number .address-label {
+    min-width: 75px;
+ }
+address .address-label.email {
+    padding-top: 2px;
+}
+
+/* === FOOTER =============================================== */
+
+footer.main {
+	background-color: #7d3103;
+	background: white;
+	padding: 20px 0 10px;
+}
+footer.main nav {
+	padding-bottom: 90px;
+}
+.backtotop {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === Q U E R I E S ===================================================
+======================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === Q U E R I E S ===================================================
+======================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === Q U E R I E S ===================================================
+======================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === Q U E R I E S ===================================================
+======================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === Q U E R I E S ===================================================
+======================================================================== */
+
+
+
+
+
+
+
+
+
+
+/* === _LG =============================================== */
+@media (min-width: 1200px) {
+
+	.form-control {
+	}
+}
+
+/* === _MD =============================================== */
+/* @media (min-width: 992px) and (max-width: 1199px) { */
+@media (max-width: 1199px) {
+
+	.promote.promote-left img, .promote.promote-right img {
+	    width: 250px;
+	}
+	.promote.thumb img {
+	    width: 200px;
+	}
+	.promote .overflow-auto {
+		overflow: visible;
+	}
+	.navbar-brand img {
+		width: 200px;
+	}
+	.nav .home-link {
+		display: none;
+	}
+}
+
+
+/* === S M A L L  =  I  =============================================
+===================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+/* === S M A L L  =  I  =============================================
+===================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/* === S M A L L  =  I  =============================================
+===================================================================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.container-fluid .container {
+		width: 735px;
+	}
+}
+/* === _SM ====================================================== */
+@media (max-width: 991px) {
+
+	body {
+		font-size: 0.85em;
+	}
+	.carousel {
+	}
+	a.carousel-CTA {
+		font-size: 0.8em;
+	}
+
+	p, ul {
+		font-size: 1.1em;
+	}
+	ul.navbar-nav li a {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	address {
+		font-size: 1.6em;
+	}
+
+	nav.main {
+		font-size: 0.7em;
+	}
+	.navbar-brand img {
+		width: 150px;
+	}
+	.navbar-brand {
+		padding-top: 20px;
+	}
+    /* --- HEADINGS --- SMALL------------------------ */
+
+    h2 {
+        margin: 0 0 10px;
+    }
+    .carousel h1 > span {
+        padding-top: 6px;
+    }
+	.sub-page .carousel .item {
+		height: 400px;
+	}
+    .carousel .caption.small  {
+	    padding-left: 0;
+	}
+	.carousel .carousel-CTA {
+	    white-space: normal;
+		padding: 12px 22px;
+		margin-top: 15px;
+	}
+
+    /* --- __SECTION --- SMALL VIEWPORT -------------------------- */
+
+    section {
+        padding-top: 70px;
+    }
+    article.practices {
+    }
+    section header, article header, aside header {
+        padding-bottom: 20px;
+    }
+
+    .promote .cta a {
+        float: right;
+        padding-left: 20px;
+    }
+
+    /* --- CONTACT --- SMALL------------------------ */
+
+    textarea.form-control {
+    	min-height: 180px;
+	}
+
+	address .col-sm-12 {
+		padding-bottom: 20px;
+		float: none;
+	}
+	address .address-label, address .address-label.email {
+		padding-top: 5px;
+	}
+	address .address-label.address {
+		padding-left: 20px;
+		min-width: 100px;
+	}
+}
+
+
+
+
+/* === M O B I L E  =  I  ===========================================
+===================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+/* === M O B I L E  =  I  ===========================================
+===================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/* === M O B I L E  =  I  ===========================================
+===================================================================== */
+
+
+
+
+
+
+
+
+
+
+/* === M O B I L E  =  I  ===========================================
+===================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+/* === M O B I L E  =  I  ===========================================
+===================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/* === M O B I L E  =  I  ===========================================
+===================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === M O B I L E  =  I  ===========================================
+====== XS (MOBILE) ================================================== */
+
+@media (max-width: 767px) {
+
+	header.main {
+		display: none;
+	}
+	.backtotop {
+		display: block;
+	}
+
+	/* --- NAVIGATION --- MOBILE I ------------------- */
+
+	.navbar {position: fixed !important;}
+	ul.navbar-nav .dropdown-menu {
+		display: block;
+		position: relative;
+		float: none;
+	}
+
+    /* --- COPY --- MOBILE 1 ----------------------------- */
+
+	.parallax h2 {
+		margin-bottom: 20px;
+	}
+    h3, .promote h3, h2, .promote h2 {
+        margin: 10px 0 10px;
+    }
+	.promote .cta a {
+        white-space: nowrap;
+    }
+
+    /* --- SECTION --- MOBILE I ------------------- */
+
+    section, article.practices, aside {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    aside.contact {
+        padding-top: 20px;
+    }
+
+    section header, article header, aside header {
+        padding-bottom: 0;
+    }
+    section.highlight {
+        padding: 40px 0 30px;
+    }
+
+    /* --- __PROMOTE --- MOBILE I -------------------------- */
+
+    .promote.promote-left:not(.thumb) img, .promote.promote-right:not(.thumb) img {
+		float: none;
+		width: 100%;
+		padding: 20px 0 0;
+	}
+	.promote.thumb img {
+		width: 125px;
+	}
+
+	/* CONTACT AND FOOTER --- MOBILE I ------------------- */
+
+	.form-group {
+	    margin-bottom: 10px;
+	}
+
+	/* ADDRESS --- MOBILE I ------------------- */
+
+    address .col-sm-6 {
+		float: left;
+		width: 50%;
+	}
+	address .number div, address .number div:first-child {
+		margin-top: 0;
+		overflow: inherit;
+	}
+	address .number > div > span, address .address-label.address {
+	    min-width: auto;
+	    min-width: none;
+	    float: none;
+	    display: block;
+	    text-align: left;
+	    padding-top: 0;
+	}
+
+	address .address-label.address, address .content.address {
+		text-align: right;
+		padding-right: 0;
+	}
+	address .number .address-label {
+		padding-top: 0;
+	}
+	address .address-label.phone-number {
+		line-height: inherit;
+	}
+	address span {
+    	clear: left;
+    }
+	address .number > div {
+		padding-bottom: 6px;
+	}
+	address .content.phone-number {
+		font-size: 25px;
+		line-height: 28px;
+	}
+}
+
+
+
+
+
+
+/* === M O B I L E  =  I I ==========================================
+===================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === M O B I L E  =  I I ==========================================
+===================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+/* === M O B I L E  =  I I ==========================================
+===================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/* === M O B I L E  =  I I ==========================================
+===================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === M O B I L E  =  I I ==========================================
+===================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+/* === M O B I L E  =  I I ==========================================
+===================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/* === M O B I L E  =  I I ==========================================
+===================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+/* === M O B I L E  =  I I ==========================================
+====== XS (MOBILE) Portrait ========================================= */
+
+@media (max-width: 543px) {
+	body {
+		font-size: 0.7em;
+	}
+	p {
+		font-size: 1.1em;
+	}
+	.parallax {
+		background: Black;
+		padding-bottom: 30px;
+	}
+	.parallax h2, .parallax h3 {
+		color: White;
+	}
+
+    .promote .cta {
+    	margin: 0;
+    	padding-top: 10px;
+		overflow: inherit;
+		text-align: left;
+    }
+    .promote .cta a {
+		float: none;
+	    white-space: normal;
+    }
+	address .content.name {
+		font-size: 22px;
+	}
+	address .address-label.address, address .content.address {
+		padding-left: 0
+	}
+	.col-xm-6.col-sm-6 {
+		float: none;
+		width: auto;
+		padding-left: 30px;
+	}
+	address .address-label.address, address .content.address {
+		text-align: left;
+	}
+	address .content.title {
+		font-size: 12px;
+		line-height: 15px;
+	}
+	address > div > .address, address .number > div {
+		padding-bottom: 10px;
+	}
+}
