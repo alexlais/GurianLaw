@@ -34,7 +34,7 @@ h2, h3, p.cta {
 }
 
 /* --- CLEARING BOOTSTRAP _NONSENSES ---------------------------------------- */
-
+#google-map {display: none;}
 .form-control::-moz-placeholder, .form-control:-ms-input-placeholder
 	{color:inherit;}
 a:focus, .navbar-default ul.navbar-nav > li > a:focus, .navbar-default ul.navbar-nav > li > a:hover
@@ -99,7 +99,7 @@ h3 {
 h4 {
 	font-size: 1.7em;
 }
-.highlight .col-sm-4 h3 {
+.highlight .col-sm-4 h3, .col-md-3 hgroup h3, .col-md-3 hgroup h4  {
 	font-size: 1.5em;
 }
 .highlight .col-sm-4 p {
@@ -119,7 +119,7 @@ p.callout, .callout p, .btn-submit {
 footer.main {
 	font-size: 0.7em;
 }
-nav.main, .col-md-3 hgroup, .highlight h1, hgroup, abbr[data-original-title], abbr[title], .form-control {
+nav.main, .highlight h1, hgroup, abbr[data-original-title], abbr[title], .form-control {
     font-size: .8em;
 }
 hgroup {
