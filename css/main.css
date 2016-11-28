@@ -366,7 +366,7 @@ abbr[data-original-title], abbr[title] {
     width: 100%;
 }
 .promote.promote-left img, .promote.promote-right img {
-	width: 600px;
+	width: 500px;
     height: auto;
     float: left;
     padding: 0 30px 12px 0;
