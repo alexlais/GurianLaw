@@ -103,27 +103,23 @@ h4 {
 .btn-submit {
 	font-size: 1.3em;
 }
-.telephone, .parallax p {
-	font-size: 1.3em;
-}
-.parallax p {
-	font-size: 1.4em;
-}
+.telephone {}
 /* --- smaller --- ----------------------*/
-footer.main {
-	font-size: 0.7em;
-}
 nav.main, abbr[data-original-title], abbr[title], .form-control {
     font-size: .8em;
 }
-/* --- hgroup only --- -----------------*/
-.highlight h1, .col-sm-4 hgroup /* home and estate planning page */{
-    font-size: 0.9em;
-}
+/* --- hgroup --- -----------------*/
+footer.main,
 .col-sm-6.col-md-3 hgroup /* tax law page */ {
     font-size: .7em;
 }
-/* --- highlight only --- --------------*/
+.highlight h1, .col-sm-4 hgroup /* home and estate planning page */{
+    font-size: .9em;
+}
+p.cta {
+	font-size: 1.1em;
+}
+/* --- highlight --- --------------*/
 .callout h2  {
 	font-size: 1.5em;
 }
@@ -133,11 +129,11 @@ nav.main, abbr[data-original-title], abbr[title], .form-control {
 .highlight .col-sm-4 h3, .highlight .col-sm-3 h3 {
 	font-size: 1.4em;
 }
-/* --- carousel only --- ----------------*/
+/* --- carousel ONLY --- ----------------*/
 .carousel {
 	font-size: 1.9em;
 }
-.carousel .caption p, p.cta {
+.carousel .caption p {
 	font-size: 1em;
 }
 .carousel h1 span {
@@ -152,7 +148,7 @@ a.carousel-CTA {
 .carousel .large h1, .carousel .large h2 {
 	font-size: 2.4em;
 }
-/* --- address only (px) --- ----------- */
+/* --- address ONLY (px) --- ----------- */
 address .address-label {
     font-size: 14px;
 }
@@ -445,7 +441,8 @@ footer.main aside {
 }
 .callout {
 	background-color: rgba(0,0,0,0.075);
-	padding: 1.5rem 2rem 1.5rem;
+	padding: 1.5rem 2rem;
+	padding: 1em 2em;
 	margin-top: 40px;
 }
 p.callout {
@@ -1217,6 +1214,15 @@ body {
 	}
 	.home-page main > section > header {
 		padding-top: 0;
+	}
+	.highlight h1 {
+		margin-bottom: 20px
+	}
+	section, .parallax {
+		padding-bottom: 40px;
+	}
+	.parallax {
+		background: black !important;
 	}
 
 	/* --- NAVIGATION --- MOBILE I ------------------- */
