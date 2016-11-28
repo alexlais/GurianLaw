@@ -3,11 +3,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Vollkorn|Electrolize|Average');
 
-h1, h2, h3, h4, main {
+h1, h2, h3, main {
 	font-family: "Vollkorn", Georgia, "Times New Roman", serif;
 	font-weight: normal;
 }
-.carousel, .cta, nav.main, .highlight h1,
+h4, .carousel, .cta, nav.main, .highlight h1,
 .cta a:after, .promote h3 a:after,
 .form-group, .btn-submit,  textarea, select,
 input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"] {
@@ -16,25 +16,38 @@ input[type="text"], input[type="email"], input[type="url"], input[type="url"], i
 .carousel p.telephone, address .content.phone-number, address .content.fax-number {
 	font-family: "Times New Roman", serif;
 }
-/* --- FONT design & marging ----------------------- */
+
+
+
+/* --- FONT design -------------------------------------------------------- */
 .parallax a, .cta a, .cta, .carousel-CTA, .carousel .caption, .btn-submit, address .address-label, nav.main {
 	font-weight: bold;
 }
 p, ul.native, ul.typeface {
-    margin: 0 0 0.7rem;
+    margin: 0 0 1.5%;
 }
 h2, h3, h4 {
-    margin: 0 0 0.9rem;
+    margin: 0 0 0.6em;
 }
-h2, h3, p.cta {
-	margin-top: 1.2rem;
+figure + h2, h3, p.cta {
+	margin-top: 0.6em;
+}
+h4 {
+    margin-top: -.2em;
 }
 .promote-left h2, .promote-right h2, .promote-left h3, .promote-right h3 {
 	margin-top: 0;
 }
 
-/* --- CLEARING BOOTSTRAP _NONSENSES ---------------------------------------- */
+
+
+
+/* provisional */
 #google-map {display: none;}
+
+
+
+/* ---  _NONSENSE: clearing unnecessary link manipulation that developers love to waste time with, everywhere! (just leave the focus alone!)---------------------------------------- */
 .form-control::-moz-placeholder, .form-control:-ms-input-placeholder
 	{color:inherit;}
 .navbar-default ul.navbar-nav > li > a:focus, .navbar-default ul.navbar-nav > li > a:hover
@@ -71,42 +84,38 @@ body {
 	font-size: 100%;}
 
 /* --- copy and headings --- ------------- */
-p, ul.native, ul.typeface, .small {
-	font-size: 1.3em;
+.form-control {
+	font-size: 100%;
 }
-h1, h2 {
-	font-size: 2.2em;
-}
-.promote.promote-left h2, .promote.promote-right h2 {
-	font-size: 2.5em;
-}
-.parallax h2 {
-	font-size: 2.8em;
-}
-.parallax.attorney h2 {
-	font-size: 3.5em;
-	margin-bottom: 40px;
-}
-main > section > header h2 {
-	font-size: 2.8em;
-}
-.contact h2 {
-	font-size: 3em;
-}
-h3 {
-	font-size: 2em;
+p, ul.native, ul.typeface, .small, .btn-submit {
+	font-size: 130%;
 }
 h4 {
-	font-size: 1.7em;
+	font-size: 150%;
+}
+h3 {
+	font-size: 200%;
+}
+h1, h2 {
+	font-size: 220%;
+}
+.promote.promote-left h2, .promote.promote-right h2 {
+	font-size: 250%;
+}
+.parallax h2, main > section > header h2 {
+	font-size: 280%;
+}
+.contact h2 {
+	font-size: 300%;
+}
+.parallax.attorney h2 {
+	font-size: 350%;
 }
 /* --- larger --- -----------------------*/
-.btn-submit {
-	font-size: 1.3em;
-}
 .telephone {}
 /* --- smaller --- ----------------------*/
-nav.main, abbr[data-original-title], abbr[title], .form-control {
-    font-size: .8em;
+nav.main, abbr[data-original-title], abbr[title] {
+    font-size: 90%;
 }
 /* --- hgroup --- -----------------*/
 footer.main,
@@ -114,7 +123,7 @@ footer.main,
     font-size: .7em;
 }
 .highlight h1, .col-sm-4 hgroup /* home and estate planning page */{
-    font-size: .9em;
+    font-size: 90%;
 }
 p.cta {
 	font-size: 1.1em;
@@ -123,10 +132,10 @@ p.cta {
 .callout h2  {
 	font-size: 1.5em;
 }
-.highlight .col-sm-4 p, .highlight .col-sm-3 p {
+.highlight .col-sm-4 p, .highlight .col-md-3 p {
 	font-size: 1.2em;
 }
-.highlight .col-sm-4 h3, .highlight .col-sm-3 h3 {
+.highlight .col-sm-4 h3, .highlight .col-md-3 h3 {
 	font-size: 1.4em;
 }
 /* --- carousel ONLY --- ----------------*/
@@ -241,9 +250,12 @@ background: #6d7722;
 
 /* --- BORDER RADIUS --------------------------------- */
 
-.form-control, .btn-submit 								{border-radius: 3px;}
-.cta a 										{border-radius: 5px;}
-.carousel-CTA, .telephone, .callout 					{border-radius: 8px;}
+.form-control, .btn-submit {
+	border-radius: 3px;}
+.cta a, .callout img {
+	border-radius: 5px;}
+.carousel-CTA, .telephone, .callout {
+	border-radius: 8px;}
 
 /* --- _A -------------------------------------------------- */
 a {
@@ -343,8 +355,8 @@ abbr[data-original-title], abbr[title] {
 }
 .promote.border {
     border-top: 1px solid rgba(255, 255, 255, .4);
-    padding-top: 30px;
-    margin-top: 40px;
+    padding-top: 2em;
+    margin-top: 2em;
 }
 .promote ul {
     padding: 0 0 0 20px;
@@ -395,17 +407,17 @@ abbr[data-original-title], abbr[title] {
 ======================================================================================== */
 
 section, .parallax {
-    padding: 70px 0 80px;
+    padding: 70px 0 4%;
 }
 aside, article > header, aside.contact .highlight {
-    padding: 60px 0;
+    padding: 60px 0 4%;
 }
 aside.contact {
 	padding-bottom: 0;
 	background: white;
 }
 main > section > header, .highlight header, aside.contact header {
-	padding-bottom: 40px;
+	padding-bottom: 2%;
 }
 .home-page main > section > header {
     padding-top: 40px;
@@ -414,15 +426,15 @@ footer.main aside {
 	padding: 0;
 }
 .img-banner {
-    margin: 2em 0 0;
+    margin: 2% 0 1%;
 }
 
 /* ---- _HIGHLIGHT _callout ------------------------------ */
 
 .highlight footer {
     border-top: 1px solid rgba(255, 255, 255, .2);
-    margin-top: 40px;
-    padding-top: 20px;
+    margin-top: 4%;
+    padding-top: 2%;
     box-shadow: inset 0 40px 40px -50px rgba(0,0,0,.1);
 }
 .highlight.brown footer, .highlight.blue footer {
@@ -432,8 +444,8 @@ footer.main aside {
     text-transform: uppercase;
     letter-spacing: 3px;
     border-bottom: 1px solid rgba(255, 255, 255, .4);
-    margin: 10px 0 40px;
-    padding: 0 0 10px;
+    margin: 1% 0 4%;
+    padding: 0 0 1%;
     box-shadow: 0 15px 24px -5px rgba(0,0,0,0.075);
 }
 .highlight.brown h1, .highlight.blue h1 {
@@ -441,12 +453,12 @@ footer.main aside {
 }
 .callout {
 	background-color: rgba(0,0,0,0.075);
-	padding: 1.5rem 2rem;
-	padding: 1em 2em;
-	margin-top: 40px;
+	padding: 1.5em 2em 1em;
+	margin-top: 1.5em;
 }
 p.callout {
 	font-style: italic;
+	padding: 1.5em 2em;
 }
 .callout .row {
 	padding-top: 1em;
@@ -1036,15 +1048,22 @@ body {
 
 body {
 	font-size: 90%;
+	color: #666;
+}
+.clearfix {
+	padding-bottom: 4%;
 }
 	nav.main {
 		font-size: 70%;
 	}
-	p {
+	p, ul.native, ul.typeface {
 		font-size: 120%;
 	}
 	h2 {
 		font-size: 160%;
+	}
+	.promote {
+		margin-bottom: 2%;
 	}
 	.promote.promote-left h2, .promote.promote-right h2 {
 		font-size: 200%;
@@ -1056,7 +1075,6 @@ body {
 		font-size: 150%;
 	}
 	h2, h3, p.cta, h2, h3, h4 {
-		margin: 0.5em 0;
 	}
 
     /* --- NAVIGATION --- SMALL------------------------ */
@@ -1215,19 +1233,12 @@ body {
 	.home-page main > section > header {
 		padding-top: 0;
 	}
-	.highlight h1 {
-		margin-bottom: 20px
-	}
-	section, .parallax {
-		padding-bottom: 40px;
-	}
-	.parallax {
-		background: black !important;
-	}
 
 	/* --- NAVIGATION --- MOBILE I ------------------- */
 
-	.navbar {position: fixed !important;}
+	.navbar {
+		position: fixed !important;
+	}
 	ul.navbar-nav .dropdown-menu {
 		display: block;
 		position: relative;
@@ -1239,7 +1250,9 @@ body {
 	.cta a {
         white-space: nowrap;
     }
-
+	.highlight figure + h2 {
+		margin-top: 0;
+	}
     /* --- __PROMOTE --- MOBILE I -------------------------- */
 
     .promote.promote-left:not(.thumb) img, .promote.promote-right:not(.thumb) img {
@@ -1415,17 +1428,21 @@ body {
 body {
 	font-size: 90%;
 }
-	p {
+	p, ul.native, ul.typeface {
 		font-size: 1.1em;
 	}
+	h2 {
+		font-size: 1.4em !important;
+	}
+	.container {
+	}
+
 	.parallax {
-		background: Black;
-		padding-bottom: 30px;
+		background: Black !important;
 	}
 	.parallax h2, .parallax h3 {
 		color: White;
 	}
-
     .cta {
     	margin: 0;
     	padding-top: 10px;
