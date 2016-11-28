@@ -1412,9 +1412,9 @@ body {
 ====== XS (MOBILE) Portrait ========================================= */
 
 @media (max-width: 543px) {
-	body {
-		font-size: 0.7em;
-	}
+body {
+	font-size: 90%;
+}
 	p {
 		font-size: 1.1em;
 	}
