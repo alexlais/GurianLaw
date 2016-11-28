@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Vollkorn|Electrolize|Average');
 
-h1, h2, h3, h4, .telephone, main {
+h1, h2, h3, h4, main {
 	font-family: "Vollkorn", Georgia, "Times New Roman", serif;
 	font-weight: normal;
 }
@@ -13,7 +13,7 @@ h1, h2, h3, h4, .telephone, main {
 input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"] {
 	font-family: "Electrolize", "Share Tech Mono", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
 }
-.carousel p.telephone {
+.carousel p.telephone, address .content.phone-number, address .content.fax-number {
 	font-family: "Times New Roman", serif;
 }
 /* --- FONT design & marging ----------------------- */
@@ -37,7 +37,7 @@ h2, h3, p.cta {
 #google-map {display: none;}
 .form-control::-moz-placeholder, .form-control:-ms-input-placeholder
 	{color:inherit;}
-a:focus, .navbar-default ul.navbar-nav > li > a:focus, .navbar-default ul.navbar-nav > li > a:hover
+.navbar-default ul.navbar-nav > li > a:focus, .navbar-default ul.navbar-nav > li > a:hover
 	{color:inherit;}
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover
 	{background-color: inherit;
@@ -99,15 +99,6 @@ h3 {
 h4 {
 	font-size: 1.7em;
 }
-.highlight .col-sm-4 h3, .col-md-3 hgroup h3, .callout h2, .col-md-3 hgroup h4  {
-	font-size: 1.5em;
-}
-.highlight .col-sm-4 p, .highlight .col-sm-3 p {
-	font-size: 1.2em;
-}
-.highlight .col-sm-3 h3 {
-	font-size: 1.4em;
-}
 /* --- larger --- -----------------------*/
 .btn-submit {
 	font-size: 1.3em;
@@ -122,11 +113,25 @@ h4 {
 footer.main {
 	font-size: 0.7em;
 }
-nav.main, .highlight h1, hgroup, abbr[data-original-title], abbr[title], .form-control {
+nav.main, .highlight h1, abbr[data-original-title], abbr[title], .form-control {
     font-size: .8em;
 }
-hgroup {
-    font-size: .9em;
+/* --- hgroup only --- -----------------*/
+.col-sm-4 hgroup /* home and estate planning page */{
+    font-size: 0.9em;
+}
+.col-sm-6.col-md-3 hgroup /* tax law page */ {
+    font-size: .7em;
+}
+/* --- highlight only --- --------------*/
+.highlight .col-sm-4 h3, .callout h2  {
+	font-size: 1.5em;
+}
+.highlight .col-sm-4 p, .highlight .col-sm-3 p {
+	font-size: 1.2em;
+}
+.highlight .col-sm-3 h3 {
+	font-size: 1.4em;
 }
 /* --- carousel only --- ----------------*/
 .carousel {
@@ -156,6 +161,9 @@ address .content.name {
 }
 address .content.title {
 	font-size: 13px; line-height: 16px;
+}
+address .content.address {
+	font-size: 18px;
 }
 address .content.phone-number {
 	font-size: 30px; line-height: 36px;
@@ -251,7 +259,7 @@ a {
 footer.main a, aside.highlight a, address .email a:hover, .highlight p:not(.cta) a {
     text-decoration: underline;
 }
-a:focus, a:hover, h3 a:hover, footer.main a:hover, .highlight a:hover, .highlight p a:hover {
+a:hover, h3 a:hover, footer.main a:hover, .highlight a:hover, .highlight p a:hover {
     text-decoration: none;
 }
 
@@ -299,7 +307,7 @@ a:focus, a:hover, h3 a:hover, footer.main a:hover, .highlight a:hover, .highligh
 .promote h3 a:after {
     margin-right: 0;
 }
-.cta a:hover:after, .promote h3 a:hover:after, figure:hover ~ h3 a:after {
+.cta a:hover:after, .promote h3 a:hover:after, figure:hover ~ hgroup h3 a:after {
     padding-left: 15px;
     padding-right: 0;
 }
@@ -363,7 +371,7 @@ abbr[data-original-title], abbr[title] {
     width: 100%;
 }
 .promote.promote-left img, .promote.promote-right img {
-	width: 500px;
+	width: 550px;
     height: auto;
     float: left;
     padding: 0 30px 12px 0;
@@ -814,14 +822,13 @@ address {
     background: #eee;
     padding-top: 8px;
     padding-bottom: 8px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin: 40px 0;
     display: block;
 }
 address .content.name {
     border-bottom: 1px solid Gray;
     display: inline-block;
-    padding-top: 3px;
+    padding-top: 8px;
 }
 address .content.title {
     text-transform: uppercase;
@@ -973,7 +980,7 @@ nav.main {
     font-size: 0.7em;
 }
 	.promote.promote-left img, .promote.promote-right img {
-	    width: 250px;
+	    width: 400px;
 	}
 	.promote.thumb img {
 	    width: 200px;
