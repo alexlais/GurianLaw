@@ -27,7 +27,7 @@
 	<div class="preloader"><img src="loading.gif"></div>
 	<div class="backtotop"><a href="#page-top"><img src="top.png"></a></div>
 
-    <nav class="main navbar navbar-fixed-top" role="navigation">
+    <nav class="main navbar navbar-fixed-top">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -44,7 +44,7 @@
 			<!-- NAVIGATION --------------------------------------- -->
 
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" role="navigation">
                     <li class="home-link"><a href="index.html">Home</a></li>
 		            <li class="dropdown">
                         <a class="page-scroll" href="#practices">practices</a>
@@ -67,14 +67,15 @@
 
 	<!-- HOME PAGE CAROUSEL ------------------------------- -->
 
-	<header id="home" class="main" role="banner">
+	<header id="home" class="main"
+	role="banner" aria-roledescription="Contract Law banner" aria-labelledby="ARIA_label_banner" aria-describedby="ARIA_describe_banner">
 	    <div class="carousel">
 			<div class="carousel-inner">
 				<div class="item active" style="background-image: url(images/slider/2.jpg); background-position: center top;">
 					<div class="caption large">
 		            	<div class="container">
-						    <h1>Contract Law</h1>
-						    <p>Secure Agreements Founded <br>On Experienced Legal Advice</p>
+						    <h1 id="ARIA_label_banner">Contract Law</h1>
+						    <p id="ARIA_describe_banner">Secure Agreements Founded <br role="presentation">On Experienced Legal Advice</p>
 						</div>
 					</div>
 				</div>
@@ -83,46 +84,50 @@
 	    </div>
 	</header>
 
-  	<main role="main">
-	    <article class="container-fuid" role="region">
-		    <div class="container">
+  	<main role="main" aria-label="Jorge L. Gurian P.A., contract law services page">
 
-	    		<!-- MAIN ARTICLE HEADER ------------------------------------ -->
+    	<!-- TAX LAW SERVICES ------------------------------------ -->
 
-		        <header id="practices" class="practices">
-		            <div class="row">
-		                <div class="col-lg-9">
-		                    <h2>Miami Contract Law Attorney</h2>
-		                    <p>A thoroughly drafted contract can greatly influence the success of your investment in businesses and real estate. These legally binding documents determine what each party's liabilities and contingencies are for unexpected circumstances.</p>
-		                    <p>At the <mark>law firm</mark> of <span class="text-nowrap">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></span>, we represent individuals and businesses throughout the <mark>Miami Dade</mark> area and <mark>South Florida</mark> in complex <mark>contract law</mark> matters. Our clients are from a wide range of backgrounds and industries both within the United States <span class="text-nowrap">and abroad</span>.</p>
-		                </div>
-		            </div>
-		        </header>
-		    </div>
+    	<section id="practices" class="container practices"
+		role="note" aria-labelledby="ARIA_label_1" aria-describedby="ARIA_describe_1 ARIA_describe_2">
 
-		    <!-- BLURB ------------------------------------ -->
+	        <header>
+	            <div class="row">
+	                <div class="col-lg-9">
+	                    <h2 id="ARIA_label_1" role="heading" aria-level="2">
+	                    	Miami Contract Law Attorney</h2>
+	                    <p id="ARIA_describe_1">A thoroughly drafted contract can greatly influence the success of your investment in businesses and real estate. These legally binding documents determine what each party's liabilities and contingencies are for unexpected circumstances.</p>
+	                    <p id="ARIA_describe_2">At the <mark>law firm</mark> of <span class="text-nowrap">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></span>, we represent individuals and businesses throughout the <mark>Miami Dade</mark> area and <mark>South Florida</mark> in complex <mark>contract law</mark> matters. Our clients are from a wide range of backgrounds and industries both within the United States <span class="text-nowrap">and abroad</span>.</p>
+	                </div>
+	            </div>
+	        </header>
+		</section>
 
-		    <section id="contract" class="container-fluid highlight">
-		    	<div class="container">
-		    		<h1 role="heading">Miami Dade &amp; <span class="text-nowrap">South Florida</span> <span class="text-nowrap">Contract Law</span></h1>
-				</div>
-	            <div class="container">
-		            <div class="promote promote-left">
-		                <figure class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay="0">
-		                    <img class="hidden-xs" src="images/page3/Contract_Law.jpg" alt="Contract Drafting, Review And Negotiation">
-		                </figure>
-		                <div class="overflow-auto">
-			            	<h2 role="heading">Contract Drafting, Review <span class="text-nowrap">And Negotiation</span></h2>
-							<p>Our clients' success is driven by the comprehensive service and skill we provide in complex business and real estate transactions as well as in associated <a href="Tax_Attorney.html">tax law</a> and <a href="Estate_Planning.html">estate planning</a> considerations. Attorney Jorge L. Gurian has more than 20 years of experience as an attorney and an acute understanding of the strategic element of legal planning.</p>
-							<p>We handle a wide range of contracts and <a href="#agreements">agreements</a>, thoroughly drafting, reviewing and negotiating the terms on behalf of our clients so their best interests are always protected.</p>
-							<p>Whether you need to assure your own personal or professional liabilities are limited in a transaction or need to make sure exit strategies are in place should your investment not work out as planned, we can help.</p>
-		                    <p class="cta"><a class="page-scroll" href="#contact">Talk To Us</span></a></p>
-				    	</div>
-				    </div>
-				</div>
-			</section>
+		<!-- CONTRACT ------------------------------------ -->
 
-			<!-- 1b -->
+		<section id="contract" class="container-fluid highlight">
+	    	<div class="container">
+	    		<h1 role="heading">Miami Dade &amp; <span class="text-nowrap">South Florida</span> <span class="text-nowrap">Contract Law</span></h1>
+			</div>
+            <div class="container">
+	            <div class="promote promote-left">
+	                <figure class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay="0">
+	                    <img class="hidden-xs" src="images/page3/Contract_Law.jpg" alt="Contract Drafting, Review And Negotiation">
+	                </figure>
+	                <div class="overflow-auto">
+		            	<h2 role="heading">Contract Drafting, Review <span class="text-nowrap">And Negotiation</span></h2>
+						<p>Our clients' success is driven by the comprehensive service and skill we provide in complex business and real estate transactions as well as in associated <a href="Tax_Attorney.html">tax law</a> and <a href="Estate_Planning.html">estate planning</a> considerations. Attorney Jorge L. Gurian has more than 20 years of experience as an attorney and an acute understanding of the strategic element of legal planning.</p>
+						<p>We handle a wide range of contracts and <a href="#agreements">agreements</a>, thoroughly drafting, reviewing and negotiating the terms on behalf of our clients so their best interests are always protected.</p>
+						<p>Whether you need to assure your own personal or professional liabilities are limited in a transaction or need to make sure exit strategies are in place should your investment not work out as planned, we can help.</p>
+	                    <p class="cta"><a class="page-scroll" href="#contact">Talk To Us</span></a></p>
+			    	</div>
+			    </div>
+			</div>
+		</section>
+
+		<!-- AGREEMENTS ------------------------------------ -->
+
+		<article>
 		    <section id="agreement" class="container-fluid highlight orange">
 		    	<div class="container">
 		    		<h1>Miami Dade &amp; <span class="text-nowrap">South Florida</span> Agreements Law Service</h1>
@@ -303,12 +308,12 @@
 					<div class="row" itemscope itemtype="http://schema.org/LocalBusiness">
 				        <div class="col-xm-12 col-sm-12 col-md-4 text-center">
 							<span class="content name" itemprop="name"><strong>Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></strong></span>
-							<span class="content title" itemprop="jobTitle">A South Florida Estate Planning, <br>Tax &amp; Business Law&nbsp;Firm</span>
+							<span class="content title" itemprop="jobTitle">A South Florida Estate Planning, <br role="presentation">Tax &amp; Business Law&nbsp;Firm</span>
 				        </div>
 				        <div class="col-xm-6 col-sm-6 col-md-4 address">
 							<div><span class="address-label address">Address:</span></div>
 							<div class="content address" itemscope itemtype="http://schema.org/PostalAddress">
-								<span itemprop="streetAddress">2665 S. Bayshore Dr. <br>Suite 800</span>
+								<span itemprop="streetAddress">2665 S. Bayshore Dr. <br role="presentation">Suite 800</span>
 								<br><span itemprop="addressLocality">Miami</span>,
 								<span itemprop="addressRegion">FL</span>
 								<span itemprop="postalCode">33133</span>
@@ -355,7 +360,7 @@
 
  		<aside class="container text-center" role="contentinfo">
 	 		<p><a href="Site-Map.html">Site Map</a> | <a id="PrivacyPolicy" href="Privacy-Policy.html">Privacy Policy</a></p>
- 			<p class="copyright">&copy 2016 by <span class="text-nowrap">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></span> <span class="text-nowrap">All rights reserved</span>. <a target="_blank" rel="nofollow" href="AlexLais.com">Developed by</a>.</p>
+ 			<p class="copyright">&copy 2016 by <span class="text-nowrap">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></span> <span class="text-nowrap">All rights reserved</span>.</p>
 	 	</aside>
 	</footer>
 
