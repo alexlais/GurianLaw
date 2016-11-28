@@ -3,12 +3,12 @@
 
 @import url('https://fonts.googleapis.com/css?family=Vollkorn|Electrolize|Average');
 
-h1, h2, h3, h4, .telephone, header {
+h1, h2, h3, h4, .telephone, main {
 	font-family: "Vollkorn", Georgia, "Times New Roman", serif;
 	font-weight: normal;
 }
 .carousel, .cta, nav.main, .highlight h1,
-.promote .cta a:after, .promote h3 a:after,
+.cta a:after, .promote h3 a:after,
 .form-group, .btn-submit,  textarea, select,
 input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"] {
 	font-family: "Electrolize", "Share Tech Mono", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
@@ -17,14 +17,14 @@ input[type="text"], input[type="email"], input[type="url"], input[type="url"], i
 	font-family: "Times New Roman", serif;
 }
 /* --- FONT design & marging ----------------------- */
-.parallax a, .promote .cta a, .promote .cta, .carousel-CTA, .carousel .caption, .btn-submit, address .address-label, nav.main {
+.parallax a, .cta a, .cta, .carousel-CTA, .carousel .caption, .btn-submit, address .address-label, nav.main {
 	font-weight: bold;
 }
 p, ul.native, ul.typeface {
     margin: 0 0 0.7rem;
 }
 h2, h3, h4 {
-    margin: 0 0 0.55rem;
+    margin: 0 0 0.9rem;
 }
 h2, h3, p.cta {
 	margin-top: 1.2rem;
@@ -55,7 +55,8 @@ navbar-nav > li > .dropdown-menu
 /* --- _LINE HEIGHT ----------------------------------------------------- */
 
 body, address, h1, h1, h3, h4, span, a 			{line-height: inherit;}
-p, li, h2, h3, h3 span, h4						{line-height: 140%;}
+p, li											{line-height: 155%;}
+h2, h3, h3 span, h4								{line-height: 135%;}
 .carousel h2, .carousel h3  					{line-height: 1;}
 .carousel h1							  		{line-height: 0.9;}
 .parallax.miami h2 								{line-height: 1.7;}
@@ -67,42 +68,52 @@ html, body, h1, h2, h3, h4, p, span, a, ul, li, .form-control, button, input, op
 /* input[type="text"], input[type="email"], input[type="url"], input[type="password"]  */ {
 	font-size: inherit;}
 body {
-	font-size: 1.15em;}
+	font-size: 100%;}
 
 /* --- copy and headings --- ------------- */
 p, ul, .small {
-	font-size: 1em;
+	font-size: 1.2em;
 }
 h1, h2 {
-	font-size: 1.8em;
+	font-size: 1.9em;
 }
-.parallax.miami h2 {
-	font-size: 2em;
+.promote.promote-left h2 {
+	font-size: 2.1em;
+}
+.parallax h2 {
+	font-size: 2.8em;
+}
+.parallax.attorney h2 {
+	font-size: 3.5em;
+	margin-bottom: 40px;
 }
 main > section > header h2 {
-	font-size: 2.5em;
+	font-size: 2.8em;
 }
 .contact h2 {
-	font-size: 3em;
+	font-size: 3.3em;
 }
 h3 {
-	font-size: 1.7em;
+	font-size: 1.85em;
 }
 h4 {
-	font-size: 1.5em;
+	font-size: 1.7em;
 }
 /* --- larger --- -----------------------*/
-.callout, .btn-submit {
-	font-size: 1.1em;
-}
-.telephone, .parallax {
+p.callout, .callout p, .btn-submit {
 	font-size: 1.3em;
+}
+.telephone, .parallax p {
+	font-size: 1.3em;
+}
+.parallax p {
+	font-size: 1.4em;
 }
 /* --- smaller --- ----------------------*/
 footer.main {
 	font-size: 0.7em;
 }
-nav.main, .col-md-3 hgroup, .highlight h1, .cta, hgroup, abbr[data-original-title], abbr[title], .form-control {
+nav.main, .col-md-3 hgroup, .highlight h1, hgroup, abbr[data-original-title], abbr[title], .form-control {
     font-size: .8em;
 }
 hgroup {
@@ -110,7 +121,10 @@ hgroup {
 }
 /* --- carousel only --- ----------------*/
 .carousel {
-	font-size: 1.7em;
+	font-size: 1.9em;
+}
+.carousel .caption p, p.cta {
+	font-size: 1em;
 }
 .carousel h1 span {
 	font-size: 0.52em;
@@ -159,7 +173,7 @@ h1, .highlight h2, .highlight h3, .highlight a,
 .carousel-CTA, .carousel-CTA:hover, .carousel-CTA:focus,
 .left-control, .right-control, .left-control:hover, .right-control:hover,
 .left-control:active, .right-control:active, .left-control:after, .right-control:after,
-.highlight .promote .cta a, .promote .cta a:hover,
+.highlight .cta a, .cta a:hover,
 .btn-submit, .parallax{
 	color: white;}
 /* ------------------------- */
@@ -215,7 +229,7 @@ background: #6d7722;
 /* --- BORDER RADIUS --------------------------------- */
 
 .form-control, .btn-submit 								{border-radius: 3px;}
-.promote .cta a 										{border-radius: 5px;}
+.cta a 										{border-radius: 5px;}
 .carousel-CTA, .telephone, .callout 					{border-radius: 8px;}
 
 /* --- _A -------------------------------------------------- */
@@ -228,20 +242,22 @@ a {
 footer.main a, aside.highlight a, address .email a:hover, .highlight p:not(.cta) a {
     text-decoration: underline;
 }
-a:focus, a:hover, h3 a:hover, footer.main a:hover, .highlight a:hover {
+a:focus, a:hover, h3 a:hover, footer.main a:hover, .highlight a:hover, .highlight p a:hover {
     text-decoration: none;
 }
 
 /* --- _CTA ----------------------------------------------- */
-
-.promote .cta, .carousel-CTA  {
+.highlight a:hover {
+	color: white;
+}
+.cta, .carousel-CTA  {
 	text-transform: uppercase;
 }
-.promote .cta {
+.cta {
     overflow: auto;
     text-align: right;
 }
-.promote .cta a {
+.cta a {
     text-align: right;
     display: block;
     padding: 9px 50px 9px 10px;
@@ -249,7 +265,7 @@ a:focus, a:hover, h3 a:hover, footer.main a:hover, .highlight a:hover {
     transition-duration: 0.15s;
     transition-timing-function: linear;
 }
-.highlight .promote .cta a {
+.highlight .cta a {
     padding-top: 10px;
     display: inline;
     float: left;
@@ -257,13 +273,13 @@ a:focus, a:hover, h3 a:hover, footer.main a:hover, .highlight a:hover {
     border: 1px solid #fff;
     padding-left: 15px;
  }
-.promote .cta a:hover {
+.cta a:hover {
     background: #1fad8a;
 }
-.highlight .promote .cta a:hover {
+.highlight .cta a:hover {
     background: White;
 }
-.promote .cta a:after, .promote h3 a:after {
+.cta a:after, .promote h3 a:after {
     margin-right: -38px;
     content:"\a0\2192"; /* "\a0" is used to generate a non braking space in html */
     padding-right: 15px;
@@ -274,7 +290,7 @@ a:focus, a:hover, h3 a:hover, footer.main a:hover, .highlight a:hover {
 .promote h3 a:after {
     margin-right: 0;
 }
-.promote .cta a:hover:after, .promote h3 a:hover:after, figure:hover ~ h3 a:after {
+.cta a:hover:after, .promote h3 a:hover:after, figure:hover ~ h3 a:after {
     padding-left: 15px;
     padding-right: 0;
 }
@@ -343,15 +359,13 @@ abbr[data-original-title], abbr[title] {
 .promote img, .img-responsive {
     width: 100%;
 }
-.promote.promote-left img {
-	width: 400px;
+.promote.promote-left img, .promote.promote-right img {
+	width: 600px;
     height: auto;
     float: left;
     padding: 0 30px 12px 0;
 }
 .promote.promote-right img {
-	width: 400px;
-    height: auto;
     float: right;
     padding: 0 0 12px 30px;
 }
@@ -366,7 +380,7 @@ abbr[data-original-title], abbr[title] {
     transition: all 5s ease-out;
 }
 .promote figure a:hover img, figure.hover img {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 /* =====================================================================================
@@ -418,23 +432,11 @@ p.callout {
 }
 
 
-/* --- SCROOL BUG FIX ---
+/* --- SCROOL BUG FIX ---  */
 
-	.home-page article.practices {
-  		margin-top: 60px;
-	}
-	*/
-	.home-page nav.main:not(.navbar-fixed-top) + main {
-		margin-top: -60px;
-	}
-
-	/*
-	.home-page nav.main:not(.navbar-fixed-top) {
-	    /* margin-bottom: -50px;
-	    position: relative;
-	    z-index: 2;
-	}
-	*/
+.home-page nav.main:not(.navbar-fixed-top) + main {
+	margin-top: -60px;
+}
 
 
 /* === _CAROUSEL ================================================================================================================
@@ -699,13 +701,13 @@ p.callout {
 
 .navbar-fixed-top 							{position: static;}
 .sub-page .navbar-fixed-top 				{position: fixed !important;}
-.collapse.navbar-collapse 					{float: right;}
+.collapse.navbar-collapse 					{}
 .nav > li > a:focus, .nav > li > a:hover 	{outline:none; outline-offset: 0;}
 ul.navbar-nav li:hover .dropdown-menu 		{display: block;}
 
 nav.main {
     background-color: white;
-    box-shadow: 0 0 4px 4px rgba(0,0,0,.2);
+    box-shadow: 0 0 4px 4px rgba(0,0,0,.3);
     border: 0;
 }
 /* _SUBMENU */
@@ -751,7 +753,7 @@ ul.navbar-nav .dropdown-menu a {
 }
 /* _LOGO */
 .navbar-brand {
-    padding: 16px 0 0 10px;
+    padding: 16px 20px 0 10px;
 }
 .navbar-brand img {
     width: 230px;
@@ -790,7 +792,7 @@ ul.navbar-nav .dropdown-menu a {
     background: #22c39b;
 }
 
-/* === _ADDRESS =============================================== */
+/* === ADDRESS =============================================== */
 
 address {
     background: #eee;
@@ -1070,7 +1072,7 @@ nav.main {
         padding-bottom: 20px;
     }
 
-    .promote .cta a {
+    .cta a {
         float: right;
         padding-left: 20px;
     }
@@ -1204,7 +1206,7 @@ nav.main {
 	.parallax h2 {
 		margin-bottom: 20px;
 	}
-	.promote .cta a {
+	.cta a {
         white-space: nowrap;
     }
 
@@ -1409,13 +1411,13 @@ nav.main {
 		color: White;
 	}
 
-    .promote .cta {
+    .cta {
     	margin: 0;
     	padding-top: 10px;
 		overflow: inherit;
 		text-align: left;
     }
-    .promote .cta a {
+    .cta a {
 		float: none;
 	    white-space: normal;
     }

@@ -28,7 +28,7 @@
 	<div class="preloader"><img src="loading.gif"></div>
 	<div class="backtotop"><a href="#page-top"><img src="top.png"></a></div>
 
-    <nav class="main navbar navbar-fixed-top" role="navigation">
+    <nav class="main navbar navbar-fixed-top">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -44,7 +44,7 @@
 
 			<!-- NAVIGATION --------------------------------------- -->
 
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="collapse navbar-collapse navbar-ex1-collapse" role="navigation" aria-roledescription="main navigation">
                 <ul class="nav navbar-nav">
                     <li class="home-link"><a href="index.html">Home</a></li>
 		            <li class="dropdown">
@@ -55,10 +55,9 @@
 		            		<li><a href="Contract_Law.html" title="Miami &amp; South Florida Contract Law Firm Services" rel="law services" rev="law firm">Contract Law</a></li>
 		            	</ul>
                     </li>
-		            <li><a class="page-scroll red" href="#investment">Investment Tax</a></li>
-		            <li><a class="page-scroll brown" href="#business">Business Tax</a></li>
-		            <li><a class="page-scroll orange" href="#estategift">Estate Gift Tax</a></li>
-		            <li><a class="page-scroll blue" href="#capital">Gains &amp Losses Tax</a></li>
+		            <li><a class="page-scroll red" href="#estate">Taxes &amp; Estate Planning</a></li>
+		            <li><a class="page-scroll brown" href="#trust">Trust Lawyer</a></li>
+		            <li><a class="page-scroll orange" href="#probate">Probate Lawyer</a></li>
 		            <li class="hidden"><a class="page-scroll" href="#miami">Miami</a></li>
 	            	<li><a class="page-scroll" href="#contact">Contact</a></li>
                 </ul>
@@ -70,14 +69,15 @@
 
 	<!-- HOME PAGE CAROUSEL ------------------------------- -->
 
-	<header id="home" class="main" role="banner">
+	<header id="home" class="main"
+	role="banner" aria-roledescription="Estate Planning Lawyer banner" aria-labelledby="ARIA_label_banner" aria-describedby="ARIA_describe_banner">
 	    <div class="carousel">
 			<div class="carousel-inner">
-				<div class="item active" style="background-image: url(images/slider/2.jpg); background-position: center;">
-					<div class="caption large">
+				<div class="item active" style="background-image: url(images/slider/2.jpg); background-position: center -70px;">
+					<div class="caption">
 		            	<div class="container">
-						    <h1>Estate Planning Lawyer</h1>
-						    <p>Unexpected Things Happen, <br>And You Need To Be Prepared</p>
+						    <h1 id="ARIA_label_banner">Estate Planning Lawyer</h1>
+						    <p id="ARIA_describe_banner">Unexpected Things Happen, <br role="presentation">And You Need To Be Prepared</p>
 						</div>
 					</div>
 				</div>
@@ -86,76 +86,81 @@
 	    </div>
 	</header>
 
-  	<main role="main">
-	    <article id="practices" class="container-fuid practices">
-		    <div class="container">
+  	<main role="main" aria-label="Jorge L. Gurian P.A., estate planning services page">
 
-	    		<!-- MAIN ARTICLE HEADER ------------------------------------ -->
+    	<!-- ESTATE PLANNING SERVICES ------------------------------------ -->
 
-		        <header>
-		            <div class="row">
-		                <div class="col-lg-9">
-		                    <h2>Miami &amp; South Florida <span class="text-nowrap">Tax Attorney</span></h2>
-		                    <p>At the <mark>law firm</mark> of <span class="text-nowrap">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></span>, we address key issues in <mark>tax law</mark> as they relate to investors in the <mark>Miami Dade</mark> area and throughout <mark>South Florida</mark>. We represent clients who live within the United States as well as abroad <span class="text-nowrap">in issues of</span>:</p>
-		                </div>
-		            </div>
-		        </header>
+    	<section id="practices" class="container practices"
+		role="directory" aria-labelledby="ARIA-label-1" aria-describedby="ARIA-describe-1 ARIA-describe-2">
 
-	    		<!-- MAIN ARTICLE CONTENT ------------------------------------ -->
+	        <header>
+	            <div class="row">
+	                <div class="col-lg-12">
+	                    <h2 id="ARIA-label-1" role="heading" aria-level="2">
+	                    	Miami &amp; South Florida <span class="text-nowrap">Estate Planning</span></h2>
+						<p id="ARIA-describe-1">The law firm of Jorge L. Gurian, P.A., works with individuals seeking estate planning representation, families who are making decisions in <a href="Estate-Planning/Probate.shtml">probate</a> and estate executors who need guidance through the estate administration process.</p>
+						<p id="ARIA-describe-2">While we can confidently handle the full scope of estate planning needs, including those related to guardianships and special needs planning, our comprehensive understanding of this area of law allows us to take a more strategic approach for our clients.</p>
+	                </div>
+	            </div>
+	        </header>
 
-	            <div class="row" role="menu">
-					<!-- 1a -->
-	                <div class="col-sm-6 col-md-3">
-	                    <div class="promote">
-	                        <figure class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay="0">
-	                        	<a class="page-scroll" href="#investment" title="Miami &amp; South Florida Investments Tax Law Firm Services" rel="Investments tax law services" rev="tax law firm"><img class="img-responsive" src="images/page1/Real_Estate_Investments_Taxes.jpg" alt="Real Estate Investments Tax"></a>
-	            			</figure>
-	                        <hgroup>
-	                        	<h3><a class="page-scroll" href="#investment" title="Miami &amp; South Florida Investments Tax Law Firm Services" rel="Investments tax law services" rev="tax law firm">Real Estate Investments <span class="text-nowrap">And Taxes</span></a></h3>
-	                        	<h4>If you are currently investing or are seeking investment opportunities in the <span class="text-nowrap">South Florida</span> <span class="text-nowrap">real estate</span>.</h4>
-	                        </hgroup>
-	                    </div>
-	                </div>
-					<!-- 2a -->
-	                <div class="col-sm-6 col-md-3">
-	                    <div class="promote">
-	                        <figure class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".3s">
-	                        	<a class="page-scroll" href="#business" title="Miami &amp; South Florida Business Tax Law Firm Services" rel="Business tax law services" rev="tax law firm"><img class="img-responsive" src="images/page1/Corporate_Business_Tax.png" alt="Business Tax"/></a>
-	                        </figure>
-	                        <hgroup>
-	                        	<h3><a class="page-scroll" href="#business" title="Miami &amp; South Florida Business Tax Law Firm Services" rel="Business tax law services" rev="tax law firm">Corporate And <span class="text-nowrap">Business Tax</span></a></h3>
-	                        	<h4>Understand the rules and regulations that influence your <span class="text-nowrap">bottom line</span>.</h4>
-	                    	</hgroup>
-	                    </div>
-	                </div>
-					<!-- 3a -->
-	                <div class="clearfix hidden-md hidden-lg"></div>
-	                <div class="col-sm-6 col-md-3">
-	                    <div class="promote">
-	                        <figure class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".6s">
-	                        	<a class="page-scroll" href="#estategift" title="Miami &amp; South Florida Estate Gift Tax Law Firm Services" rel="estate gift tax law services" rev="tax law firm"><img class="img-responsive" src="images/page1/Estate_Gift_Tax.png" alt="Estate Gift"/></a>
-	                      	</figure>
-	                        <hgroup>
-	                        	<h3><a class="page-scroll" href="#estategift" title="Miami &amp; South Florida Estate Planning Tax Law Firm Services" rel="estate gift tax law services" rev="tax law firm">Estate <span class="text-nowrap">Gift Tax</span></a></h3>
-	                        	<h4>Outline the transfer of your assets to any beneficiaries and heirs should something happen <span class="text-nowrap">to you</span>.</h4>
-	                        </hgroup>
-	                    </div>
-	                </div>
-					<!-- 4a -->
-	                <div class="col-sm-6 col-md-3">
-	                    <div class="promote">
-	                        <figure class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".9s">
-	                        	<a class="page-scroll" href="#capital" title="Miami &amp; South Florida Capital Gains And Losses Tax Law Firm Services" rel="capital tax law services" rev="tax law firm"><img class="img-responsive" src="images/page1/Gains_and_Losses_Taxes.jpg" alt="Capital Gains And Losses"/></a>
-	                      	</figure>
-	                        <hgroup>
-	                        	<h3><a class="page-scroll" href="#capital" title="Miami &amp; South Florida Capital Gains And Losses Tax Law Firm Services" rel="capital law services" rev="tax law firm">Taxes in Investment Gains <span class="text-nowrap">And Losses</span></a></h3>
-	                        	<h4>Make sure your personal liabilities or those of your beneficiaries are protected from pertinent <span class="text-nowrap">tax consequences</span>.</h4>
-	                        </hgroup>
-	                    </div>
-	                </div>
-		        </div>
-		    </div>
-	    </article>
+            <div class="row">
+	        	<div class="col-sm-4">
+
+					<!-- 1 - estate -->
+                    <div class="promote"
+					role="listitem" aria-level="1" aria-setsize="3" aria-labelledby="ARIA-label-2" aria-describedby="ARIA-describe-3" aria-details="ARIA-details-2">
+                        <figure class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay="0">
+                        	<a class="page-scroll" href="#estate" title="Miami &amp; South Florida Estate Planning Tax Law Firm Services" rel="estate planning tax law services" rev="estate planning law firm"><img class="img-responsive" src="images/page2/Estate_Planning_Lawyer.jpg" alt="Estate Planning" role="presentation"></a>
+            			</figure>
+                    	<hgroup>
+	                    	<h3 id="ARIA-label-2" role="heading" aria-level="3">
+	                    		<a class="page-scroll" href="#estate" title="Miami &amp; South Florida Estate Planning Tax Law Firm Services"
+	                  			id="ARIA-details-2" rel="estate planning tax law services" rev="estate planning law firm">Taxes &amp; <span class="text-nowrap">Estate Planning</span></a>
+	                  		</h3>
+                    	</hgroup>
+						<p id="ARIA-describe-3">Attorney Jorge L. Gurian's vast experience in tax law, contracts and investments has given him an acute understanding of how proper tax planning and estate planning can preserve wealth, protect beneficiaries and prevent undue tax burdens.</p>
+                    	<p class="cta"><a class="page-scroll" href="#estate" title="Miami &amp; South Florida Estate Planning Tax Law Firm Services" rel="estate planning tax law services" rev="estate planning law firm">Explore <span class="text-nowrap">Estate Planning</span></a></p>
+                    </div>
+                </div>
+	        	<div class="col-sm-4">
+
+					<!-- 2 - trust -->
+                    <div class="promote"
+					role="listitem" aria-level="1" aria-setsize="3" aria-labelledby="ARIA-label-3" aria-describedby="ARIA-describe-4" aria-details="ARIA-details-3">
+                        <figure class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".3s">
+                        	<a class="page-scroll" href="#trust" title="Miami &amp; South Florida Trust Law Firm Services" rel="trust lawyer services" rev="estate planning law firm"><img class="img-responsive" src="images/page2/Trust_Lawyer_Services.jpg" alt="Business Tax" role="presentation"></a>
+                        </figure>
+                    	<hgroup>
+	                    	<h3 id="ARIA-label-3" role="heading" aria-level="3">
+	                    		<a class="page-scroll" href="#trust" title="Miami &amp; South Florida Trust Law Firm Services"
+	                  			id="ARIA-details-3" rel="trust lawyer services" rev="estate planning law firm">Trust Lawyer</a>
+	                  		</h3>
+                    	</hgroup>
+                    	<p id="ARIA-describe-4">The individuals we work with come from all backgrounds, both within the United States and abroad. They are often dealing with complex issues that go beyond the standard questions of wills and trusts.</p>
+                        <p class="cta"><a class="page-scroll" href="#trust" title="Miami &amp; South Florida Trust Law Firm Services" rel="trust lawyer services" rev="estate planning law firm">Explore <span class="text-nowrap">Trust Services</span></a></p>
+            		</div>
+                </div>
+	        	<div class="col-sm-4">
+
+					<!-- 3 - probate -->
+                    <div class="promote"
+					role="listitem" aria-level="1" aria-setsize="3" aria-labelledby="ARIA-label-4" aria-describedby="ARIA-describe-5" aria-details="ARIA-details-4">
+                        <figure class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".6s">
+                        	<a class="page-scroll" href="#probate" title="Miami &amp; South Florida Probabe Law Firm Services" rel="probabe law services" rev="estate planning law firm"><img class="img-responsive" src="images/page2/Probate_Lawyer_Services.jpg" alt="Estate Gift" role="presentation"></a>
+                      	</figure>
+                    	<hgroup>
+							<h3 id="ARIA-label-4" role="heading" aria-level="3">
+                    			<a class="page-scroll" href="#probate" title="Miami &amp; South Florida Probabe Law Firm Services"
+                  				id="ARIA-details-4" rel="probate lawyer services" rev="estate planning law firm">Probate Lawyer</a>
+                  			</h3>
+                    	</hgroup>
+                  		<p id="ARIA-describe-5">No one likes to imagine life without a loved one, but it is important to consider this possibility. Not knowing how to manage an individual's final affairs or act in accordance with their wishes should they need extended medical care only adds to the stress.</p>
+                    	<p class="cta"><a class="page-scroll" href="#probate" title="Miami &amp; South Florida Probabe Law Firm Services" rel="probabe law services" rev="estate planning law firm">Explore <span class="text-nowrap">Probate Services</span></a></p>
+                    </div>
+                </div>
+	        </div>
+		</section>
 
 		<article>
 
@@ -163,28 +168,27 @@
 
 		    <header class="container-fluid highlight">
 		    	<div class="container">
-		    		<h1>Miami Dade &amp; <span class="text-nowrap">South Florida</span> <span class="text-nowrap">Tax Legal Advice</span></h1>
+		    		<h1>Miami Dade &amp; <span class="text-nowrap">South Florida</span> <span class="text-nowrap">Wills, Trusts And Guardianships Legal Advice</span></h1>
 				</div>
 	            <div class="container">
-		            <div class="promote promote-left">
+		            <div class="promote promote-right">
 		                <figure class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay="0">
-		                    <img class="hidden-xs" src="images/page1/Asset_Preservation_Attorney.jpg" alt="Wealth And Asset Preservation Attorney">
-		                    <img class="visible-xs-block" src="images/page1/Asset_Preservation_Attorney-xs.jpg" alt="Wealth And Asset Preservation Attorney">
+		                    <img class="hidden-xs" src="images/page2/Wills_Trusts_Guardianships.jpg" alt="Wills, Trusts And Guardianships Attorney">
 		                </figure>
 		                <div class="overflow-auto">
-			            	<h2>Wealth And Asset Preservation Attorney</h2>
-		                    <p>Attorney <span class="text-nowrap">Jorge L. Gurian's</span> vast experience as a lawyer and his master's-level education in tax law, specifically, has earned him a reputation for excellence throughout the Miami area. He works closely with each of our clients to preserve wealth, reduce their overall tax payments and preserve their assets so they are not liquidated due to <span class="text-nowrap">unexpected circumstances</span>.</p>
-							<p>The right legal representation today can dramatically influence your investments tomorrow, so make sure to work with an attorney who can give you the individualized attention <span class="text-nowrap">you need</span>.</p>
+			            	<h2>Wills, Trusts And Guardianships</h2>
+		                    <p>Attorney <span class="text-nowrap">Jorge L. Gurian's</span> vast experience as a lawyer and his master's-level education in tax law, specifically, has earned him a reputation for excellence throughout <span class="text-nowrap">the Miami area</span>.</p>
+		                    <p>Before you draft the documents that will outline how your assets and health care are handled after you are gone, make sure you work with an attorney who can bring to light the issues and solutions that often go overlooked.</p>
 		                    <p class="cta"><a class="page-scroll" href="#contact">Talk To Us</span></a></p>
 				    	</div>
 				    </div>
 				</div>
 			</header>
 
-			<!-- 1b -->
-		    <section id="investment" class="container-fluid highlight red">
+			<!-- 1b estate -->
+		    <section id="estate" class="container-fluid highlight red">
 		    	<div class="container">
-		    		<h1>Investments And Taxes</h1>
+		    		<h1>Taxes And Estate Planning</h1>
 				</div>
 	            <div class="container">
 					<div class="row">
@@ -218,8 +222,8 @@
 				</div>
 			</section>
 
-			<!-- 2b -->
-		    <section id="business" class="container-fluid highlight brown">
+			<!-- 2b trust -->
+		    <section id="trust" class="container-fluid highlight brown">
 		    	<div class="container">
 		    		<h1>Corporate And Business Tax</h1>
 				</div>
@@ -262,8 +266,8 @@
 				</div>
 			</section>
 
-			<!-- 3b -->
-		    <section id="estategift" class="container-fluid highlight orange">
+			<!-- 3b probate -->
+		    <section id="probate" class="container-fluid highlight orange">
 		    	<header class="container">
 		    		<h1>Estate Gift Tax</h1>
 				    <h2>South Florida Estate Gift Tax Lawyer</h2>
@@ -305,57 +309,9 @@
 				</div>
 			</section>
 
-			<!-- 4b -->
-		    <section id="capital" class="container-fluid highlight blue">
-		    	<header class="container">
-		    		<h1>Taxes in Capital Gains And Losses</h1>
-				    <h2>Miami Tax Lawyer For Investment Gains And Losses</h2>
-					<p>Holdings in real estate and businesses are always subject to market gains and losses. Any investment you make will likely see its ups and downs, and through it all you need to make sure your personal liabilities or those of your beneficiaries are protected from pertinent tax consequences. Working with an experienced Miami investment tax attorney at our firm <span class="text-nowrap">can help</span>.</p>
-				</header>
-	            <div class="container">
-					<div class="row">
-						<div class="col-sm-6">
-				            <div class="promote">
-				                <figure class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay="0">
-									<img class="img-responsive" src="images/page1/Gains_and_Losses_Taxes.jpg" alt="Capital Gains And Losses"/>
-								</figure>
-								<!-- 4b -->
-								<h2>Reliable, Trusted Advice For Protecting Your Business Interests</h2>
-								<p>At the law firm of Jorge L. Gurian, P.A., our clients turn to us for reliable, to-the-point advice in wealth protection, preservation of assets and estate planning issues that influence the value of real estate or <span class="text-nowrap">business interests</span>.</p>
-								<p>Our experience spans more than 20 years in the practice of law, and that experience is paired with attorney Gurian's credentials of a master's degree in tax law. Such comprehensive knowledge of this nuanced area of law has earned us a reputation for excellence that investors throughout South Florida can turn to, whether they live within the United States or are investing in the U.S. from <span class="text-nowrap">locations abroad</span>.</p>
-							</div>
-			    		</div>
-						<div class="col-sm-6">
-				            <div class="promote">
-				                <figure class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".3s">
-									<img class="img-responsive" src="images/page1/Capital_Gains_and_Losses_Taxes.jpg" alt="Capital Gains And Losses"/>
-								</figure>
-								<h2>Dade County Tax Attorney For Investment Gains And Losses</h2>
-								<p>The taxes you pay on investments correlates with how much income you receive or how highly associated assets are valued within the marketplace. By using the law strategically, you can protect what you have earned and keep as much as possible, saving yourself from tax consequences <span class="text-nowrap">caused by</span>:</p>
-								<ul>
-									<li>Investment fraud</li>
-									<li>Selling or acquiring assets</li>
-									<li>Increased income from unexpected success</li>
-								</ul>
-								<p>Tax codes are continuously changing, which adds another layer of complexity to these issues. Your attorney should be knowledgeable of the most up-to-date tax standards and be able to communicate them to you promptly, so you can make the most informed decisions possible at any time. We have the skill and understanding to deliver <span class="text-nowrap">such information</span>.</p>
-							</div>
-			    		</div>
-					</div>
-			    	<footer>
-						<img class="img-responsive img-banner" src="images/page1/Investments.jpg" alt="Capital Gains And Losses"/>
-			            <div class="row">
-			                <div class="text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration=".5s" data-wow-delay="0">
-								<h3>Make Sure Your Investments <span class="text-nowrap">Work For You</span></h3>
-								<p>Before you enter into any contract, whether in real estate, business law or estate planning, work with an experienced lawyer at our firm. Contact Jorge L. Gurian <a class="page-scroll" href="#contact">online</a> or by telephone at 305-290-1940 to schedule an appointment and discuss your <span class="text-nowrap">tax questions</span>.</p>
-			                </div>
-			            </div>
-			    	</footer>
-				</div>
-			</section>
-
 		    <!-- parallax miami ------------------------------------ -->
 
-		    <aside id="miami" class="parallax miami" role="seealso geography">
+		    <aside id="miami" class="parallax miami" role="seealso">
 	           	<div class="container">
 					<h2><a href="http://pview.findlaw.com/cmd/view?wld_id=1980873&amp;pid=1" target="_blank"><span class="text-nowrap">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></span></a>, represents clients throughout the <span class="text-nowrap">Miami area</span> and <span class="text-nowrap">South Florida</span>. This includes those in <span class="text-nowrap">Dade County</span>, <span class="text-nowrap">Monroe County</span>, <span class="text-nowrap">Broward County</span> and <span class="text-nowrap">Palm Beach County</span> and the cities of <span class="text-nowrap">Fort Lauderdale</span>, Hialeah, Hollywood, <span class="text-nowrap">Pompano Beach</span> and Kendall.</h2>
 				</div>
@@ -480,12 +436,12 @@
 					<div class="row" itemscope itemtype="http://schema.org/LocalBusiness">
 				        <div class="col-xm-12 col-sm-12 col-md-4 text-center">
 							<span class="content name" itemprop="name"><strong>Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></strong></span>
-							<span class="content title" itemprop="jobTitle">A South Florida Estate Planning, <br>Tax &amp; Business Law&nbsp;Firm</span>
+							<span class="content title" itemprop="jobTitle">A South Florida Estate Planning, <br role="presentation">Tax &amp; Business Law&nbsp;Firm</span>
 				        </div>
 				        <div class="col-xm-6 col-sm-6 col-md-4 address">
 							<div><span class="address-label address">Address:</span></div>
 							<div class="content address" itemscope itemtype="http://schema.org/PostalAddress">
-								<span itemprop="streetAddress">2665 S. Bayshore Dr. <br>Suite 800</span>
+								<span itemprop="streetAddress">2665 S. Bayshore Dr. <br role="presentation">Suite 800</span>
 								<br><span itemprop="addressLocality">Miami</span>,
 								<span itemprop="addressRegion">FL</span>
 								<span itemprop="postalCode">33133</span>
@@ -502,9 +458,9 @@
 		    <div id="google-map" data-latitude="52.365629" data-longitude="4.871331" ></div>
 			<div class="container-fluid highlight">
 				<div class="container">
-				    <div class="promote promote-right first thumb">
+				    <div class="promote promote-right thumb">
 			            <figure>
-			                <img class="img-not-responsive img-circle" src="images/page0/Jorge_Gurian.jpg" alt="Jorge Gurian">
+			                <img class="img-circle" src="images/page0/Jorge_Gurian.jpg" alt="Jorge Gurian">
 			            </figure>
 						<h3>Sound Advice And Guidance For Today's Investments <span class="text-nowrap">And Tomorrow's Success</span></h3>
 						<p>Taking the time to plan for your future is crucial to your success. In the Miami and <span class="text-nowrap">South Florida</span> area, specifically, investing in businesses and real estate is a worthwhile option for individuals who are looking for ways to protect their earnings and build a successful financial future.</p>
@@ -520,13 +476,13 @@
 	<!-- FOOTER ------------------------------------ -->
 
  	<footer class="main">
- 		<nav>
- 			<ul class="list-inline text-center">
- 				<li><a href="index.html">Home Page</a></li>
-        		<li><a href="Tax_Attorney.html" title="Miami &amp; South Florida Tax Law Firm Services" rel="law services" rev="law firm">Tax Law</a></li>
-        		<li><a href="Estate_Planning.html" title="Miami &amp; South Florida Estate Planning Law Firm Services" rel="law services" rev="law firm">Estate Planning</a></li>
-        		<li><a href="Contract_Law.html" title="Miami &amp; South Florida Contract Law Firm Services" rel="law services" rev="law firm">Contract Law</a></li>
-        		<li><a href="#contact" title="Contact Us" rel="contact" rev="law firm">Contact Us</a></li>
+ 		<nav role="navigaton" aria-label="footer navigation">
+ 			<ul class="list-inline text-center" role="list">
+ 				<li role="listitem" aria-level="1"><a href="index.html">Home Page</a></li>
+        		<li role="listitem" aria-level="1"><a href="Tax_Attorney.html" title="Miami &amp; South Florida Tax Law Firm Services" rel="law services" rev="law firm">Tax Law</a></li>
+        		<li role="listitem" aria-level="1"><a href="Estate_Planning.html" title="Miami &amp; South Florida Estate Planning Law Firm Services" rel="law services" rev="law firm">Estate Planning</a></li>
+        		<li role="listitem" aria-level="1"><a href="Contract_Law.html" title="Miami &amp; South Florida Contract Law Firm Services" rel="law services" rev="law firm">Contract Law</a></li>
+        		<li role="listitem" aria-level="1"><a href="#contact" title="Contact Us" rel="contact" rev="law firm">Contact Us</a></li>
  			</ul>
  		</nav>
 
@@ -538,17 +494,9 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-  	<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyAFN2xCmdzr52luyFP0QFROp0kldgCYgUk&callback=initMap&sensor=true"></script>
-	<script type="text/javascript" src="js/jquery.inview.min.js"></script>
-	<script type="text/javascript" src="js/wow.min.js"></script>
+  	<script src="http://maps.google.com/maps/api/js?key=AIzaSyAFN2xCmdzr52luyFP0QFROp0kldgCYgUk&callback=initMap&sensor=true"></script>
+	<script src="js/jquery.inview.min.js"></script>
+	<script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
-
-
-	<!-- script type="text/javascript" src="js/jquery.inview.min.js"></script>
-	<script type="text/javascript" src="js/wow.min.js"></script>
-	<script type="text/javascript" src="js/mousescroll.js"></script>
-	<script type="text/javascript" src="js/smoothscroll.js"></script>
-	<script type="text/javascript" src="js/main.js"></script -->
-
 </body>
 </html>
