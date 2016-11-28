@@ -113,24 +113,24 @@ h4 {
 footer.main {
 	font-size: 0.7em;
 }
-nav.main, .highlight h1, abbr[data-original-title], abbr[title], .form-control {
+nav.main, abbr[data-original-title], abbr[title], .form-control {
     font-size: .8em;
 }
 /* --- hgroup only --- -----------------*/
-.col-sm-4 hgroup /* home and estate planning page */{
+.highlight h1, .col-sm-4 hgroup /* home and estate planning page */{
     font-size: 0.9em;
 }
 .col-sm-6.col-md-3 hgroup /* tax law page */ {
     font-size: .7em;
 }
 /* --- highlight only --- --------------*/
-.highlight .col-sm-4 h3, .callout h2  {
+.callout h2  {
 	font-size: 1.5em;
 }
 .highlight .col-sm-4 p, .highlight .col-sm-3 p {
 	font-size: 1.2em;
 }
-.highlight .col-sm-3 h3 {
+.highlight .col-sm-4 h3, .highlight .col-sm-3 h3 {
 	font-size: 1.4em;
 }
 /* --- carousel only --- ----------------*/
@@ -452,6 +452,7 @@ p.callout {
 	font-style: italic;
 }
 .callout .row {
+	padding-top: 1em;
 	padding-bottom: 1em;
 }
 
@@ -976,9 +977,10 @@ footer.main nav {
 /* @media (min-width: 992px) and (max-width: 1199px) { */
 @media (max-width: 1199px) {
 
-nav.main {
-    font-size: 0.7em;
+body {
+	font-size: 90%;
 }
+
 	.promote.promote-left img, .promote.promote-right img {
 	    width: 400px;
 	}
@@ -1035,28 +1037,36 @@ nav.main {
 /* === _SM ====================================================== */
 @media (max-width: 991px) {
 
-	body {
-		font-size: 0.85em;
+body {
+	font-size: 90%;
+}
+	nav.main {
+		font-size: 70%;
 	}
-	.carousel {
+	p {
+		font-size: 120%;
 	}
-	a.carousel-CTA {
-		font-size: 0.8em;
+	h2 {
+		font-size: 160%;
+	}
+	.promote.promote-left h2, .promote.promote-right h2 {
+		font-size: 200%;
+	}
+	.col-sm-6.col-md-3 hgroup {
+		font-size: 100%;
+	}
+	h3 {
+		font-size: 150%;
+	}
+	h2, h3, p.cta, h2, h3, h4 {
+		margin: 0.5em 0;
 	}
 
-	p, ul {
-		font-size: 1.1em;
-	}
+    /* --- NAVIGATION --- SMALL------------------------ */
+
 	ul.navbar-nav li a {
 		padding-left: 5px;
 		padding-right: 5px;
-	}
-	address {
-		font-size: 1.6em;
-	}
-
-	nav.main {
-		font-size: 0.7em;
 	}
 	.navbar-brand img {
 		width: 150px;
@@ -1064,11 +1074,9 @@ nav.main {
 	.navbar-brand {
 		padding-top: 20px;
 	}
-    /* --- HEADINGS --- SMALL------------------------ */
 
-    h2 {
-        margin: 0 0 10px;
-    }
+    /* --- CAROUSEL --- SMALL------------------------ */
+
     .carousel h1 > span {
         padding-top: 6px;
     }
@@ -1084,16 +1092,7 @@ nav.main {
 		margin-top: 15px;
 	}
 
-    /* --- __SECTION --- SMALL VIEWPORT -------------------------- */
-
-    section {
-        padding-top: 70px;
-    }
-    article.practices {
-    }
-    section header, article header, aside header {
-        padding-bottom: 20px;
-    }
+    /* --- __SECTION --- SMALL -------------------------- */
 
     .cta a {
         float: right;
@@ -1105,7 +1104,6 @@ nav.main {
     textarea.form-control {
     	min-height: 180px;
 	}
-
 	address .col-sm-12 {
 		padding-bottom: 20px;
 		float: none;
@@ -1214,6 +1212,12 @@ nav.main {
 	.backtotop {
 		display: block;
 	}
+	body {
+		padding-top: 10px;
+	}
+	.home-page main > section > header {
+		padding-top: 0;
+	}
 
 	/* --- NAVIGATION --- MOBILE I ------------------- */
 
@@ -1226,29 +1230,8 @@ nav.main {
 
     /* --- COPY --- MOBILE 1 ----------------------------- */
 
-	.parallax h2 {
-		margin-bottom: 20px;
-	}
 	.cta a {
         white-space: nowrap;
-    }
-
-    /* --- SECTION --- MOBILE I ------------------- */
-
-    section, article.practices, aside {
-        padding-top: 20px;
-        padding-bottom: 10px;
-    }
-    aside.contact {
-        padding-top: 20px;
-    }
-
-    section header, article header, aside header {
-        padding-bottom: 0;
-    }
-    section.highlight {
-        padding-top: 40px;
-        padding-bottom: 30px;
     }
 
     /* --- __PROMOTE --- MOBILE I -------------------------- */
@@ -1260,6 +1243,9 @@ nav.main {
 	}
 	.promote.thumb img {
 		width: 125px;
+	}
+	figure {
+		padding-top: 20px;
 	}
 
 	/* CONTACT AND FOOTER --- MOBILE I ------------------- */
