@@ -1096,6 +1096,7 @@ footer.main nav a:hover {
 	}
 	p, ul.native, ul.typeface, .highlight .col-sm-4 p, .highlight .col-md-3 p, .form-control {
 		font-size: 145%;
+		line-height: 140%;
 	}
 	.col-sm-6.col-md-3 hgroup, .col-sm-4 hgroup {
 		font-size: 100%;
