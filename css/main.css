@@ -1275,7 +1275,7 @@ footer.main nav a:hover {
 
 
 	/* --- FONT SIZE ----- MOBILE I ---------- */
-	h2 {
+	h2, .promote.promote-left h2, .promote.promote-right h2 {
 		font-size: 180%
 	}
 	main > section > header h2 {
