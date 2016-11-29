@@ -1273,6 +1273,9 @@ footer.main nav a:hover {
 	h2 {
 		font-size: 180%
 	}
+	main > section > header h2 {
+		font-size: 220%;
+	}
 	aside.miami {
 		padding-top: 6%;
 		font-size: 50%;
