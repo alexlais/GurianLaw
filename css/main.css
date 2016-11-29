@@ -23,13 +23,13 @@ input[type="text"], input[type="email"], input[type="url"], input[type="url"], i
 .parallax a, .cta a, .cta, .carousel-CTA, .carousel .caption, .btn-submit, address .address-label, nav.main {
 	font-weight: bold;
 }
-p, ul.native, ul.typeface {
+p, ul.native, ul.typeface, h4 {
     margin: 0 0 1em;
 }
 p.cta {
 	margin-top: 2%;
 }
-h2, h3, h4 {
+h2, h3 {
     margin: 0 0 0.3em;
 }
 figure + h2, h3 {
@@ -72,6 +72,7 @@ navbar-nav > li > .dropdown-menu
 
 body, address, h1, h1, h3, h4, span, a 			{line-height: inherit;}
 p, li											{line-height: 155%;}
+.home-page .col-sm-4 p							{line-height: 140%;}
 h2, h3, h3 span, h4								{line-height: 135%;}
 .parallax.miami h2 								{line-height: 1.7;}
 .carousel h2, .carousel h3  					{line-height: 1;}
@@ -87,7 +88,7 @@ body {
 	font-size: 100%;}
 
 /* --- copy and headings --- ------------- */
-.form-control {
+.highlight h1, .form-control {
 	font-size: 100%;
 }
 p, ul.native, ul.typeface, .small, .btn-submit {
@@ -125,11 +126,11 @@ footer.main,
 .col-sm-6.col-md-3 hgroup /* tax law page */ {
     font-size: 70%;
 }
-.highlight h1, .col-sm-4 hgroup /* home and estate planning page */{
+.col-sm-4 hgroup /* home and estate planning page */{
     font-size: 90%;
 }
 p.cta {
-	font-size: 110%;
+	font-size: 105%;
 }
 /* --- highlight --- --------------*/
 .callout h2  {
@@ -288,7 +289,7 @@ a:hover, h3 a:hover, footer.main a:hover, .highlight a:hover, .highlight p a:hov
 .cta a {
     text-align: right;
     display: block;
-    padding: 9px 50px 9px 10px;
+    padding: 9px 3em 9px 10px;
     transition-property: background, color;
     transition-duration: 0.15s;
     transition-timing-function: linear;
@@ -308,7 +309,7 @@ a:hover, h3 a:hover, footer.main a:hover, .highlight a:hover, .highlight p a:hov
     background: White;
 }
 .cta a:after, .promote h3 a:after {
-    margin-right: -38px;
+    margin-right: -2.2em;
     content:"\a0\2192"; /* "\a0" is used to generate a non braking space in html */
     padding-right: 15px;
     transition-property: padding;
@@ -329,11 +330,6 @@ a:hover, h3 a:hover, footer.main a:hover, .highlight a:hover, .highlight p a:hov
 p, h1, h2, h3, h4, h5, h6, div, ul, li {
 	cursor: default;
 }
-
-/* -- _H1 ---------------------------------------------------------- */
-
-
-/* -- _H2 _H3 ----------------------------------------------------- */
 h1 + h2 {
 	margin-top: -10px !important;
 }
@@ -382,12 +378,13 @@ abbr[data-original-title], abbr[title] {
     width: 100%;
 }
 .promote.promote-left img, .promote.promote-right img {
-	width: 550px;
+	width: 450px;
     height: auto;
     float: left;
     padding: 0 30px 12px 0;
 }
 .promote.promote-right img {
+	width: 650px;
     float: right;
     padding: 0 0 12px 30px;
 }
@@ -457,7 +454,7 @@ footer.main aside {
 .callout {
 	background-color: rgba(0,0,0,0.075);
 	margin-top: 2%;
-	padding: 3% 4% 2%
+	padding: 3% 4% 1%
 }
 .container.callout {
 	padding-right: 15px;
@@ -1045,24 +1042,25 @@ body {
 
 
 
-/* === S M A L L  =  I  =============================================
+/* ===  S M A L L  ==================================================
 ===================================================================== */
 
 @media (min-width: 768px) and (max-width: 991px) {
+	/*
 	.container-fluid .container {
 		width: 735px;
-	}
+	} */
 }
 /* === _SM ====================================================== */
 @media (max-width: 991px) {
 
-body {
-	font-size: 90%;
-	color: #666;
-}
-.clearfix {
-	padding-bottom: 1%;
-}
+	body {
+		font-size: 90%;
+		color: #666;
+	}
+	.clearfix {
+		padding-bottom: 1%;
+	}
 	nav.main {
 		font-size: 70%;
 	}
@@ -1070,8 +1068,11 @@ body {
 		font-size: 120%;
 	}
 	h2 {
-		font-size: 160%;
+		font-size: 200% !important;
 	}
+	.cta a:after, .promote h3 a:after {
+	    margin-right: -2.3em;
+   	}
 	.promote {
 		margin-bottom: 1%;
 	}
@@ -1080,10 +1081,6 @@ body {
 	}
 	.col-sm-6.col-md-3 hgroup {
 		font-size: 100%;
-	}
-	h3 {
-	}
-	h2, h3, p.cta, h2, h3, h4 {
 	}
 
     /* --- NAVIGATION --- SMALL------------------------ */
@@ -1229,7 +1226,6 @@ body {
 ====== XS (MOBILE) ================================================== */
 
 @media (max-width: 767px) {
-
 	header.main {
 		display: none;
 	}
@@ -1237,8 +1233,16 @@ body {
 		display: block;
 	}
 	body {
+		font-size: 90%;
 		padding-top: 10px;
 	}
+	p, ul.native, ul.typeface {
+		font-size: 1.1em;
+	}
+	h2, h3 {
+		font-size: 130% !important;
+	}
+
 	.home-page main > section > header {
 		padding-top: 0;
 	}
@@ -1263,6 +1267,13 @@ body {
 		margin-top: 0;
 	}
 
+	.parallax {
+		background: Black !important;
+	}
+	.parallax h2, .parallax h3 {
+		color: White;
+	}
+
     /* --- __PROMOTE --- MOBILE I -------------------------- */
 
     .promote.promote-left:not(.thumb) img, .promote.promote-right:not(.thumb) img {
@@ -1273,19 +1284,16 @@ body {
 	.promote.thumb img {
 		width: 125px;
 	}
-	figure {
-		padding-top: 20px;
-	}
-	.callout {
-	}
-	.container.callout > div {
-		padding: 0;
-	}
+	.promote.border, .callout {margin-top: 0;}
+	.clearfix {padding-bottom: 0;}
+	p, ul.native, ul.typeface, h4 {margin-bottom: 0.5em;}
+	figure {padding-top: 20px;}
+	.container.callout > div {padding: 0;}
 
 	/* CONTACT AND FOOTER --- MOBILE I ------------------- */
 
 	.form-group {
-	    margin-bottom: 10px;
+	    margin-bottom: 20px;
 	}
 
 	/* ADDRESS --- MOBILE I ------------------- */
@@ -1440,24 +1448,10 @@ body {
 ====== XS (MOBILE) Portrait ========================================= */
 
 @media (max-width: 543px) {
-body {
-	font-size: 90%;
-}
-	p, ul.native, ul.typeface {
-		font-size: 1.1em;
-	}
-	h2 {
-		font-size: 1.4em !important;
-	}
+
 	.container {
 	}
 
-	.parallax {
-		background: Black !important;
-	}
-	.parallax h2, .parallax h3 {
-		color: White;
-	}
     .cta {
     	margin: 0;
     	padding-top: 10px;
