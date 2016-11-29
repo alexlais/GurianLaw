@@ -83,7 +83,7 @@ h2, h3, h3 span, h4								{line-height: 135%;}
 
 /* --- _FONT_SIZE -------------------------------------------------- */
 
-html, body, h1, h2, h3, h4, p, span, a, ul, li, .form-control, button, input, optgroup, select, textarea
+.dropdown-menu, html, body, h1, h2, h3, h4, p, span, a, ul, li, .form-control, button, input, optgroup, select, textarea
 /* input[type="text"], input[type="email"], input[type="url"], input[type="password"]  */ {
 	font-size: inherit;}
 body {
@@ -637,7 +637,7 @@ address {
 	float: right;
 	border: 1px solid #f0f0f0;
     padding: 12px 20px 10px 16px;
-    margin-top: -50px;
+    margin-top: -30px;
     background: #fdfdfd;
 }
 address > div {
@@ -1238,6 +1238,9 @@ footer.main nav a:hover {
 ====== XS (_MOBILE) ================================================== */
 
 @media (max-width: 767px) {
+	main {
+		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+	}
 	header.main {
 		display: none;
 	}
@@ -1277,10 +1280,8 @@ footer.main nav a:hover {
 	}
 
 	/* --- NAVIGATION --- MOBILE I ------------------- */
-
-	.navbar {
-		position: relative !important;
-		font-size: 2em;
+	nav.main {
+		font-size: 1.5em;
 	}
 	.navbar-toggle {
 	    background-color: #178267;
@@ -1305,9 +1306,12 @@ footer.main nav a:hover {
 		width: auto;
 		border-bottom: 4px;
 		left: auto;
+		box-shadow: none;
+		border-bottom: 1px solid gray;
 	}
-	ul.navbar-nav .dropdown-menu a {
-		padding: 20px 10px 18px;
+	 ul.navbar-nav .dropdown-menu a {
+		text-transform: capitalize;
+		padding: 10px 0 10px 10px;
 	}
 
     /* --- COPY --- MOBILE 1 ----------------------------- */
