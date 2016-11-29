@@ -24,16 +24,16 @@ input[type="text"], input[type="email"], input[type="url"], input[type="url"], i
 	font-weight: bold;
 }
 p, ul.native, ul.typeface {
-    margin: 0 0 1.5%;
+    margin: 0 0 1em;
+}
+p.cta {
+	margin-top: 2%;
 }
 h2, h3, h4 {
     margin: 0 0 0.3em;
 }
 figure + h2, h3 {
 	margin-top: 0.6em;
-}
-p.cta {
-	margin-top: 2em;
 }
 h4 {
     margin-top: -.2em;
@@ -73,9 +73,9 @@ navbar-nav > li > .dropdown-menu
 body, address, h1, h1, h3, h4, span, a 			{line-height: inherit;}
 p, li											{line-height: 155%;}
 h2, h3, h3 span, h4								{line-height: 135%;}
+.parallax.miami h2 								{line-height: 1.7;}
 .carousel h2, .carousel h3  					{line-height: 1;}
 .carousel h1							  		{line-height: 0.9;}
-.parallax.miami h2 								{line-height: 1.7;}
 .carousel p 									{line-height: 1.3;}
 
 /* --- _FONT_SIZE -------------------------------------------------- */
@@ -123,13 +123,13 @@ nav.main, abbr[data-original-title], abbr[title] {
 /* --- hgroup --- -----------------*/
 footer.main,
 .col-sm-6.col-md-3 hgroup /* tax law page */ {
-    font-size: .7em;
+    font-size: 70%;
 }
 .highlight h1, .col-sm-4 hgroup /* home and estate planning page */{
     font-size: 90%;
 }
 p.cta {
-	font-size: 1.1em;
+	font-size: 110%;
 }
 /* --- highlight --- --------------*/
 .callout h2  {
