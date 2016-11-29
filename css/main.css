@@ -611,9 +611,12 @@ ul.navbar-nav .dropdown-menu a {
 }
 .form-control {
     background-color: transparent;
-    border-color: #22c39b;
+    border: 1px solid #22c39b;
     padding: 5px;
     box-shadow: none;
+}
+.form-control[required="required"]{
+	border: 2px solid  #22c39b;
 }
 .form-group {
     margin-bottom: 15px;
@@ -1256,6 +1259,9 @@ footer.main nav a:hover {
 	input[type="text"], input[type="email"], input[type="url"], input[type="password"],
 	textarea, select {
 		color: #444;
+	}
+	.form-control {
+		height: 45px;
 	}
 	.backtotop {
 		display: block;
