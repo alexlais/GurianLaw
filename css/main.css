@@ -27,7 +27,7 @@ p, ul.native, ul.typeface {
     margin: 0 0 1.5%;
 }
 h2, h3, h4 {
-    margin: 0 0 0.6em;
+    margin: 0 0 0.3em;
 }
 figure + h2, h3, p.cta {
 	margin-top: 0.6em;
@@ -453,16 +453,23 @@ footer.main aside {
 }
 .callout {
 	background-color: rgba(0,0,0,0.075);
-	padding: 1.5em 2em 1em;
-	margin-top: 1.5em;
+	margin-top: 2%;
+	padding: 3% 4% 2%
+}
+.container.callout {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.container.callout > div {
+	padding: 0 1%;
 }
 p.callout {
 	font-style: italic;
 	padding: 1.5em 2em;
 }
 .callout .row {
-	padding-top: 1em;
-	padding-bottom: 1em;
+	padding-top: 1%;
+	padding-bottom: 1.5%;
 }
 
 
@@ -1051,7 +1058,7 @@ body {
 	color: #666;
 }
 .clearfix {
-	padding-bottom: 4%;
+	padding-bottom: 1%;
 }
 	nav.main {
 		font-size: 70%;
@@ -1063,7 +1070,7 @@ body {
 		font-size: 160%;
 	}
 	.promote {
-		margin-bottom: 2%;
+		margin-bottom: 1%;
 	}
 	.promote.promote-left h2, .promote.promote-right h2 {
 		font-size: 200%;
@@ -1250,9 +1257,10 @@ body {
 	.cta a {
         white-space: nowrap;
     }
-	.highlight figure + h2 {
+	.highlight figure + h2, .highlight figure + h3 {
 		margin-top: 0;
 	}
+
     /* --- __PROMOTE --- MOBILE I -------------------------- */
 
     .promote.promote-left:not(.thumb) img, .promote.promote-right:not(.thumb) img {
@@ -1265,6 +1273,11 @@ body {
 	}
 	figure {
 		padding-top: 20px;
+	}
+	.callout {
+	}
+	.container.callout > div {
+		padding: 0;
 	}
 
 	/* CONTACT AND FOOTER --- MOBILE I ------------------- */
