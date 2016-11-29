@@ -99,7 +99,7 @@ p, ul.native, ul.typeface, .small, .btn-submit {
 	font-size: 130%;
 }
 h4 {
-	font-size: 150%;
+	font-size: 170%;
 }
 h3 {
 	font-size: 200%;
@@ -139,7 +139,7 @@ p.cta {
 .callout h2  {
 	font-size: 150%;
 }
-.highlight .col-sm-4 p, .highlight .col-md-3 p {
+.highlight .col-sm-4 p, .highlight .col-md-3 p, footer.main ul.native {
 	font-size: 120%;
 }
 .highlight .col-sm-4 h3, .highlight .col-md-3 h3 {
@@ -449,6 +449,7 @@ main > section > header, .highlight header, aside.contact header {
 }
 form {
 	clear: both;
+	padding-bottom: 30px;
 }
 .home-page main > section > header {
     padding-top: 40px; /* aaa */
@@ -1300,6 +1301,13 @@ footer.main nav a:hover {
 		position: fixed !important;
 		font-weight: bold;
 	}
+	.navbar-brand {
+		padding: 10px 0 10px 10px;
+	}
+	.navbar-brand img {
+		width: 220px;
+
+	}
  	/* .collapse.in .navbar-collapse {
 		display: block;
 		overflow-y: auto;
@@ -1344,6 +1352,7 @@ footer.main nav a:hover {
 		margin-top: 0;
 		margin-bottom: 0;
 		background: #eee;
+		border-bottom: 2px solid black;
 	}
 	ul.navbar-nav .dropdown-menu {
 		display: block;
