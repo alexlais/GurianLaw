@@ -181,7 +181,7 @@ address .content.phone-number {
 	font-size: 30px;
 }
 
-/* --- _COLORS ---------------------------------------------------------------------------------- */
+/* --- _COLORS ------- hover green #22c39b ---------------------------------------------------------- */
 
 body {
 	color: #999;
@@ -1296,11 +1296,12 @@ footer.main nav a:hover {
 	}
 	h2 span.location {
 		display: block;
-		font-size: 45%;
+		font-size: 55%;
 		border-bottom: 1px solid rgba(0,0,0,.1);
     	color: #999;
 		padding-bottom: 0;
 		line-height: 120%;
+		font-family: "Electrolize", "Share Tech Mono", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
 	}
 	aside.contact header p {
 		font-size: 150%;
@@ -1411,7 +1412,9 @@ footer.main nav a:hover {
 	.parallax h2, .parallax h3 {
 		color: White;
 	}
-
+	figure {
+		padding: 4% 0;
+	}
     /* --- __PROMOTE --- MOBILE I -------------------------- */
 
     .promote.promote-left:not(.thumb) img, .promote.promote-right:not(.thumb) img {
@@ -1425,7 +1428,6 @@ footer.main nav a:hover {
 	.promote.border, .callout {margin-top: 0; border: 0;}
 	.clearfix {padding-bottom: 0;}
 	p, ul.native, ul.typeface, h4 {margin-bottom: 0.5em;}
-	figure {padding-top: 20px;}
 	.container.callout > div {padding: 0;}
 
 	/* CONTACT AND FOOTER --- MOBILE I ------------------- */
@@ -1444,7 +1446,7 @@ footer.main nav a:hover {
 	footer.main ul.native a {
 		display: block;
 		text-align: left;
-		border-bottom: 1px solid rgb(23, 130, 103);
+		border-bottom: 1px solid #22c39b;
 		padding: 12px 5%;
 		font-size: 130%;
 		text-decoration: none;
