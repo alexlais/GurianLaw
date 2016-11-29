@@ -1095,7 +1095,7 @@ footer.main nav a:hover {
 		font-size: 200%;
 	}
 	p, ul.native, ul.typeface, .highlight .col-sm-4 p, .highlight .col-md-3 p, .form-control {
-		font-size: 150%;
+		font-size: 145%;
 	}
 	.col-sm-6.col-md-3 hgroup, .col-sm-4 hgroup {
 		font-size: 100%;
@@ -1451,6 +1451,7 @@ footer.main nav a:hover {
 		font-size: 130%;
 		text-decoration: none;
 		text-transform: uppercase;
+		font-weight: bold;
 	}
 
 	/* ADDRESS --- MOBILE I ------------------- */
