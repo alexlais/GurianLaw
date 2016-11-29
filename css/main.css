@@ -1355,19 +1355,17 @@ footer.main nav a:hover {
 		border-bottom: 1px solid #ddd;
 		background: transparent;
 	}
+
 	 ul.navbar-nav li a {
 		border-bottom: 1px solid #ddd;
-		padding-left: 5%;
-		padding-right: 5%;
+		padding: 7px 5%;
 	}
 	 ul.navbar-nav .dropdown > a {
-		border-bottom: 0;
-		padding-bottom: 15px;
 		border-bottom: 1px solid #ddd;
 	}
 	 ul.navbar-nav .dropdown-menu a {
 		text-transform: capitalize;
-		padding: 12px 10%;
+		padding: 7px 10%;
 		background: transparent;
 		border-bottom: 1px solid #ddd;
 	}
