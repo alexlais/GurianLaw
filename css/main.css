@@ -13,14 +13,14 @@ h4, .carousel, .cta, nav.main, .highlight h1,
 input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"] {
 	font-family: "Electrolize", "Share Tech Mono", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
 }
-.carousel p.telephone, address .content.phone-number, address .content.fax-number {
-	font-family: "Times New Roman", serif;
+.carousel p.telephone, address {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
 
 
 /* --- FONT design -------------------------------------------------------- */
-.parallax a, .cta a, .cta, .carousel-CTA, .carousel .caption, .btn-submit, address .address-label, nav.main {
+.parallax a, .cta a, .cta, .carousel-CTA, .carousel .caption, .btn-submit, address .address-label {
 	font-weight: bold;
 }
 p, ul.native, ul.typeface, h4 {
@@ -62,11 +62,13 @@ h4 {
 	{background: inherit;}
 navbar-nav > li > .dropdown-menu
 	{border-top-left-radius: inherit; border-top-right-radius: inherit;}
+/*
 .dropdown-menu > li > a {
 	font-weight: inherit;}
+.dropdown-menu {font-size: inherit;}
+*/
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
 	background: inherit; color: inherit; text-decoration: inherit;}
-.dropdown-menu {font-size: inherit;}
 
 /* --- _LINE HEIGHT ----------------------------------------------------- */
 
@@ -119,11 +121,10 @@ h1, h2 {
 .telephone {}
 /* --- smaller --- ----------------------*/
 nav.main, abbr[data-original-title], abbr[title] {
-    font-size: 90%;
+    font-size: 95%;
 }
 /* --- hgroup --- -----------------*/
-footer.main,
-.col-sm-6.col-md-3 hgroup /* tax law page */ {
+footer.main aside, .col-sm-6.col-md-3 hgroup /* tax law page */ {
     font-size: 70%;
 }
 .col-sm-4 hgroup /* home and estate planning page */{
@@ -161,27 +162,22 @@ a.carousel-CTA {
 .carousel .large h1, .carousel .large h2 {
 	font-size: 2.4em;
 }
-/* --- address ONLY (px) --- ----------- */
+/* --- _address ONLY (px) --- ----------- */
 address .address-label {
-    font-size: 14px;
+    font-size: 13px;
 }
-address .content.name {
-    font-size: 26px; line-height: 30px;
+address .content.name strong {
+    font-size: 20px; font-weight: normal;
 }
 address .content.title {
-	font-size: 13px; line-height: 16px;
+	font-size: 10px; line-height: 12px;
 }
-address .content.address {
-	font-size: 18px;
-}
-address .content.phone-number {
-	font-size: 30px; line-height: 36px;
-}
-address .content.email {
+address .content.address, address .content.fax-number, address .content.email {
 	font-size: 16px;
 }
-address .address-label.phone-number {
-	line-height: 30px;
+address .content.phone-number {
+	font-size: 28px;
+	line-height: 32px;
 }
 
 /* --- _COLORS ---------------------------------------------------------------------------------- */
@@ -200,24 +196,29 @@ h1, .highlight h2, .highlight h3, .highlight a,
 .left-control, .right-control, .left-control:hover, .right-control:hover,
 .left-control:active, .right-control:active, .left-control:after, .right-control:after,
 .highlight .cta a, .cta a:hover,
-.btn-submit, .parallax{
+.btn-submit, .parallax {
 	color: white;}
-/* ------------------------- */
-h3, h3 a, .promote h3 a:after, address, .form-control:focus {
-	color: #444;}
-header h2, address a, a, h3 a:hover, .promote h3 a:hover:after, figure:hover ~ hgroup h3 a, figure:hover ~ hgroup h3 a:after {
-    color: rgb(34, 195, 155);}
-address .content.title, h4 {
-	color: #777;}
-footer.main, footer.main a {
-	color: rgb(125, 49, 3);}
-/* ------------------------- */
 .highlight, .highlight h1, .highlight p:not(callout) {
     color: rgba(255, 255, 255, 0.9);
 }
+a, header h2 {
+    color: rgb(34, 195, 155);
+}
+/* real hover */
 a:hover, .highlight .cta a:hover {
     color: rgb(31, 173, 138);
+    color: rgb(34, 195, 155);
 }
+/* ------------------------- */
+h3, h3 a, .promote h3 a:after, address, .form-control:focus {
+	color: #444;}
+/* fake hover */
+h3 a:hover, .promote h3 a:hover:after, figure:hover ~ hgroup h3 a, figure:hover ~ hgroup h3 a:after {
+    color: rgb(34, 195, 155);}
+address a {
+	rgba(23, 130, 103, 1);}
+address .content.title, h4 {
+	color: #777;}
 /* nav --------------------- */
 ul.navbar-nav a {
 	color: #666;}
@@ -235,6 +236,24 @@ ul.navbar-nav > li.active > a {
 ul.navbar-nav .dropdown-menu {
     background-color: rgba(255, 255, 255,.95);
 }
+/* _highlight ----------------- */
+
+.highlight.transparent, .highlight.transparent p, .highlight.transparent h3 {
+	background: White;
+	color: inherit;}
+.highlight.native {
+	background: #178267;} /* green */
+.highlight.blue, li.active a.page-scroll.blue {
+	background: #004e7a;} /* blue */
+.highlight.orange, li.active a.page-scroll.orange {
+	background: #da8025;} /* orange */
+.highlight.brown, li.active a.page-scroll.brown {
+	background: #676b47;} /* brown */
+.highlight.red, li.active a.page-scroll.red {
+	background: #602020;} /* red */
+.highlight.burgundy {
+	background: #7d3103;}
+
 /*
 background: #f4f5f0;
 background: #da2525;  nav red
@@ -245,18 +264,12 @@ background: #74862d;
 background: #676b47;  brown 103, 107, 71
 background: #6d7722;
 */
-.highlight 												{background: #178267;} /* aqua */
-.highlight.blue, li.active a.page-scroll.blue 			{background: #004e7a; /* blue */}
-.highlight.orange, li.active a.page-scroll.orange 		{background: #da8025; /* orange */}
-.highlight.brown, li.active a.page-scroll.brown 		{background: #676b47; /* brow */}
-.highlight.red, li.active a.page-scroll.red 			{background: #602020; /* red */}
-.contact .highlight 									{background: #7d3103;}
 
-/* --- BORDER RADIUS --------------------------------- */
+/* --- BORDER _RADIUS --------------------------------- */
 
-.form-control, .btn-submit {
-	border-radius: 3px;}
-.cta a, .callout img {
+.form-control, .btn-submit, img, address {
+	border-radius: 4px;}
+.cta a {
 	border-radius: 5px;}
 .carousel-CTA, .telephone, .callout {
 	border-radius: 8px;}
@@ -377,20 +390,27 @@ abbr[data-original-title], abbr[title] {
 .promote img, .img-responsive {
     width: 100%;
 }
-.promote.promote-left img, .promote.promote-right img {
-	width: 450px;
-    height: auto;
-    float: left;
+.promote.promote-left figure {
     padding: 0 30px 12px 0;
+    float: left;
+}
+.promote.promote-right figure {
+    padding: 0 0 12px 30px;
+    float: right;
+}
+.promote.promote-right img {
+    height: auto;
+}
+.promote.promote-left img {
+	width: 450px;
 }
 .promote.promote-right img {
 	width: 650px;
-    float: right;
-    padding: 0 0 12px 30px;
 }
 .promote.thumb img {
 	width: 200px;
 }
+/* image zoom on hover */
 .promote figure a {
     overflow: hidden;
     display: block;
@@ -405,6 +425,10 @@ abbr[data-original-title], abbr[title] {
 /* =====================================================================================
 ===   _SECTIONS   ======================================================================
 ======================================================================================== */
+	/* --- SCROOL BUG FIX ---  */
+	.home-page nav.main:not(.navbar-fixed-top) + main {
+		margin-top: -60px;
+	}
 
 section, .parallax {
     padding: 70px 0 4%;
@@ -414,13 +438,17 @@ aside, article > header, aside.contact .highlight {
 }
 aside.contact {
 	padding-bottom: 0;
+	padding-top: 80px;
 	background: white;
 }
 main > section > header, .highlight header, aside.contact header {
 	padding-bottom: 2%;
 }
+form {
+	clear: both;
+}
 .home-page main > section > header {
-    padding-top: 40px;
+    padding-top: 40px; /* aaa */
 }
 footer.main aside {
 	padding: 0;
@@ -437,6 +465,7 @@ footer.main aside {
     padding-top: 2%;
     box-shadow: inset 0 40px 40px -50px rgba(0,0,0,.1);
 }
+/* just a bit darker shadow for darker colors */
 .highlight.brown footer, .highlight.blue footer {
     box-shadow: inset 0 40px 40px -50px rgba(0,0,0,.2);
 }
@@ -467,18 +496,197 @@ p.callout {
 	font-style: italic;
 	padding: 1.5em 2em;
 }
+/* just to separa footer and header from the items in the callout */
 .callout .row {
 	padding-top: 1%;
 	padding-bottom: 1.5%;
 }
 
+/* --- PRALLAX -------------------------------------- */
 
-/* --- SCROOL BUG FIX ---  */
-
-.home-page nav.main:not(.navbar-fixed-top) + main {
-	margin-top: -60px;
+.parallax {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-color: Black;
+}
+.parallax:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.2);
+    background: rgba(34, 195, 155, 0.3);
+    background: rgba(241, 94, 5, 0.6);
+    background: rgba(0,0,0,0.3);
+}
+.parallax.attorney {
+    background-image: url(../images/page0/Attorney_1.jpg);
+}
+.parallax.miami {
+    background-image: url(../images/page0/Miami.jpg);
+}
+.parallax .container {
+    position: relative;
+    z-index: 1;
 }
 
+/* === _NAV _MAINNAV _NAVIGATION ===================================================================================
+==================================================================================================================== */
+
+.navbar-fixed-top 							{position: static;}
+.sub-page .navbar-fixed-top 				{position: fixed !important;}
+.collapse.navbar-collapse 					{}
+.nav > li > a:focus, .nav > li > a:hover 	{outline:none; outline-offset: 0;}
+ul.navbar-nav li:hover .dropdown-menu 		{display: block;}
+
+nav.main {
+    background-color: white;
+    box-shadow: 0 0 4px 4px rgba(0,0,0,.3);
+    border: 0;
+}
+/* _SUBMENU */
+ul.navbar-nav .dropdown-menu {
+	border: 0;
+    border-bottom: 6px solid #009973;
+    padding: 0;
+    left: -10px;
+    right: auto;
+    top: auto;
+    float: none;
+    /* background-clip: padding-box; */
+    box-shadow: 0 4px 3px 1px rgba(0,0,0,.2);
+    width: 200px;
+   }
+   /*
+   ul.navbar-nav > li > .dropdown-menu {
+	    border-radius: 10px;
+	    border-top-left-radius: 0;
+		border-top-right-radius: 10px;
+	}
+   ul.navbar-nav > li > .dropdown-menu {
+	    border-radius:11px;
+	}
+   ul.navbar-nav > li > .dropdown-menu li:first-child a {
+	    border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+   ul.navbar-nav > li > .dropdown-menu li:last-child a {
+	    border-radius: 0 0 10px 10px;
+	}
+
+/* NAV LINKS */
+ul.navbar-nav li a, ul.navbar-nav .dropdown-menu a {
+	text-transform: uppercase;
+	padding: 20px 10px 18px;
+	transition-property: padding;
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
+}
+ul.navbar-nav .dropdown-menu a {
+	padding: 10px 10px 10px 20px;
+}
+/* _LOGO */
+.navbar-brand {
+    padding: 16px 20px 0 10px;
+}
+.navbar-brand img {
+    width: 230px;
+    height: auto;
+}
+
+/* === CONTACT =====================================================================================================
+==================================================================================================================== */
+
+#google-map {
+    height: 300px;
+}
+.form-control {
+    background-color: transparent;
+    border-color: #22c39b;
+    padding: 5px;
+    box-shadow: none;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group.submit {
+}
+.btn-submit {
+    background: rgba(23, 130, 103, 1);
+    border: 1px solid #178267;
+    padding: 6px 30px;
+}
+.form-control:focus {
+	border-color: #22c39b;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(34, 195, 155, 1);
+}
+.btn-submit:hover {
+	background: rgba(23, 130, 103, .1);
+    border: 1px solid #22c39b;
+    background: #22c39b;
+}
+
+/* === _ADDRESS =============================================== */
+
+address {
+	float: right;
+	border: 1px solid #f0f0f0;
+    padding: 12px 20px 10px 16px;
+    margin-top: -50px;
+    background: #fdfdfd;
+}
+address > div {
+	padding-bottom: 6px;
+}
+address .name {
+	text-align: center;
+}
+address .content.name {
+    border-bottom: 1px solid #bbb;
+    display: inline-block;
+}
+address .content.title {
+    text-transform: uppercase;
+	display: block;
+}
+address .number div, address .content.address {
+	overflow: auto;
+}
+address .address-label {
+    float: left;
+    min-width: 70px;
+    text-align: right;
+    padding: 2px 12px 0 0;
+}
+address .address-label.phone-number {
+	padding-top: 12px;
+}
+
+/* === _FOOTER =============================================== */
+
+footer.main {
+	background-color: #7d3103;
+	background: white;
+	padding: 20px 0 10px;
+}
+footer.main nav {
+	padding-bottom: 90px;
+}
+footer.main nav a {
+	padding: 3px 6px;
+}
+footer.main nav a:hover {
+	color: white;
+	background: #22c39b;
+}
+.backtotop {
+	display: none;
+}
 
 /* === _CAROUSEL ================================================================================================================
 ================================================================================================================ */
@@ -704,187 +912,6 @@ p.callout {
 	z-index: 2;
 }
 
-/* --- PRALLAX -------------------------------------- */
-
-.parallax {
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
-    background-color: Black;
-}
-.parallax:after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0,0,0,.2);
-    background: rgba(34, 195, 155, 0.3);
-    background: rgba(241, 94, 5, 0.6);
-    background: rgba(0,0,0,0.3);
-}
-.parallax.attorney {
-    background-image: url(../images/page0/Attorney_1.jpg);
-}
-.parallax.miami {
-    background-image: url(../images/page0/Miami.jpg);
-}
-.parallax .container {
-    position: relative;
-    z-index: 1;
-}
-
-/* === _NAV _MAINNAV _NAVIGATION ===================================================================================
-==================================================================================================================== */
-
-.navbar-fixed-top 							{position: static;}
-.sub-page .navbar-fixed-top 				{position: fixed !important;}
-.collapse.navbar-collapse 					{}
-.nav > li > a:focus, .nav > li > a:hover 	{outline:none; outline-offset: 0;}
-ul.navbar-nav li:hover .dropdown-menu 		{display: block;}
-
-nav.main {
-    background-color: white;
-    box-shadow: 0 0 4px 4px rgba(0,0,0,.3);
-    border: 0;
-}
-/* _SUBMENU */
-ul.navbar-nav .dropdown-menu {
-	border: 0;
-    border-bottom: 6px solid #009973;
-    padding: 0;
-    left: -10px;
-    right: auto;
-    top: auto;
-    float: none;
-    /* background-clip: padding-box; */
-    box-shadow: 0 4px 3px 1px rgba(0,0,0,.2);
-    width: 200px;
-   }
-   /*
-   ul.navbar-nav > li > .dropdown-menu {
-	    border-radius: 10px;
-	    border-top-left-radius: 0;
-		border-top-right-radius: 10px;
-	}
-   ul.navbar-nav > li > .dropdown-menu {
-	    border-radius:11px;
-	}
-   ul.navbar-nav > li > .dropdown-menu li:first-child a {
-	    border-top-left-radius: 10px;
-		border-top-right-radius: 10px;
-	}
-   ul.navbar-nav > li > .dropdown-menu li:last-child a {
-	    border-radius: 0 0 10px 10px;
-	}
-
-/* NAV LINKS */
-ul.navbar-nav li a, ul.navbar-nav .dropdown-menu a {
-	text-transform: uppercase;
-	padding: 20px 10px 18px;
-	transition-property: padding;
-	transition-duration: 0.3s;
-	transition-timing-function: linear;
-}
-ul.navbar-nav .dropdown-menu a {
-	padding: 10px 10px 10px 20px;
-}
-/* _LOGO */
-.navbar-brand {
-    padding: 16px 20px 0 10px;
-}
-.navbar-brand img {
-    width: 230px;
-    height: auto;
-}
-
-/* === CONTACT =====================================================================================================
-==================================================================================================================== */
-
-#google-map {
-    height: 300px;
-}
-.form-control {
-    background-color: transparent;
-    border-color: #22c39b;
-    padding: 5px;
-    box-shadow: none;
-}
-.form-group {
-    margin-bottom: 15px;
-}
-.form-group.submit {
-}
-.btn-submit {
-    background: rgba(23, 130, 103, 1);
-    border: 1px solid #178267;
-    padding: 6px 30px;
-}
-.form-control:focus {
-	border-color: #22c39b;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(34, 195, 155, 1);
-}
-.btn-submit:hover {
-	background: rgba(23, 130, 103, .1);
-    border: 1px solid #22c39b;
-    background: #22c39b;
-}
-
-/* === ADDRESS =============================================== */
-
-address {
-    background: #eee;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin: 40px 0;
-    display: block;
-}
-address .content.name {
-    border-bottom: 1px solid Gray;
-    display: inline-block;
-    padding-top: 8px;
-}
-address .content.title {
-    text-transform: uppercase;
-	display: block;
-}
-address .number div, address .content.address {
-	overflow: auto;
-}
-address .number div:first-child {
-	margin-top: -3px;
-}
-address .address-label {
-    float: left;
-    min-width: 75px;
-    text-align: right;
-    padding: 2px 12px 0 0;
-}
-address .number .address-label {
-    min-width: 75px;
- }
-address .address-label.email {
-    padding-top: 2px;
-}
-
-/* === FOOTER =============================================== */
-
-footer.main {
-	background-color: #7d3103;
-	background: white;
-	padding: 20px 0 10px;
-}
-footer.main nav {
-	padding-bottom: 90px;
-}
-.backtotop {
-	display: none;
-}
-
-
 
 
 
@@ -984,19 +1011,19 @@ footer.main nav {
 
 /* === _LG =============================================== */
 @media (min-width: 1200px) {
-
 	.form-control {
 	}
 }
 
+/* === _MD + ALL BELOW ================================== */
+@media (max-width: 1199px) {
+	body {
+		font-size: 90%;
+	}
+}
 /* === _MD =============================================== */
 /* @media (min-width: 992px) and (max-width: 1199px) { */
 @media (max-width: 1199px) {
-
-body {
-	font-size: 90%;
-}
-
 	.promote.promote-left img, .promote.promote-right img {
 	    width: 400px;
 	}
@@ -1015,7 +1042,7 @@ body {
 }
 
 
-/* === S M A L L  =  I  =============================================
+/* === S M A L L ====================================================
 ===================================================================== */
 
 
@@ -1028,7 +1055,7 @@ body {
 
 
 
-/* === S M A L L  =  I  =============================================
+/* === S M A L L ====================================================
 ===================================================================== */
 
 
@@ -1042,45 +1069,41 @@ body {
 
 
 
-/* ===  S M A L L  ==================================================
+/* === S M A L L ====================================================
 ===================================================================== */
 
-@media (min-width: 768px) and (max-width: 991px) {
-	/*
-	.container-fluid .container {
-		width: 735px;
-	} */
-}
+
+
+
+
+
 /* === _SM ====================================================== */
 @media (max-width: 991px) {
 
+    /* --- FONT SIZE --- SMALL------------------------ */
 	body {
-		font-size: 90%;
-		color: #666;
+		font-size: 70%;
 	}
+	.highlight .col-sm-4 h3, .highlight .col-md-3 h3, .btn-submit {
+		font-size: 200%;
+	}
+	p, ul.native, ul.typeface, .highlight .col-sm-4 p, .highlight .col-md-3 p, .form-control {
+		font-size: 160%;
+	}
+	.col-sm-6.col-md-3 hgroup, .col-sm-4 hgroup {
+		font-size: 100%;
+	}
+
+    /* -------------------------- */
 	.clearfix {
 		padding-bottom: 1%;
 	}
-	nav.main {
-		font-size: 70%;
-	}
-	p, ul.native, ul.typeface {
-		font-size: 120%;
-	}
-	h2 {
-		font-size: 200% !important;
-	}
+
 	.cta a:after, .promote h3 a:after {
 	    /* margin-right: -2.3em; */
    	}
 	.promote {
 		margin-bottom: 1%;
-	}
-	.promote.promote-left h2, .promote.promote-right h2 {
-		font-size: 200%;
-	}
-	.col-sm-6.col-md-3 hgroup {
-		font-size: 100%;
 	}
 
     /* --- NAVIGATION --- SMALL------------------------ */
@@ -1125,17 +1148,6 @@ body {
     textarea.form-control {
     	min-height: 180px;
 	}
-	address .col-sm-12 {
-		padding-bottom: 20px;
-		float: none;
-	}
-	address .address-label, address .address-label.email {
-		padding-top: 5px;
-	}
-	address .address-label.address {
-		padding-left: 20px;
-		min-width: 100px;
-	}
 }
 
 
@@ -1223,45 +1235,79 @@ body {
 
 
 /* === M O B I L E  =  I  ===========================================
-====== XS (MOBILE) ================================================== */
+====== XS (_MOBILE) ================================================== */
 
 @media (max-width: 767px) {
 	header.main {
 		display: none;
 	}
+	aside.contact {
+		color: Black;
+	}
+	.form-control::-moz-placeholder, .form-control,
+	input[type="text"], input[type="email"], input[type="url"], input[type="password"],
+	textarea, select {
+		color: #444;
+	}
+	aside.contact header p {font-size: 1em; line-height: 130%;}
 	.backtotop {
 		display: block;
 	}
 	body {
-		font-size: 90%;
 		padding-top: 10px;
 	}
-	p, ul.native, ul.typeface {
-		font-size: 1.1em;
-	}
-	p.callout {
-
-	}
-	.highlight h1 {
-		font-size: 0.6em;
-	}
-	h2, h3 {
-		font-size: 140% !important;
-	}
-
 	.home-page main > section > header {
 		padding-top: 0;
+	}
+
+
+	/* --- FONT SIZE ----- MOBILE I ---------- */
+	h2 {
+		font-size: 180%
+	}
+	aside.miami {
+		padding-top: 6%;
+		font-size: 50%;
+	}
+	.highlight h1 {
+		font-size: 100%;
+	}
+	main.nav{
+		font-size: 4em;
 	}
 
 	/* --- NAVIGATION --- MOBILE I ------------------- */
 
 	.navbar {
-		position: fixed !important;
+		position: relative !important;
+		font-size: 2em;
+	}
+	.navbar-toggle {
+	    background-color: #178267;
+	    border: 0;
+	    margin: 9px 5px 0 0;
+	    padding: 2px 4px 6px;
+	}
+	.navbar-toggle .icon-bar, .navbar-toggle .icon-bar + .icon-bar {
+	    background-color: white;
+	    width: 22px;
+		height: 2px;
+		margin-top: 5px;
+	}
+	.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+		max-height: auto;
+		max-height: none;
 	}
 	ul.navbar-nav .dropdown-menu {
 		display: block;
 		position: relative;
 		float: none;
+		width: auto;
+		border-bottom: 4px;
+		left: auto;
+	}
+	ul.navbar-nav .dropdown-menu a {
+		padding: 20px 10px 18px;
 	}
 
     /* --- COPY --- MOBILE 1 ----------------------------- */
@@ -1304,15 +1350,7 @@ body {
 
 	/* ADDRESS --- MOBILE I ------------------- */
 
-    address .col-sm-6 {
-		float: left;
-		width: 50%;
-	}
-	address .number div, address .number div:first-child {
-		margin-top: 0;
-		overflow: inherit;
-	}
-	address .number > div > span, address .address-label.address {
+	address .address-label {
 	    min-width: auto;
 	    min-width: none;
 	    float: none;
@@ -1321,25 +1359,20 @@ body {
 	    padding-top: 0;
 	}
 
-	address .address-label.address, address .content.address {
-		text-align: right;
-		padding-right: 0;
-	}
 	address .number .address-label {
 		padding-top: 0;
 	}
-	address .address-label.phone-number {
-		line-height: inherit;
+	address .content.name strong {
+		font-size: 20px;
 	}
 	address span {
     	clear: left;
     }
-	address .number > div {
-		padding-bottom: 6px;
-	}
 	address .content.phone-number {
 		font-size: 25px;
-		line-height: 28px;
+		line-height: 30px;
+		padding-bottom: 6px;
+		display: block;
 	}
 }
 
@@ -1464,29 +1497,15 @@ body {
 		overflow: inherit;
 		text-align: left;
     }
-    .cta a {
+    address, .cta a {
 		float: none;
 	    white-space: normal;
     }
-	address .content.name {
-		font-size: 22px;
-	}
-	address .address-label.address, address .content.address {
-		padding-left: 0
-	}
-	.col-xm-6.col-sm-6 {
-		float: none;
-		width: auto;
-		padding-left: 30px;
-	}
-	address .address-label.address, address .content.address {
-		text-align: left;
-	}
-	address .content.title {
-		font-size: 12px;
-		line-height: 15px;
-	}
-	address > div > .address, address .number > div {
-		padding-bottom: 10px;
-	}
+    address .content.title br {
+    }
+    address .name {
+    	text-align: left;
+    }
+
+
 }
