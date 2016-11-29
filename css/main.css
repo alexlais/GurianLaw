@@ -169,17 +169,16 @@ address .address-label {
     font-size: 13px;
 }
 address .content.name strong {
-    font-size: 20px; font-weight: normal;
+    font-size: 23px; font-weight: normal;
 }
 address .content.title {
-	font-size: 10px; line-height: 12px;
+	font-size: 11px; line-height: 14px;
 }
 address .content.address, address .content.fax-number, address .content.email {
 	font-size: 16px;
 }
 address .content.phone-number {
-	font-size: 28px;
-	line-height: 32px;
+	font-size: 30px;
 }
 
 /* --- _COLORS ---------------------------------------------------------------------------------- */
@@ -668,10 +667,10 @@ address .address-label {
     float: left;
     min-width: 70px;
     text-align: right;
-    padding: 2px 12px 0 0;
+    padding: 3px 12px 0 0;
 }
 address .address-label.phone-number {
-	padding-top: 12px;
+	padding-top: 16px;
 }
 
 /* === _FOOTER =============================================== */
@@ -1282,6 +1281,9 @@ footer.main nav a:hover {
 	main > section > header h2 {
 		font-size: 220%;
 	}
+	.btn-submit {
+		width: 100%;
+	}
 	aside.miami {
 		padding-top: 6%;
 		font-size: 50%;
@@ -1449,16 +1451,17 @@ footer.main nav a:hover {
 		padding-top: 0;
 	}
 	address .content.name strong {
-		font-size: 20px;
+		font-weight: bold;
 	}
 	address span {
     	clear: left;
     }
 	address .content.phone-number {
-		font-size: 25px;
-		line-height: 30px;
 		padding-bottom: 6px;
 		display: block;
+	}
+	address .content.address, address .content.fax-number, address .content.email {
+		font-size: 19px;
 	}
 }
 
