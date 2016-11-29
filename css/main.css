@@ -29,8 +29,11 @@ p, ul.native, ul.typeface {
 h2, h3, h4 {
     margin: 0 0 0.3em;
 }
-figure + h2, h3, p.cta {
+figure + h2, h3 {
 	margin-top: 0.6em;
+}
+p.cta {
+	margin-top: 2em;
 }
 h4 {
     margin-top: -.2em;
@@ -130,13 +133,13 @@ p.cta {
 }
 /* --- highlight --- --------------*/
 .callout h2  {
-	font-size: 1.5em;
+	font-size: 150%;
 }
 .highlight .col-sm-4 p, .highlight .col-md-3 p {
-	font-size: 1.2em;
+	font-size: 120%;
 }
 .highlight .col-sm-4 h3, .highlight .col-md-3 h3 {
-	font-size: 1.4em;
+	font-size: 155%;
 }
 /* --- carousel ONLY --- ----------------*/
 .carousel {
@@ -1079,7 +1082,6 @@ body {
 		font-size: 100%;
 	}
 	h3 {
-		font-size: 150%;
 	}
 	h2, h3, p.cta, h2, h3, h4 {
 	}
