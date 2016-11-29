@@ -1252,6 +1252,9 @@ footer.main nav a:hover {
 	header.main {
 		display: none;
 	}
+	.nav .home-link {
+		display: block;
+	}
 	aside.contact {
 		color: Black;
 	}
@@ -1298,10 +1301,11 @@ footer.main nav a:hover {
 	h2 span.location {
 		display: block;
 		font-size: 55%;
-		border-bottom: 1px solid rgba(0,0,0,.1);
+		border-bottom: 1px solid #22c39b;
     	color: #999;
 		padding-bottom: 0;
-		line-height: 120%;
+		line-height: 140%;
+		margin-bottom: 1%;
 		font-family: "Electrolize", "Share Tech Mono", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
 	}
 	aside.contact header p {
