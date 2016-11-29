@@ -30,7 +30,7 @@
     <nav class="main navbar navbar-fixed-top">
         <div class="container">
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse, .navbar-toggle">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -44,7 +44,7 @@
 			<!-- NAVIGATION --------------------------------------- -->
 
             <div class="collapse navbar-collapse navbar-ex1-collapse" role="navigation" aria-roledescription="main navigation">
-                <ul class="nav navbar-nav" role="navigation">
+                <ul class="nav navbar-nav hidden-xs" role="navigation">
                     <li role="listitem" aria-level="1" class="home-link"><a href="index.html">Home</a></li>
 		            <li role="listitem" aria-level="1" class="dropdown">
                         <a class="page-scroll" href="#practices">practices</a>
@@ -58,6 +58,22 @@
 		            <li role="listitem" aria-level="1"><a class="page-scroll orange" href="#agreements">Agreements</a></li>
 		            <li class="hidden"><a class="page-scroll" href="#miami">Miami</a></li>
 	            	<li role="listitem" aria-level="1"><a class="page-scroll" href="#contact">Contact</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav visible-xs-block" role="presentation">
+                    <li role="listitem" aria-level="1" class="home-link"><a href="index.html">Home</a></li>
+		            <li role="listitem" aria-level="1" class="dropdown">
+                        <a class="page-scroll" href="#practices" data-toggle="collapse" data-target=".navbar-ex1-collapse, .navbar-toggle">practices</a>
+		                <ul class="dropdown-menu">
+		            		<li role="listitem" aria-level="2"><a href="Tax_Attorney.html" title="Miami &amp; South Florida Tax Law Firm Services" rel="law services" rev="law firm">Tax Law</a></li>
+		            		<li role="listitem" aria-level="2"><a href="Estate_Planning.html" title="Miami &amp; South Florida Estate Planning Law Firm Services" rel="law services" rev="law firm">Estate Planning</a></li>
+		            		<li role="listitem" aria-level="2"><a class="active page-scroll" href="#page-top" title="Miami &amp; South Florida Contract Law Firm Services" rel="law services" rev="law firm" data-toggle="collapse" data-target=".navbar-ex1-collapse, .navbar-toggle">Contract Law</a></li>
+		            	</ul>
+                    </li>
+		            <li role="listitem" aria-level="1"><a class="page-scroll" href="#contract" data-toggle="collapse" data-target=".navbar-ex1-collapse, .navbar-toggle">Contract LAw</a></li>
+		            <li role="listitem" aria-level="1"><a class="page-scroll orange" href="#agreements" data-toggle="collapse" data-target=".navbar-ex1-collapse, .navbar-toggle">Agreements</a></li>
+		            <li class="hidden"><a class="page-scroll" href="#miami">Miami</a></li>
+	            	<li role="listitem" aria-level="1"><a class="page-scroll" href="#contact" data-toggle="collapse" data-target=".navbar-ex1-collapse, .navbar-toggle">Contact</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -237,51 +253,72 @@
 	  	<aside id="contact" class="contact" role="seealso">
 			<div class="container">
 		        <header>
+		       		<address class="hidden-xs" itemscope itemtype="http://schema.org/LocalBusiness">
+				        <div class="name">
+							<span class="content name" itemprop="name"><strong>Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></strong></span>
+							<span class="content title" itemprop="jobTitle">A South Florida Estate Planning, <br role="presentation">Tax &amp; Business Law&nbsp;Firm</span>
+				        </div>
+				        <div class="number">
+							<div><span class="address-label phone-number">Phone:</span> <span class="content phone-number" itemprop="telephone" content="+13052901940"><a href="tel:+1305-290-1940">305-290-1940</a></span></div>
+							<div><span class="address-label fax-number">Fax:</span> <span class="content fax-number" itemprop="faxNumber">305-279-1489</span></div>
+						</div>
+				        <div class="address">
+							<div><span class="address-label address">Address:</span></div>
+							<div class="content address" itemscope itemtype="http://schema.org/PostalAddress">
+								<span itemprop="streetAddress">2665 S. Bayshore Dr. <br role="presentation">Suite 800</span>
+								<br role="presentation"><span itemprop="addressLocality">Miami</span>,
+								<span itemprop="addressRegion">FL</span>
+								<span itemprop="postalCode">33133</span>
+							</div>
+						</div>
+						<div class="email"><span class="address-label email">Email:</span> <span class="content email" itemprop="email"><a href="mailto:email">Contact@GurianLaw.com</a></span></div>
+			    	</address>
 					<h2>Talk To Us</h2>
 					<p>Have your questions answered by scheduling an appointment with <span class="text-nowrap">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></span> <br>The firm can be reached online using <span class="text-nowrap">the email form below</span> or <span class="text-nowrap">by telephone at 305-290-1940.</span> <br>Spanish language services availabel. <span class="text-nowrap">Se habla espa&ntilde;ol</span>.</p>
 		        </header>
+
 				<form id="main-contact-form" name="contact-form" method="post" action="#"  class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay="0">
 					<div class="row">
 					  	<div class="col-sm-3">
 						    <div class="form-group">
-						      	<input type="text" name="name" class="form-control" placeholder="Name (required)" required="required">
+						      	<input type="text" name="name" class="form-control" placeholder="Name (required)" aria-label="Name (required)" required="required">
 						    </div>
 					 	</div>
 					  	<div class="col-sm-3">
 						    <div class="form-group">
-						      	<input type="email" name="email" class="form-control" placeholder="Email (required)" required="required">
+						      	<input type="email" name="email" class="form-control" placeholder="Email (required)" aria-label="Email (required)" required="required">
 						    </div>
 					  	</div>
 					  	<div class="col-sm-3">
 						    <div class="form-group">
-						      	<input type="text" name="organization" class="form-control" placeholder="Organization or Sector">
+						      	<input type="text" name="organization" class="form-control" placeholder="Organization or Sector" aria-label="Organization or Sector">
 						    </div>
 					 	</div>
 					  	<div class="col-sm-3">
 						    <div class="form-group">
-						      	<input type="text" name="telephone" class="form-control" placeholder="Telephone">
+						      	<input type="text" name="telephone" class="form-control" placeholder="Telephone" aria-label="Telephone">
 						    </div>
 					 	</div>
 					</div>
 					<div class="row">
 					  	<div class="col-sm-8">
 							<div class="form-group">
-					  			<input type="text" name="subject" class="form-control" placeholder="Subject">
+					  			<input type="text" name="subject" class="form-control" placeholder="Subject" aria-label="Subject">
 							</div>
 						</div>
 					  	<div class="col-sm-2">
 							<div class="form-group">
-						        <select name="state" class="form-control selectpicker" >
-									<option value=" ">Language</option>
-									<option>English</option>
-									<option>Spanish</option>
+						        <select name="Language" class="form-control" role="listbox" aria-label="Language">
+									<option value=" ">Language:</option>
+									<option value="English" role="option" aria-selected="false">English</option>
+									<option value="Spanish" role="option" aria-selected="false">Spanish</option>
 								</select>
 						    </div>
 					  	</div>
 					  	<div class="col-sm-2">
-						    <div class="form-group">
-						        <select name="state" class="form-control selectpicker" >
-									<option value=" " >Your State</option>
+						    <div class="form-group" role="listbox">
+						        <select name="state" class="form-control" role="option" aria-label="State">
+									<option value=" ">State</option>
 									<option>Alabama</option>
 									<option>Alaska</option>
 									<option >Arizona</option>
@@ -338,37 +375,38 @@
 					  	</div>
 					</div>
 					<div class="form-group">
-					  	<textarea name="message" id="message" class="form-control" rows="4" placeholder="Message (required)" required="required"></textarea>
+					  	<textarea name="message" id="message" class="form-control" rows="4" placeholder="Message (required)" aria-label="Message (required)" required="required"></textarea>
 					</div>
 					<div class="form-group submit">
-					  	<button type="submit" class="btn-submit">Submit</button>
+					  	<button type="submit" class="btn-submit" aria-label="Submit">Submit</button>
 					</div>
-				</form>
 
-				<address>
-					<div class="row" itemscope itemtype="http://schema.org/LocalBusiness">
-				        <div class="col-xm-12 col-sm-12 col-md-4 text-center">
+		       		<address class="visible-xs-block" itemscope itemtype="http://schema.org/LocalBusiness">
+				        <div class="name">
 							<span class="content name" itemprop="name"><strong>Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></strong></span>
 							<span class="content title" itemprop="jobTitle">A South Florida Estate Planning, <br role="presentation">Tax &amp; Business Law&nbsp;Firm</span>
 				        </div>
-				        <div class="col-xm-6 col-sm-6 col-md-4 address">
+				        <div class="number">
+							<div><span class="address-label phone-number">Phone:</span> <span class="content phone-number" itemprop="telephone" content="+13052901940"><a href="tel:+1305-290-1940">305-290-1940</a></span></div>
+							<div><span class="address-label fax-number">Fax:</span> <span class="content fax-number" itemprop="faxNumber">305-279-1489</span></div>
+						</div>
+				        <div class="address">
 							<div><span class="address-label address">Address:</span></div>
 							<div class="content address" itemscope itemtype="http://schema.org/PostalAddress">
 								<span itemprop="streetAddress">2665 S. Bayshore Dr. <br role="presentation">Suite 800</span>
-								<br><span itemprop="addressLocality">Miami</span>,
+								<br role="presentation"><span itemprop="addressLocality">Miami</span>,
 								<span itemprop="addressRegion">FL</span>
 								<span itemprop="postalCode">33133</span>
 							</div>
 						</div>
-				        <div class="col-xm-6 col-sm-6 col-md-4 number">
-							<div><span class="address-label phone-number">Phone:</span> <span class="content phone-number" itemprop="telephone" content="+13052901940"><a href="tel:+1305-290-1940">305-290-1940</a></span></div>
-							<div><span class="address-label fax-number">Fax:</span> <span class="content fax-number" itemprop="faxNumber">305-279-1489</span></div>
-							<div><span class="address-label email">Email:</span> <span class="content email" itemprop="email"><a href="mailto:email">Contact@GurianLaw.com</a></span></div>
-						</div>
-			    	</div>
-		    	</address>
+						<div class="email"><span class="address-label email">Email:</span> <span class="content email" itemprop="email"><a href="mailto:email">Contact@GurianLaw.com</a></span></div>
+			    	</address>
+				</form>
 		    </div>
 		    <div id="google-map" data-latitude="52.365629" data-longitude="4.871331" ></div>
+
+			<!-- CONTACT HIGHLIGHT -->
+
 			<div class="highlight native">
 				<div class="container">
 				    <div class="promote promote-right thumb">
@@ -390,7 +428,7 @@
 
  	<footer class="main">
  		<nav role="navigaton" aria-label="footer navigation">
- 			<ul class="list-inline text-center" role="list">
+ 			<ul class="native list-inline text-center" role="list">
  				<li role="listitem" aria-level="1"><a href="index.html">Home Page</a></li>
         		<li role="listitem" aria-level="1"><a href="Tax_Attorney.html" title="Miami &amp; South Florida Tax Law Firm Services" rel="law services" rev="law firm">Tax Law</a></li>
         		<li role="listitem" aria-level="1"><a href="Estate_Planning.html" title="Miami &amp; South Florida Estate Planning Law Firm Services" rel="law services" rev="law firm">Estate Planning</a></li>
@@ -401,7 +439,7 @@
 
  		<aside class="container text-center" role="contentinfo">
 	 		<p><a href="Site-Map.html">Site Map</a> | <a id="PrivacyPolicy" href="Privacy-Policy.html">Privacy Policy</a></p>
- 			<p class="copyright">&copy 2016 by <span class="text-nowrap">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></span> <span class="text-nowrap">All rights reserved</span>.</p>
+ 			<p class="copyright">&copy 2016 by <span class="text-nowrap">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></span> <span class="text-nowrap">All rights reserved</span>. <a target="_blank" rel="nofollow" href="AlexLais.com">Developed by</a>.</p>
 	 	</aside>
 	</footer>
 
@@ -411,5 +449,13 @@
 	<script src="js/jquery.inview.min.js"></script>
 	<script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
+
+
+	<!-- script type="text/javascript" src="js/jquery.inview.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/mousescroll.js"></script>
+	<script type="text/javascript" src="js/smoothscroll.js"></script>
+	<script type="text/javascript" src="js/main.js"></script -->
+
 </body>
 </html>

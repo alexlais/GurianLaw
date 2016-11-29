@@ -1306,7 +1306,9 @@ footer.main nav a:hover {
 		font-size: 150%;
 		line-height: 130%;
 	}
+
 	/* --- NAVIGATION --- _MOB I ------------------- */
+
 	nav.main {
 		font-size: 1.5em;
 		position: fixed !important;
@@ -1430,6 +1432,23 @@ footer.main nav a:hover {
 
 	.form-group {
 	    margin-bottom: 20px;
+	}
+	footer.main {
+		padding-top: 0;
+		border-top: 2px solid black;
+	}
+	footer.main ul.native li {
+		display: block;
+		padding: 0;
+	}
+	footer.main ul.native a {
+		display: block;
+		text-align: left;
+		border-bottom: 1px solid rgb(23, 130, 103);
+		padding: 12px 5%;
+		font-size: 130%;
+		text-decoration: none;
+		text-transform: uppercase;
 	}
 
 	/* ADDRESS --- MOBILE I ------------------- */
