@@ -1071,7 +1071,7 @@ body {
 		font-size: 200% !important;
 	}
 	.cta a:after, .promote h3 a:after {
-	    margin-right: -2.3em;
+	    /* margin-right: -2.3em; */
    	}
 	.promote {
 		margin-bottom: 1%;
@@ -1239,11 +1239,14 @@ body {
 	p, ul.native, ul.typeface {
 		font-size: 1.1em;
 	}
+	p.callout {
+
+	}
 	.highlight h1 {
 		font-size: 0.6em;
 	}
 	h2, h3 {
-		font-size: 150% !important;
+		font-size: 140% !important;
 	}
 
 	.home-page main > section > header {
