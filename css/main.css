@@ -1085,7 +1085,7 @@ footer.main nav a:hover {
 /* === _SM ====================================================== */
 @media (max-width: 991px) {
 
-    /* --- FONT SIZE --- SMALL------------------------ */
+    /* --- FONT SIZE --- SMALL AND MOBILE!!!! --------------- */
 	body {
 		font-size: 70%;
 	}
@@ -1093,7 +1093,7 @@ footer.main nav a:hover {
 		font-size: 200%;
 	}
 	p, ul.native, ul.typeface, .highlight .col-sm-4 p, .highlight .col-md-3 p, .form-control {
-		font-size: 160%;
+		font-size: 150%;
 	}
 	.col-sm-6.col-md-3 hgroup, .col-sm-4 hgroup {
 		font-size: 100%;
@@ -1305,7 +1305,7 @@ footer.main nav a:hover {
 		font-weight: bold;
 	}
 	.navbar-brand {
-		padding: 10px 0 10px 10px;
+		padding: 13px 0 10px 10px;
 	}
 	.navbar-brand img {
 		width: 220px;
