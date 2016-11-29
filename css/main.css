@@ -1239,6 +1239,9 @@ body {
 	p, ul.native, ul.typeface {
 		font-size: 1.1em;
 	}
+	.highlight h1 {
+		font-size: 0.6em;
+	}
 	h2, h3 {
 		font-size: 150% !important;
 	}
@@ -1284,7 +1287,7 @@ body {
 	.promote.thumb img {
 		width: 125px;
 	}
-	.promote.border, .callout {margin-top: 0;}
+	.promote.border, .callout {margin-top: 0; border: 0;}
 	.clearfix {padding-bottom: 0;}
 	p, ul.native, ul.typeface, h4 {margin-bottom: 0.5em;}
 	figure {padding-top: 20px;}
