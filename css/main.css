@@ -1316,9 +1316,8 @@ footer.main nav a:hover {
 	/* --- NAVIGATION --- _MOB I ------------------- */
 
 	nav.main {
-		font-size: 1.5em;
+		font-size: 1.45em;
 		position: fixed !important;
-		font-weight: bold;
 	}
 	.navbar-brand {
 		padding: 13px 0 10px 10px;
@@ -1393,7 +1392,6 @@ footer.main nav a:hover {
 		border-bottom: 1px solid #ddd;
 	}
 	 ul.navbar-nav .dropdown-menu a {
-		text-transform: capitalize;
 		padding: 7px 7%;
 		background: transparent;
 		border-bottom: 1px solid #ddd;
