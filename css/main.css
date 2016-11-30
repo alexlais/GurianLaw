@@ -1006,9 +1006,9 @@ footer.main aside {
 	display: block;
 	z-index: 2;
     content: "\27A1";
-    content: "\261D";
+    content: "\21E7";
     font-size: 25px;
-    line-height: 25px;
+    line-height: 30px;
     font-weight: bold;
     padding: 5px;
     border-radius: 50%;
