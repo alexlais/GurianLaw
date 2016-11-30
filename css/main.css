@@ -3,14 +3,16 @@
 
 @import url('https://fonts.googleapis.com/css?family=Vollkorn|Electrolize|Average');
 
+/* Vollkorn */
 h1, h2, h3, main {
 	font-family: "Vollkorn", Georgia, "Times New Roman", serif;
 	font-weight: normal;
 }
+/* Electrolize */
 h4, .carousel, .cta, nav.main, .highlight h1,
 .cta a:after, .promote h3 a:after,
 footer.main nav,
-.form-group, .btn-submit,  textarea, select,
+.form-group, .btn-submit, .optionalFields, textarea, select,
 input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"] {
 	font-family: "Electrolize", "Share Tech Mono", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
 }
@@ -58,11 +60,11 @@ h4 {
 	{color:inherit;}
 .navbar-default ul.navbar-nav > li > a:focus, .navbar-default ul.navbar-nav > li > a:hover
 	{color:inherit;}
+a:focus,
+.nav li a:focus, .nav li a:hover, .nav li:hover > a,
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover
 	{background-color: inherit;
 	 border-color: inherit;}
-.nav li a:focus, .nav li a:hover, .nav li:hover > a
-	{background: inherit;}
 navbar-nav > li > .dropdown-menu
 	{border-top-left-radius: inherit; border-top-right-radius: inherit;}
 /*
@@ -93,7 +95,7 @@ body {
 	font-size: 100%;}
 /* ---------------------- */
 .highlight h1, .form-control {
-	font-size: 100%;
+	font-size: 90%;
 }
 p, ul.native, ul.typeface, .small, .btn-submit {
 	font-size: 130%;
@@ -124,14 +126,14 @@ h1, h2 {
 nav.main, abbr[data-original-title], abbr[title], footer.main  {
     font-size: 95%;
 }
-/* --- hgroup --- -----------------*/
-footer.main aside {
-    font-size: 60%;
+.sitemap a {
+    font-size: 85%;
 }
-.col-sm-6.col-md-3 hgroup /* tax law page */ {
+/* --- hgroup --- -----------------*/
+.col-sm-6.col-md-3 hgroup, footer aside /* tax law page */ {
     font-size: 70%;
 }
-.col-sm-4 hgroup /* home and estate planning page */{
+.col-sm-4 hgroup, .optionalFields /* home and estate planning page */{
     font-size: 90%;
 }
 p.cta {
@@ -141,7 +143,7 @@ p.cta {
 .callout h2  {
 	font-size: 150%;
 }
-.highlight .col-sm-4 p, .highlight .col-md-3 p, footer.main ul.native {
+.highlight .col-sm-4 p, .highlight .col-md-3 p {
 	font-size: 120%;
 }
 .highlight .col-sm-4 h3, .highlight .col-md-3 h3 {
@@ -167,6 +169,9 @@ a.carousel-CTA {
 	font-size: 2.4em;
 }
 /* --- _address ONLY (px) --- ----------- */
+footer.main aside p.copyright {
+	font-size: 10px;
+}
 address .address-label {
     font-size: 13px;
 }
@@ -193,7 +198,7 @@ body {
 textarea, select {
 	color: #999;}
 /* -- _WHITE ----------------- */
-h1, .highlight h2, .highlight h3, .highlight a,
+h1, .highlight h2, .highlight h3, .highlight a, .parallax.attorney a,
 .carousel, .carousel h1, .carousel h1 span, .carousel h1 abbr, .carousel h2, .carousel h3,
 .carousel-CTA, .carousel-CTA:hover, .carousel-CTA:focus,
 .left-control, .right-control, .left-control:hover, .right-control:hover,
@@ -204,7 +209,7 @@ h1, .highlight h2, .highlight h3, .highlight a,
 .highlight, .highlight h1, .highlight p:not(callout) {
     color: rgba(255, 255, 255, 0.9);
 }
-a, header h2 {
+a, header h2, ul.native.links {
     color: rgb(34, 195, 155);
 }
 /* real hover */
@@ -223,20 +228,20 @@ address a {
 address .content.title, h4 {
 	color: #777;}
 /* nav --------------------- */
-ul.navbar-nav a {
+.navbar-nav a {
 	color: #666;}
-ul.navbar-nav .dropdown-menu li.active > a {
+.navbar-nav .dropdown-menu li.active > a {
     color: #666;}
-ul.navbar-nav a:hover, ul.navbar-nav li:hover > a, ul.navbar-nav .dropdown-menu li.active > a:hover {
+.navbar-nav a:hover, .navbar-nav li:hover > a, .navbar-nav .dropdown-menu li.active > a:hover {
     color: #009973;}
-ul.navbar-nav > li.active > a {
+.navbar-nav > li.active > a {
     color: white;}
-ul.navbar-nav > li.active > a {
+.navbar-nav > li.active > a, .nav .active.open > a:focus {
     background: #22c39b;/* NICE GREEN */
 	background: #da2525; /* NICE RED */
 	background: #178267;
 }
-ul.navbar-nav .dropdown-menu {
+.navbar-nav .dropdown-menu {
     background-color: rgba(255, 255, 255,.95);
 }
 /* _highlight ----------------- */
@@ -275,7 +280,7 @@ background: #6d7722;
 	border-radius: 4px;}
 .cta a {
 	border-radius: 5px;}
-.carousel-CTA, .telephone, .callout {
+.carousel-CTA, .telephone, .callout, footer.main nav a {
 	border-radius: 8px;}
 
 /* --- _A -------------------------------------------------- */
@@ -284,12 +289,15 @@ a {
     -moz-transition: 0.1s;
     -o-transition: 0.1s;
     transition: 0.1s;
-}
-footer.main a, aside.highlight a, address .email a:hover, .highlight p:not(.cta) a {
     text-decoration: underline;
 }
-a:hover, h3 a:hover, footer.main a:hover, .highlight a:hover, .highlight p a:hover {
+footer.main a, aside.highlight a, address .email a:hover, .highlight p:not(.cta) a {
+}
+.cta a, a:hover, h3 a, nav a, .carousel-CTA, address .content.phone-number a {
     text-decoration: none;
+}
+address .content.phone-number a:hover {
+    text-decoration: underline;
 }
 
 /* --- _CTA ----------------------------------------------- */
@@ -373,20 +381,6 @@ abbr[data-original-title], abbr[title] {
     padding-top: 2em;
     margin-top: 2em;
 }
-.promote ul {
-    padding: 0 0 0 20px;
-}
-.promote ul ul {
-    list-style-type: none;
-    padding: 0 0 6px 15px;
-}
-.promote ul ul li {
-  	text-indent: -17px;
-}
-.promote ul ul li:before {
-  	content: "- ";
-  	padding-right: 5px;
-}
 
 /* --- _IMAGES -------------------------------------------- */
 
@@ -444,7 +438,7 @@ aside.contact {
 	padding-top: 80px;
 	background: white;
 }
-main > section > header, .highlight header, aside.contact header {
+main > section > header, .highlight header {
 	padding-bottom: 2%;
 }
 form {
@@ -453,9 +447,6 @@ form {
 }
 .home-page main > section > header {
     padding-top: 40px; /* aaa */
-}
-footer.main aside {
-	padding: 0;
 }
 .img-banner {
     margin: 2% 0 1%;
@@ -478,7 +469,7 @@ footer.main aside {
     letter-spacing: 3px;
     border-bottom: 1px solid rgba(255, 255, 255, .4);
     margin: 1% 0 4%;
-    padding: 0 0 1%;
+    padding: 0 0 0.6em;
     box-shadow: 0 15px 24px -5px rgba(0,0,0,0.075);
 }
 .highlight.brown h1, .highlight.blue h1 {
@@ -539,14 +530,31 @@ p.callout {
     z-index: 1;
 }
 
-/* === _NAV _MAINNAV _NAVIGATION ===================================================================================
-==================================================================================================================== */
+/* === _ULs ===================================================================================
+=============================================================================================== */
 
+/* --- _NATIVE ---------- */
+ul.native {
+    padding: 0 0 0 20px;
+}
+ul.native ul {
+    list-style-type: none;
+    padding: 0 0 6px 15px;
+}
+ul.native ul li {
+  	text-indent: -17px;
+}
+ul.native ul li:before {
+  	content: "- ";
+  	padding-right: 5px;
+}
+
+/* --- _NAV _MAINNAV _NAVIGATION --- */
 .navbar-fixed-top 							{position: static;}
 .sub-page .navbar-fixed-top 				{position: fixed !important;}
 .collapse.navbar-collapse 					{}
-.nav > li > a:focus, .nav > li > a:hover 	{outline:none; outline-offset: 0;}
-ul.navbar-nav li:hover .dropdown-menu 		{display: block;}
+/* .nav > li > a:focus, .nav > li > a:hover 	{outline:none;}
+.navbar-nav li:hover .dropdown-menu 		{display: block;} */
 
 nav.main {
     background-color: white;
@@ -554,7 +562,7 @@ nav.main {
     border: 0;
 }
 /* _SUBMENU */
-ul.navbar-nav .dropdown-menu {
+.navbar-nav .dropdown-menu {
 	border: 0;
     border-bottom: 6px solid #009973;
     padding: 0;
@@ -567,31 +575,31 @@ ul.navbar-nav .dropdown-menu {
     width: 200px;
    }
    /*
-   ul.navbar-nav > li > .dropdown-menu {
+   .navbar-nav > li > .dropdown-menu {
 	    border-radius: 10px;
 	    border-top-left-radius: 0;
 		border-top-right-radius: 10px;
 	}
-   ul.navbar-nav > li > .dropdown-menu {
+   .navbar-nav > li > .dropdown-menu {
 	    border-radius:11px;
 	}
-   ul.navbar-nav > li > .dropdown-menu li:first-child a {
+   .navbar-nav > li > .dropdown-menu li:first-child a {
 	    border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
 	}
-   ul.navbar-nav > li > .dropdown-menu li:last-child a {
+   .navbar-nav > li > .dropdown-menu li:last-child a {
 	    border-radius: 0 0 10px 10px;
 	}
 
 /* NAV LINKS */
-ul.navbar-nav li a, ul.navbar-nav .dropdown-menu a {
+.navbar-nav li a, .navbar-nav .dropdown-menu a {
 	text-transform: uppercase;
 	padding: 20px 10px 18px;
 	transition-property: padding;
 	transition-duration: 0.3s;
 	transition-timing-function: linear;
 }
-ul.navbar-nav .dropdown-menu a {
+.navbar-nav .dropdown-menu a {
 	padding: 10px 10px 10px 20px;
 }
 /* _LOGO */
@@ -609,33 +617,42 @@ ul.navbar-nav .dropdown-menu a {
 #google-map {
     height: 300px;
 }
+.optionalFields.collapsed {
+	display: block;
+}
+.optionalFields:not(.collapsed) {
+	display: none;
+}
 .form-control {
     background-color: transparent;
-    border: 1px solid #22c39b;
+    border: 1px solid #ccc;
     padding: 5px;
     box-shadow: none;
 }
-.form-control[required="required"]{
+.form-control[required="required"] {
 	border: 2px solid  #22c39b;
 }
 .form-group {
-    margin-bottom: 15px;
 }
 .form-group.submit {
 }
 .btn-submit {
     background: rgba(23, 130, 103, 1);
     border: 1px solid #178267;
-    padding: 6px 30px;
+    border: 0;
+    padding: 12px 30px 10px;
 }
 .form-control:focus {
 	border-color: #22c39b;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(34, 195, 155, 1);
 }
 .btn-submit:hover {
-	background: rgba(23, 130, 103, .1);
     border: 1px solid #22c39b;
+    border: 0;
     background: #22c39b;
+    padding: 12px 28px 8px 30px;
+    margin-bottom: 2px;
+	box-shadow: 1px 1px 1px 0 rgba(0,0,0,.5), inset 1px 1px 0 1px rgba(255, 255, 255,0.65);
 }
 
 /* === _ADDRESS =============================================== */
@@ -643,7 +660,7 @@ ul.navbar-nav .dropdown-menu a {
 address {
 	float: right;
 	border: 1px solid #f0f0f0;
-    padding: 12px 20px 10px 16px;
+    padding: 40px 20px 10px 16px;
     margin-top: -80px;
     background: #f3f3f3;
     border-radius: 0 0 8px 8px;
@@ -689,15 +706,61 @@ footer.main nav ul ul {
 	display: none;
 }
 footer.main nav a {
-	padding: 3px 6px;
+	padding: 5px 12px 5px;
 	text-decoration: none;
 }
 footer.main nav a:hover {
+	padding: 6px 12px 4px;
 	color: white;
 	background: #22c39b;
+	box-shadow: 1px 1px 1px 0 rgba(0,0,0,.1), inset 1px 1px 0 1px rgba(255, 255, 255,0.3);
+}
+.sitemap {
+	background: #f8f8f8;
+	border-top: 1px solid #22c39b;
+	padding: 10px 0 10px 2%;
+}
+.sitemap.collapse.in {
+	overflow: auto;
+}
+.sitemap > ul {
+	margin: 0;
+	list-style-type: none;
+	padding-left: 8px;
+}
+.sitemap > ul > li {
+	float: left;
+	width: 19%;
+}
+.sitemap > ul > li > a {
+	text-transform: uppercase;
+}
+.sitemap li.sitemap-larger {
+	width: 26%;
+}
+.sitemap li.sitemap-smaller {
+	width: 13%;
+}
+.sitemap li.sitemap-medium {
+	width: 22%;
+}
+.sitemap ul ul {
+	padding-left: 18px;
+}
+footer.main aside {
+	border-top: 1px solid #22c39b;
+	padding-top: 10px;
+	padding-bottom: 200px;
 }
 .backtotop {
 	display: none;
+}
+.sitemap a {
+	padding: 5px 8px 6px;
+	margin-left: -7px;
+}
+.sitemap a:hover {
+	padding: 6px 8px 5px;
 }
 
 /* === _CAROUSEL ================================================================================================================
@@ -926,10 +989,11 @@ footer.main nav a:hover {
 */
 
 .backtotop a:after {
-    color: white;
-    background: rgba(0,0,0,.7);
+    color: rgba(0,0,0,.4);
+    border: 1px solid rgba(0,0,0,.4);
+    background: rgba(255, 255, 255,.5);
 	position: fixed;
-	bottom: 20px;
+	bottom: 10px;
 	right: 10px;
 	display: block;
 	z-index: 2;
@@ -1143,7 +1207,7 @@ footer.main nav a:hover {
 
     /* --- NAVIGATION --- SMALL------------------------ */
 
-	ul.navbar-nav li a {
+	.navbar-nav li a {
 		padding-left: 5px;
 		padding-right: 5px;
 	}
@@ -1276,10 +1340,10 @@ footer.main nav a:hover {
 	main {
 		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
 	}
-	header.main {
+	header.main, .sitemap-link, footer.main nav {
 		display: none;
 	}
-	.nav .home-link {
+	.nav .home-link, .sitemap {
 		display: block;
 	}
 	aside.contact {
@@ -1307,7 +1371,7 @@ footer.main nav a:hover {
 
 	/* --- FONT SIZE ----- MOBILE I ---------- */
 	h2, h3, .promote.promote-left h2, .promote.promote-right h2 {
-		font-size: 180%
+		font-size: 190%
 	}
 	main > section > header h2 {
 		font-size: 220%;
@@ -1321,7 +1385,14 @@ footer.main nav a:hover {
 		font-size: 50%;
 	}
 	.highlight h1 {
-		font-size: 100%;
+		font-size: 80%;
+		margin-left: -15px;
+		margin-right: -15px;
+		padding-right: 15px;
+		padding-left: 15px
+	}
+	h1 + h2 {
+    	margin-top: 5px !important;
 	}
 	main.nav{
 		font-size: 4em;
@@ -1349,7 +1420,7 @@ footer.main nav a:hover {
 		color: #333;
 		background: rgba(255,255,255,0.97);
 	}
-		ul.navbar-nav .dropdown-menu {
+		.navbar-nav .dropdown-menu {
 			display: block;
 			position: relative;
 			float: none;
@@ -1400,25 +1471,25 @@ footer.main nav a:hover {
 
 	}
 
-	ul.navbar-nav {
+	.navbar-nav {
 		margin-top: 0;
 		margin-bottom: 0;
 		border-bottom: 2px solid black;
 	}
 
-	 ul.navbar-nav li a {
+	 .navbar-nav li a {
 		border-bottom: 1px solid #ccc;
 		padding: 11px 5%;
 	}
-	 ul.navbar-nav .dropdown > a {
+	 .navbar-nav .dropdown > a {
 		border-bottom: 1px solid #ccc;
 	}
-	 ul.navbar-nav .dropdown-menu a {
+	 .navbar-nav .dropdown-menu a {
 		padding: 7px 10%;
 		background: transparent;
 		border-bottom: 1px solid #ccc;
 	}
-	 ul.navbar-nav .dropdown-menu li:last-child a {
+	 .navbar-nav .dropdown-menu li:last-child a {
 		border-bottom: 0;
 	}
 
@@ -1434,7 +1505,6 @@ footer.main nav a:hover {
 	*/
 
 	.parallax {
-		background: Black !important;
 	}
 	.parallax h2, .parallax h3 {
 		color: White;
@@ -1445,14 +1515,6 @@ footer.main nav a:hover {
 	.promote:not(.thumb) figure {
 		padding: 4% 0 0;
 		margin: 0 -15px;
-	}
-	.highlight h1 {
-		margin: 0 -15px;
-		padding-right: 15px;
-		padding-left: 15px
-	}
-	h1 + h2 {
-    	margin-top: 5px !important;
 	}
 
     /* --- __PROMOTE --- MOBILE I -------------------------- */
@@ -1482,33 +1544,53 @@ footer.main nav a:hover {
 		padding-top: 0;
 		border-top: 1px solid black;
 	}
-	footer.main ul.native li {
+	/* --- _SITEMAP --- MOBILE I ------------------- */
+	.sitemap, .sitemap ul {
+		padding: 0;
+		margin: 0;
+		background: white;
+	}
+	.sitemap ul li {
 		display: block;
 		padding: 0;
+		float: none;
+		width: 100%;
 	}
-	footer.main ul.native a {
+	.sitemap ul li:before {
+		display: none;
+	}
+	.sitemap li, .sitemap li.sitemap-medium, .sitemap li.sitemap-larger, .sitemap li.sitemap-smaller {
+		width: auto;
+	}
+
+	.sitemap ul a {
 		display: block;
 		text-align: left;
-		border-bottom: 1px solid #22c39b;
-		padding: 12px 5%;
+		border-bottom: 1px solid #eee;
+		padding: 12px 0 12px 5%;
 		font-size: 130%;
 		text-decoration: none;
 		text-transform: uppercase;
 	}
-	footer.main ul.native li.active a {
+	.sitemap ul a:hover {
+		padding: 12px 0 12px 5%;
 		background: #d4f7ee;
-		font-weight: bold;
 	}
-	footer.main ul.native ul {
+	.sitemap ul ul {
 		padding: 0;
 		display: block
 	}
-	footer.main ul.native ul a, footer.main ul.native li.active ul a {
-		padding-left: 10%;
-		font-weight: normal;
+	.sitemap ul ul a, .sitemap ul ul a:hover {
+		padding: 12px 0 12px 15%;
+		text-transform: capitalize;
 	}
-	footer.main ul.native a:hover, footer.main ul.native li.active a:hover {
+	.sitemap ul ul li:last-child a {
+		border-bottom: 1px solid #22c39b;
+	}
+	.sitemap ul a:hover {
 		background: rgb(23, 130, 103);
+		color: white;
+
 	}
 
 	/* ADDRESS --- MOBILE I ------------------- */

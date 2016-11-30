@@ -27,6 +27,8 @@
 	<div class="preloader"><img src="loading.gif"></div>
 	<div class="backtotop"><a href="#page-top"></a></div>
 
+	<!-- MAIN NAVIGATION WRAPPER --------------------------------------- -->
+
     <nav class="main navbar navbar-fixed-top">
         <div class="container">
             <div class="navbar-header page-scroll">
@@ -40,14 +42,14 @@
 	            	<img src="images/logo.png" alt="Jorge L. Gurian, P.A. - A South Florida Estate Planning, Tax &amp; Business Law Firm">
 	          	</a>
             </div>
-
-			<!-- NAVIGATION --------------------------------------- -->
-
             <div class="collapse navbar-collapse navbar-ex1-collapse" role="navigation" aria-roledescription="main navigation">
+
+				<!-- NAVIGATION --------------------------------------- -->
+
                 <ul class="nav navbar-nav hidden-xs" role="navigation">
                     <li role="listitem" aria-level="1" class="home-link"><a href="index.html">Home</a></li>
 		            <li role="listitem" aria-level="1" class="dropdown">
-                        <a class="page-scroll" href="#practices">practices</a>
+     					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Practices <span class="caret"></span></a>
 		                <ul class="dropdown-menu">
 		            		<li role="listitem" aria-level="2"><a href="Tax_Attorney.html" title="Miami &amp; South Florida Tax Law Firm Services" rel="law services" rev="law firm">Tax Law</a></li>
 		            		<li role="listitem" aria-level="2"><a href="Estate_Planning.html" title="Miami &amp; South Florida Estate Planning Law Firm Services" rel="law services" rev="law firm">Estate Planning</a></li>
@@ -60,7 +62,7 @@
 	            	<li role="listitem" aria-level="1"><a class="page-scroll" href="#contact">Contact</a></li>
                 </ul>
 
-    			<!-- Navigation Mobil -->
+    			<!-- Navigation MOBILE -->
 
                 <ul class="nav navbar-nav visible-xs-block" role="presentation">
                     <li class="home-link"><a href="index.html">Home</a></li>
@@ -80,10 +82,8 @@
 		            	</ul>
 	            	</li>
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+            </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
     </nav>
 
 	<!-- HOME PAGE CAROUSEL ------------------------------- -->
@@ -282,45 +282,52 @@
 					<p>Have your questions answered by scheduling an appointment with <span class="text-nowrap">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></span> <br>The firm can be reached online using <span class="text-nowrap">the email form below</span> or <span class="text-nowrap">by telephone at 305-290-1940.</span> <br>Spanish language services availabel. <span class="text-nowrap">Se habla espa&ntilde;ol</span>.</p>
 		        </header>
 
+				<!-- FORM ---------------------------------------- -->
+
 				<form id="main-contact-form" name="contact-form" method="post" action="#"  class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay="0">
+		        	<p><a class="optionalFields collapsed" role="button" data-toggle="collapse" href="#optionalFields" aria-expanded="false" aria-controls="optionalFields">Show Optional Fields</a></p>
 					<div class="row">
-					  	<div class="col-sm-3">
+					  	<div class="col-sm-6 col-md-3">
 						    <div class="form-group">
 						      	<input type="text" name="name" class="form-control" placeholder="Name (required)" aria-label="Name (required)" required="required">
 						    </div>
 					 	</div>
-					  	<div class="col-sm-3">
+					  	<div class="col-sm-6 col-md-3">
 						    <div class="form-group">
 						      	<input type="email" name="email" class="form-control" placeholder="Email (required)" aria-label="Email (required)" required="required">
 						    </div>
 					  	</div>
-					  	<div class="col-sm-3">
+					</div>
+
+					<div class="collapse" id="optionalFields">
+					<div class="row">
+					  	<div class="col-sm-6 col-md-3">
 						    <div class="form-group">
 						      	<input type="text" name="organization" class="form-control" placeholder="Organization or Sector" aria-label="Organization or Sector">
 						    </div>
 					 	</div>
-					  	<div class="col-sm-3">
+					  	<div class="col-sm-6 col-md-3">
 						    <div class="form-group">
 						      	<input type="text" name="telephone" class="form-control" placeholder="Telephone" aria-label="Telephone">
 						    </div>
 					 	</div>
 					</div>
 					<div class="row">
-					  	<div class="col-sm-8">
+					  	<div class="col-sm-6 col-md-8">
 							<div class="form-group">
 					  			<input type="text" name="subject" class="form-control" placeholder="Subject" aria-label="Subject">
 							</div>
 						</div>
-					  	<div class="col-sm-2">
+					  	<div class="col-sm-3 col-md-2">
 							<div class="form-group">
-						        <select name="Language" class="form-control" role="listbox" aria-label="Language">
+						        <select name="Language" class="form-control" role="listbox" aria-label="language">
 									<option value=" ">Language:</option>
 									<option value="English" role="option" aria-selected="false">English</option>
 									<option value="Spanish" role="option" aria-selected="false">Spanish</option>
 								</select>
 						    </div>
 					  	</div>
-					  	<div class="col-sm-2">
+					  	<div class="col-sm-3 col-md-2">
 						    <div class="form-group" role="listbox">
 						        <select name="state" class="form-control" role="option" aria-label="State">
 									<option value=" ">State</option>
@@ -379,35 +386,39 @@
 						    </div>
 					  	</div>
 					</div>
+					</div>
+
 					<div class="form-group">
 					  	<textarea name="message" id="message" class="form-control" rows="4" placeholder="Message (required)" aria-label="Message (required)" required="required"></textarea>
 					</div>
 					<div class="form-group submit">
 					  	<button type="submit" class="btn-submit" aria-label="Submit">Submit</button>
 					</div>
-
-		       		<address id="address" class="visible-xs-block" itemscope itemtype="http://schema.org/LocalBusiness">
-				        <div class="name">
-							<span class="content name" itemprop="name"><strong>Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></strong></span>
-							<span class="content title" itemprop="jobTitle">A South Florida Estate Planning, <br role="presentation">Tax &amp; Business Law&nbsp;Firm</span>
-				        </div>
-				        <div class="number">
-							<div><span class="address-label phone-number">Phone:</span> <span class="content phone-number" itemprop="telephone" content="+13052901940"><a href="tel:+1305-290-1940">305-290-1940</a></span></div>
-							<div><span class="address-label fax-number">Fax:</span> <span class="content fax-number" itemprop="faxNumber">305-279-1489</span></div>
-						</div>
-				        <div class="address">
-							<div><span class="address-label address">Address:</span></div>
-							<div class="content address" itemscope itemtype="http://schema.org/PostalAddress">
-								<span itemprop="streetAddress">2665 S. Bayshore Dr. <br role="presentation">Suite 800</span>
-								<br role="presentation"><span itemprop="addressLocality">Miami</span>,
-								<span itemprop="addressRegion">FL</span>
-								<span itemprop="postalCode">33133</span>
-							</div>
-						</div>
-						<div class="email"><span class="address-label email">Email:</span> <span class="content email" itemprop="email"><a href="mailto:email">Contact@GurianLaw.com</a></span></div>
-			    	</address>
 				</form>
-		    </div>
+		    </div> <!-- /container -->
+
+			<!-- MOBILE ADDRESS -->
+
+       		<address id="address" class="visible-xs-block container-fluid" itemscope itemtype="http://schema.org/LocalBusiness">
+		        <div class="name">
+					<span class="content name" itemprop="name"><strong>Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></strong></span>
+					<span class="content title" itemprop="jobTitle">A South Florida Estate Planning, <br role="presentation">Tax &amp; Business Law&nbsp;Firm</span>
+		        </div>
+		        <div class="number">
+					<div><span class="address-label phone-number">Phone:</span> <span class="content phone-number" itemprop="telephone" content="+13052901940"><a href="tel:+1305-290-1940">305-290-1940</a></span></div>
+					<div><span class="address-label fax-number">Fax:</span> <span class="content fax-number" itemprop="faxNumber">305-279-1489</span></div>
+				</div>
+		        <div class="address">
+					<div><span class="address-label address">Address:</span></div>
+					<div class="content address" itemscope itemtype="http://schema.org/PostalAddress">
+						<span itemprop="streetAddress">2665 S. Bayshore Dr. <br role="presentation">Suite 800</span>
+						<br role="presentation"><span itemprop="addressLocality">Miami</span>,
+						<span itemprop="addressRegion">FL</span>
+						<span itemprop="postalCode">33133</span>
+					</div>
+				</div>
+				<div class="email"><span class="address-label email">Email:</span> <span class="content email" itemprop="email"><a href="mailto:email">Contact@GurianLaw.com</a></span></div>
+	    	</address>
 		    <div id="google-map" data-latitude="52.365629" data-longitude="4.871331" ></div>
 
 			<!-- CONTACT HIGHLIGHT -->
@@ -450,9 +461,44 @@
  			</ul>
  		</nav>
 
- 		<aside class="container text-center" role="contentinfo">
-	 		<p><a href="Site-Map.html">Site Map</a> | <a id="PrivacyPolicy" href="Privacy-Policy.html">Privacy Policy</a></p>
- 			<p class="copyright">&copy 2016 by <span class="text-nowrap">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></span> <span class="text-nowrap">All rights reserved</span>.</p>
+		<!-- SITEMAP ------------------------------------ -->
+
+		<section class="sitemap collapse" id="sitemap" role="region" aria-roledescription="sitemap" aria-label="sitemap">
+ 			<ul class="native links" role="list">
+ 				<li role="listitem" aria-level="1" aria-setsize="5"><a href="index.html">Home Page</a>
+ 				    <ul>
+ 				    	<li role="listitem" aria-level="2" aria-setsize="3"><a href="index.html#business">Business Law</a></li>
+                    	<li role="listitem" aria-level="2" aria-setsize="3"><a href="index.html#attorney">Attorney</a></li>
+                    	<li role="listitem" aria-level="2" aria-setsize="3"><a href="index.html#advice">Legal Advice</a></li>
+					</ul>
+ 				</li>
+        		<li class="sitemap-medium" role="listitem" aria-level="1" aria-setsize="5"><a href="Tax_Attorney.html" title="Miami &amp; South Florida Tax Law Firm Services" rel="law services" rev="law firm">Tax Law</a>
+		            <ul>
+			            <li role="listitem" aria-level="2" aria-setsize="4"><a href="Tax_Attorney.html#investment">Investment Tax</a></li>
+			            <li role="listitem" aria-level="2" aria-setsize="4"><a href="Tax_Attorney.html#business">Business Tax</a></li>
+			            <li role="listitem" aria-level="2" aria-setsize="4"><a href="Tax_Attorney.html#estategift">Estate Gift Tax</a></li>
+			            <li role="listitem" aria-level="2" aria-setsize="4"><a href="Tax_Attorney.html#capital">Gains &amp Losses Tax</a></li>
+        			</ul>
+        		</li>
+        		<li class="sitemap-larger" role="listitem" aria-level="1" aria-setsize="5"><a href="Estate_Planning.html" title="Miami &amp; South Florida Estate Planning Law Firm Services" rel="law services" rev="law firm">Estate Planning</a>
+        			<ul>
+			            <li role="listitem" aria-level="2" aria-setsize="3"><a href="Estate_Planning.html#estate">Taxes &amp; Estate Planning</a></li>
+			            <li role="listitem" aria-level="2" aria-setsize="3"><a href="Estate_Planning.html#trust">Trust Lawyer</a></li>
+			            <li role="listitem" aria-level="2" aria-setsize="3"><a href="Estate_Planning.html#probate">Probate Lawyer</a></li>
+        			</ul>
+        		</li>
+        		<li role="listitem" aria-level="1" aria-setsize="5"><a href="Contract_Law.html" title="Miami &amp; South Florida Contract Law Firm Services" rel="law services" rev="law firm">Contract Law</a>
+		            <ul>
+			            <li role="listitem" aria-level="2" aria-setsize="2"><a href="Contract_Law.html#contract">Contracts</a></li>
+			            <li role="listitem" aria-level="2" aria-setsize="2"><a href="Contract_Law.html#agreements">Agreements</a></li>
+        			</ul>
+        		</li>
+        		<li class="sitemap-smaller" role="listitem" aria-level="1" aria-setsize="5"><a href="#contact" title="Contact Us" rel="contact" rev="law firm">Contact Us</a></li>
+ 			</ul>
+		</section>
+ 		<aside class="container-fluid" role="contentinfo">
+	 		<p class="text-center"><span class="hidden-xs"><a class="sitemap-link" role="button" data-toggle="collapse" href="#sitemap" aria-expanded="false" aria-controls="sitemap">Site Map</a> | </span><a id="PrivacyPolicy" href="Privacy-Policy.html">Privacy Policy</a></p>
+ 			<p class="text-center copyright">&copy 2016 by <span class="text-nowrap">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></span> <span class="text-nowrap">All rights reserved</span>.</p>
 	 	</aside>
 	</footer>
 
