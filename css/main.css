@@ -63,8 +63,7 @@ h4 {
 a:focus,
 .nav li a:focus, .nav li a:hover, .nav li:hover > a,
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover
-	{background-color: inherit;
-	 border-color: inherit;}
+	{background-color: inherit;}
 navbar-nav > li > .dropdown-menu
 	{border-top-left-radius: inherit; border-top-right-radius: inherit;}
 /*
@@ -1556,7 +1555,6 @@ footer.main aside {
 	.sitemap, .sitemap ul {
 		padding: 0;
 		margin: 0;
-		background: white;
 	}
 	.sitemap ul li {
 		display: block;
@@ -1571,12 +1569,14 @@ footer.main aside {
 		width: auto;
 	}
 
+	.sitemap ul a, .sitemap > ul > li > a {
+		font-size: 110%;
+	}
 	.sitemap ul a {
 		display: block;
 		text-align: left;
-		border-bottom: 1px solid #eee;
+		border-bottom: 1px solid #ddd;
 		padding: 12px 0 12px 5%;
-		font-size: 130%;
 		text-decoration: none;
 		text-transform: uppercase;
 	}
