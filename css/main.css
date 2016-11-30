@@ -299,7 +299,6 @@ a:hover, h3 a:hover, footer.main a:hover, .highlight a:hover, .highlight p a:hov
 }
 .cta {
     overflow: auto;
-    text-align: right;
 }
 .cta a {
     text-align: right;
@@ -311,8 +310,8 @@ a:hover, h3 a:hover, footer.main a:hover, .highlight a:hover, .highlight p a:hov
 }
 .highlight .cta a {
     padding-top: 10px;
-    display: inline;
-    float: left;
+    display: inline-block;
+    float: none;
     white-space: nowrap;
     border: 1px solid #fff;
     padding-left: 15px;
@@ -497,7 +496,7 @@ footer.main aside {
 }
 p.callout {
 	font-style: italic;
-	padding: 1.5em 2em;
+	padding: 1em;
 }
 /* just to separa footer and header from the items in the callout */
 .callout .row {
@@ -682,6 +681,9 @@ footer.main {
 }
 footer.main nav {
 	padding-bottom: 90px;
+}
+footer.main nav ul ul {
+	display: none;
 }
 footer.main nav a {
 	padding: 3px 6px;
@@ -907,19 +909,37 @@ footer.main nav a:hover {
     from { transform:rotate(0deg); }
     to { transform:rotate(360deg); }
 }
-
+/*
 .backtotop img {
 	position: fixed;
-	bottom: 5px;
+	bottom: 20px;
 	right: 5px;
-	height: 40px;
-	width: 40px;
+	height: 45px;
+	width: 45px;
 	display: inline-block;
 	z-index: 2;
 }
+*/
 
+.backtotop a:after {
+    color: rgba(255,255,255,.6);
+	position: fixed;
+	bottom: 20px;
+	right: 5px;
+	display: block;
+	z-index: 2;
+    content:"\21D1";
+    font-size: 30px;
+    line-height: 25px;
+    font-weight: bold;
+    background: rgba(0,0,0,.6);
+    padding: 0 10px 12px;
+}
 
-
+.backtotop a:hover:after {
+	color: black;
+    background: transparent;
+}
 
 
 
@@ -1284,6 +1304,7 @@ footer.main nav a:hover {
 	}
 	main > section > header h2 {
 		font-size: 220%;
+		font-weight: bold;
 	}
 	.btn-submit {
 		width: 100%;
@@ -1319,13 +1340,24 @@ footer.main nav a:hover {
 		font-size: 1.45em;
 		position: fixed !important;
 		color: #333;
+		background: rgba(255,255,255,0.97);
 	}
+		ul.navbar-nav .dropdown-menu {
+			display: block;
+			position: relative;
+			float: none;
+			width: auto;
+			left: auto;
+			box-shadow: none;
+			border: 0;
+			border-bottom: 1px solid #ccc;
+background: transparent;
+		}
 	.navbar-brand {
 		padding: 13px 0 10px 10px;
 	}
 	.navbar-brand img {
 		width: 240px;
-
 	}
 
 	.navbar-toggle {
@@ -1357,24 +1389,14 @@ footer.main nav a:hover {
 	.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
 		max-height: auto;
 		max-height: none;
+		background: transparent;
+
 	}
 
 	ul.navbar-nav {
 		margin-top: 0;
 		margin-bottom: 0;
-		background: #eee;
 		border-bottom: 2px solid black;
-	}
-	ul.navbar-nav .dropdown-menu {
-		display: block;
-		position: relative;
-		float: none;
-		width: auto;
-		left: auto;
-		box-shadow: none;
-		border: 0;
-		border-bottom: 1px solid #ccc;
-		background: transparent;
 	}
 
 	 ul.navbar-nav li a {
@@ -1417,6 +1439,15 @@ footer.main nav a:hover {
 		padding: 4% 0 0;
 		margin: 0 -15px;
 	}
+	.highlight h1 {
+		margin: 0 -15px;
+		padding-right: 15px;
+		padding-left: 15px
+	}
+	h1 + h2 {
+    	margin-top: 5px !important;
+	}
+
     /* --- __PROMOTE --- MOBILE I -------------------------- */
 
     .promote.promote-left:not(.thumb) img, .promote.promote-right:not(.thumb) img {
@@ -1463,6 +1494,7 @@ footer.main nav a:hover {
 	}
 	footer.main ul.native ul {
 		padding: 0;
+		display: block
 	}
 	footer.main ul.native ul a, footer.main ul.native li.active ul a {
 		padding-left: 10%;
