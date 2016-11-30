@@ -1456,7 +1456,20 @@ footer.main nav a:hover {
 		font-size: 130%;
 		text-decoration: none;
 		text-transform: uppercase;
+	}
+	footer.main ul.native li.active a {
+		background: #d4f7ee;
 		font-weight: bold;
+	}
+	footer.main ul.native ul {
+		padding: 0;
+	}
+	footer.main ul.native ul a, footer.main ul.native li.active ul a {
+		padding-left: 10%;
+		font-weight: normal;
+	}
+	footer.main ul.native a:hover, footer.main ul.native li.active a:hover {
+		background: rgb(23, 130, 103);
 	}
 
 	/* ADDRESS --- MOBILE I ------------------- */
