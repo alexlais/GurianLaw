@@ -433,10 +433,10 @@ abbr[data-original-title], abbr[title] {
 	}
 
 section, .parallax {
-    padding: 70px 0 4%;
+    padding: 70px 0 4em;
 }
 aside, article > header, aside.contact .highlight {
-    padding: 60px 0 4%;
+    padding: 60px 0 4em;
 }
 aside.contact {
 	padding-bottom: 0;
@@ -1398,9 +1398,11 @@ footer.main nav a:hover {
 	.cta a {
         white-space: nowrap;
     }
+	/* use for without images
 	.highlight figure + h2, .highlight figure + h3 {
 		margin-top: 0;
 	}
+	*/
 
 	.parallax {
 		background: Black !important;
@@ -1412,7 +1414,7 @@ footer.main nav a:hover {
 		overflow: visible;
 	}
 	.promote:not(.thumb) figure {
-		padding: 4% 0;
+		padding: 4% 0 0;
 		margin: 0 -15px;
 	}
     /* --- __PROMOTE --- MOBILE I -------------------------- */
