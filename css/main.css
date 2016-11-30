@@ -91,8 +91,7 @@ h2, h3, h3 span, h4								{line-height: 135%;}
 	font-size: inherit;}
 body {
 	font-size: 100%;}
-
-/* --- copy and headings --- ------------- */
+/* ---------------------- */
 .highlight h1, .form-control {
 	font-size: 100%;
 }
@@ -120,14 +119,16 @@ h1, h2 {
 .parallax.attorney h2 {
 	font-size: 350%;
 }
-/* --- larger --- -----------------------*/
 .telephone {}
 /* --- smaller --- ----------------------*/
-nav.main, abbr[data-original-title], abbr[title] {
+nav.main, abbr[data-original-title], abbr[title], footer.main  {
     font-size: 95%;
 }
 /* --- hgroup --- -----------------*/
-footer.main aside, .col-sm-6.col-md-3 hgroup /* tax law page */ {
+footer.main aside {
+    font-size: 60%;
+}
+.col-sm-6.col-md-3 hgroup /* tax law page */ {
     font-size: 70%;
 }
 .col-sm-4 hgroup /* home and estate planning page */{
@@ -643,8 +644,10 @@ address {
 	float: right;
 	border: 1px solid #f0f0f0;
     padding: 12px 20px 10px 16px;
-    margin-top: -30px;
+    margin-top: -80px;
     background: #f3f3f3;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,.3);
 }
 address > div {
 	padding-bottom: 6px;
@@ -688,6 +691,7 @@ footer.main nav ul ul {
 }
 footer.main nav a {
 	padding: 3px 6px;
+	text-decoration: none;
 }
 footer.main nav a:hover {
 	color: white;
@@ -1354,7 +1358,7 @@ footer.main nav a:hover {
 			box-shadow: none;
 			border: 0;
 			border-bottom: 1px solid #ccc;
-background: transparent;
+			background: transparent;
 		}
 	.navbar-brand {
 		padding: 13px 0 10px 10px;
