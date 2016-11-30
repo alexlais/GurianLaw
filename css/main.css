@@ -998,23 +998,26 @@ footer.main aside {
 
 .backtotop a:after {
     color: rgba(0,0,0,.4);
-    border: 1px solid rgba(0,0,0,.4);
-    background: rgba(255, 255, 255,.5);
+    border: 1px solid rgba(0,0,0,.3);
+    background: rgba(255, 255, 255,.4);
 	position: fixed;
 	bottom: 10px;
 	right: 10px;
 	display: block;
 	z-index: 2;
     content: "\27A1";
+    content: "\261D";
     font-size: 25px;
     line-height: 25px;
     font-weight: bold;
-    padding: 8px;
+    padding: 5px;
     border-radius: 50%;
+    /*
 	-webkit-transform: rotate(-90deg);
 	-moz-transform: rotate(-90deg);
 	-ms-transform: rotate(-90deg);
 	-o-transform: rotate(-90deg);
+	*/
 }
 
 .backtotop a:hover:after {
@@ -1477,12 +1480,12 @@ footer.main aside {
 	.navbar-toggle {
 	    margin: 10px 6px 2px 0;
 	    padding: 0 3px 5px;
-	    border: 3px solid black;
+	    border: 2px solid black;
 	}
 	.navbar-toggle .icon-bar {
 	    background-color: black;
 	    width: 22px;
-		height: 3px;
+		height: 2px;
 		margin-top: 5px;
 	}
 /*
@@ -1591,12 +1594,11 @@ footer.main aside {
 		display: block;
 		text-align: left;
 		border-bottom: 1px solid #ddd;
-		padding: 12px 0 12px 5%;
+		padding: 8px 0 8px 5%;
 		text-decoration: none;
 		text-transform: uppercase;
 	}
 	.sitemap ul a:hover {
-		padding: 12px 0 12px 5%;
 		background: #d4f7ee;
 	}
 	.sitemap ul ul {
@@ -1604,7 +1606,7 @@ footer.main aside {
 		display: block
 	}
 	.sitemap ul ul a, .sitemap ul ul a:hover {
-		padding: 12px 0 12px 15%;
+		padding: 8px 0 8px 15%;
 		text-transform: capitalize;
 	}
 	.sitemap ul ul li:last-child a {
