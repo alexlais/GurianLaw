@@ -1006,18 +1006,17 @@ footer.main aside {
 	display: block;
 	z-index: 2;
     content: "\27A1";
-    content: "\21E7";
+    content: "\276F";
     font-size: 25px;
-    line-height: 30px;
+    line-height: 35px;
     font-weight: bold;
-    padding: 5px;
+    padding: 0 10px 6px 10px;
     border-radius: 50%;
-    /*
 	-webkit-transform: rotate(-90deg);
 	-moz-transform: rotate(-90deg);
 	-ms-transform: rotate(-90deg);
 	-o-transform: rotate(-90deg);
-	*/
+	transform: rotate(-90deg);
 }
 
 .backtotop a:hover:after {
