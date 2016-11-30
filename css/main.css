@@ -9,6 +9,7 @@ h1, h2, h3, main {
 }
 h4, .carousel, .cta, nav.main, .highlight h1,
 .cta a:after, .promote h3 a:after,
+footer.main nav,
 .form-group, .btn-submit,  textarea, select,
 input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"] {
 	font-family: "Electrolize", "Share Tech Mono", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
@@ -1509,8 +1510,11 @@ background: transparent;
 	/* ADDRESS --- MOBILE I ------------------- */
 
 	address {
-		margin-top: 4%;
+		padding-top: 50px;
+		padding-bottom: 20px;
 		float: none;
+		display: block;
+		margin: 0
 	}
 	address .address-label {
 	    min-width: auto;

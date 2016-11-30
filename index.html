@@ -98,7 +98,9 @@
 	    </div>
 	</header>
 
+
     <!-- Navigation -->
+
     <nav class="main navbar navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
@@ -113,7 +115,8 @@
 	          	</a>
             </div>
 
-    		<!-- Navigation -->
+
+    		<!-- Navigation Wrapper -->
 
             <div class="collapse navbar-collapse navbar-ex1-collapse" role="navigation" aria-roledescription="main navigation">
                 <ul class="nav navbar-nav hidden-xs">
@@ -133,6 +136,8 @@
 	            	<li><a class="page-scroll" href="#contact">Contact</a></li>
                 </ul>
 
+    			<!-- Navigation Mobil -->
+
                 <ul class="nav navbar-nav visible-xs-block" role="presentation">
                     <li><a class="page-scroll" href="#page-top" data-toggle="collapse" data-target=".navbar-ex1-collapse, .navbar-toggle">Home</a></li>
 		            <li class="dropdown">
@@ -147,7 +152,11 @@
                     <li><a class="page-scroll" href="#attorney" data-toggle="collapse" data-target=".navbar-ex1-collapse, .navbar-toggle">Attorney</a></li>
                     <li><a class="page-scroll" href="#advice" data-toggle="collapse" data-target=".navbar-ex1-collapse, .navbar-toggle">Legal Advice</a></li>
 		            <li class="hidden"><a class="page-scroll" href="#miami">Miami</a></li>
-	            	<li><a class="page-scroll" href="#contact" data-toggle="collapse" data-target=".navbar-ex1-collapse, .navbar-toggle">Contact</a></li>
+	            	<li class="dropdown"><a class="page-scroll" href="#contact" data-toggle="collapse" data-target=".navbar-ex1-collapse, .navbar-toggle">Contact</a>
+		                <ul class="dropdown-menu">
+		            		<li><a href="#address"  data-toggle="collapse" data-target=".navbar-ex1-collapse, .navbar-toggle" title="Our Address And Location" rel="Location" rev="law firm">Address</a></li>
+		            	</ul>
+	            	</li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -548,29 +557,28 @@
 					<div class="form-group submit">
 					  	<button type="submit" class="btn-submit" aria-label="Submit">Submit</button>
 					</div>
-
-		       		<address class="visible-xs-block" itemscope itemtype="http://schema.org/LocalBusiness">
-				        <div class="name">
-							<span class="content name" itemprop="name"><strong>Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></strong></span>
-							<span class="content title" itemprop="jobTitle">A South Florida Estate Planning, <br role="presentation">Tax &amp; Business Law&nbsp;Firm</span>
-				        </div>
-				        <div class="number">
-							<div><span class="address-label phone-number">Phone:</span> <span class="content phone-number" itemprop="telephone" content="+13052901940"><a href="tel:+1305-290-1940">305-290-1940</a></span></div>
-							<div><span class="address-label fax-number">Fax:</span> <span class="content fax-number" itemprop="faxNumber">305-279-1489</span></div>
-						</div>
-				        <div class="address">
-							<div><span class="address-label address">Address:</span></div>
-							<div class="content address" itemscope itemtype="http://schema.org/PostalAddress">
-								<span itemprop="streetAddress">2665 S. Bayshore Dr. <br role="presentation">Suite 800</span>
-								<br role="presentation"><span itemprop="addressLocality">Miami</span>,
-								<span itemprop="addressRegion">FL</span>
-								<span itemprop="postalCode">33133</span>
-							</div>
-						</div>
-						<div class="email"><span class="address-label email">Email:</span> <span class="content email" itemprop="email"><a href="mailto:email">Contact@GurianLaw.com</a></span></div>
-			    	</address>
 				</form>
-		    </div>
+		    </div><!-- /container -->
+       		<address id="address" class="visible-xs-block container-fluid" itemscope itemtype="http://schema.org/LocalBusiness">
+		        <div class="name">
+					<span class="content name" itemprop="name"><strong>Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></strong></span>
+					<span class="content title" itemprop="jobTitle">A South Florida Estate Planning, <br role="presentation">Tax &amp; Business Law&nbsp;Firm</span>
+		        </div>
+		        <div class="number">
+					<div><span class="address-label phone-number">Phone:</span> <span class="content phone-number" itemprop="telephone" content="+13052901940"><a href="tel:+1305-290-1940">305-290-1940</a></span></div>
+					<div><span class="address-label fax-number">Fax:</span> <span class="content fax-number" itemprop="faxNumber">305-279-1489</span></div>
+				</div>
+		        <div class="address">
+					<div><span class="address-label address">Address:</span></div>
+					<div class="content address" itemscope itemtype="http://schema.org/PostalAddress">
+						<span itemprop="streetAddress">2665 S. Bayshore Dr. <br role="presentation">Suite 800</span>
+						<br role="presentation"><span itemprop="addressLocality">Miami</span>,
+						<span itemprop="addressRegion">FL</span>
+						<span itemprop="postalCode">33133</span>
+					</div>
+				</div>
+				<div class="email"><span class="address-label email">Email:</span> <span class="content email" itemprop="email"><a href="mailto:email">Contact@GurianLaw.com</a></span></div>
+	    	</address>
 		    <div id="google-map" data-latitude="52.365629" data-longitude="4.871331" ></div>
 
 			<!-- CONTACT HIGHLIGHT -->
