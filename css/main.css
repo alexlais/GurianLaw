@@ -1324,7 +1324,7 @@ footer.main nav a:hover {
 		padding: 13px 0 10px 10px;
 	}
 	.navbar-brand img {
-		width: 220px;
+		width: 240px;
 
 	}
  	/* .collapse.in .navbar-collapse {
@@ -1387,14 +1387,14 @@ footer.main nav a:hover {
 
 	 ul.navbar-nav li a {
 		border-bottom: 1px solid #ddd;
-		padding: 12px 5%;
+		padding: 11px 5%;
 	}
 	 ul.navbar-nav .dropdown > a {
 		border-bottom: 1px solid #ddd;
 	}
 	 ul.navbar-nav .dropdown-menu a {
 		text-transform: capitalize;
-		padding: 9px 7%;
+		padding: 7px 7%;
 		background: transparent;
 		border-bottom: 1px solid #ddd;
 	}
