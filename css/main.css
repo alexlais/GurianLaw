@@ -1417,8 +1417,12 @@ footer.main nav a:hover {
 	.parallax h2, .parallax h3 {
 		color: White;
 	}
-	figure {
+	.promote, .promote .overflow-auto {
+		overflow: visible;
+	}
+	.promote:not(.thumb) figure {
 		padding: 4% 0;
+		margin: 0 -15px;
 	}
     /* --- __PROMOTE --- MOBILE I -------------------------- */
 
