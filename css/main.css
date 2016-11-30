@@ -213,9 +213,11 @@ a, header h2, ul.native.links {
     color: rgb(34, 195, 155);
 }
 footer.main a {
-		color: #1fad8a;
+	color: #1fad8a;
 }
-
+footer.main nav a:hover {
+	background: #1fad8a;
+}
 /* real hover */
 a:hover, .highlight .cta a:hover {
     color: rgb(31, 173, 138);
@@ -654,9 +656,10 @@ nav.main {
     border: 1px solid #22c39b;
     border: 0;
     background: #22c39b;
+    /*
     padding: 12px 28px 8px 30px;
     margin-bottom: 2px;
-	box-shadow: 1px 1px 1px 0 rgba(0,0,0,.5), inset 1px 1px 0 1px rgba(255, 255, 255,0.65);
+	box-shadow: 1px 1px 1px 0 rgba(0,0,0,.5), inset 1px 1px 0 1px rgba(255, 255, 255,0.65); */
 }
 
 /* === _ADDRESS =============================================== */
@@ -716,8 +719,9 @@ footer.main nav a {
 footer.main nav a:hover {
 	padding: 6px 12px 4px;
 	color: white;
+	/*
 	background: #22c39b;
-	box-shadow: 1px 1px 1px 0 rgba(0,0,0,.1), inset 1px 1px 0 1px rgba(255, 255, 255,0.3);
+	box-shadow: 1px 1px 1px 0 rgba(0,0,0,.1), inset 1px 1px 0 1px rgba(255, 255, 255,0.3); */
 }
 .sitemap {
 	background: #f8f8f8;
