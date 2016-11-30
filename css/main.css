@@ -929,18 +929,19 @@ footer.main nav a:hover {
 	right: 10px;
 	display: block;
 	z-index: 2;
-    content: "\21EA";
-    font-size: 30px;
+    content: "\21E7";
+    font-size: 25px;
     line-height: 30px;
     font-weight: normal;
     background: rgba(0,0,0,.4);
-    padding: 5px 10px 14px;
+    padding: 5px 8px;
     border-radius: 50%;
 
 }
 
 .backtotop a:hover:after {
 	color: black;
+	border-color: black;
     background: transparent;
 }
 
