@@ -647,7 +647,6 @@ address {
     margin-top: -80px;
     background: #f3f3f3;
     border-radius: 0 0 8px 8px;
-    box-shadow: 4px 4px 4px 4px rgba(0,0,0,.3);
 }
 address > div {
 	padding-bottom: 6px;
@@ -934,8 +933,8 @@ footer.main nav a:hover {
 	right: 10px;
 	display: block;
 	z-index: 2;
-    content: "\21E7";
-    font-size: 20px;
+    content: "\261D";
+    font-size: 25px;
     line-height: 25px;
     font-weight: bold;
     padding: 5px 8px 8px;
