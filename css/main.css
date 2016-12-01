@@ -1442,7 +1442,7 @@ footer.main aside {
 		background: rgba(255,255,255,0.97);
 	}
 	.navbar-fixed-top .navbar-collapse {
-		overflow: auto;
+		overflow-y: scroll;
 	}
 
 	.navbar-fixed-top .navbar-collapse.in {
