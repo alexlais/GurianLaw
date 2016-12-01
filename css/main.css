@@ -1142,9 +1142,6 @@ footer.main aside {
 	.navbar-brand img {
 		width: 200px;
 	}
-	.nav .home-link {
-		display: none;
-	}
 }
 
 
@@ -1363,7 +1360,7 @@ footer.main aside {
 	header.main, .sitemap-link, footer.main nav {
 		display: none;
 	}
-	.nav .home-link, .sitemap {
+	.sitemap {
 		display: block;
 	}
 	aside.contact {

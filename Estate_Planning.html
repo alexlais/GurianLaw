@@ -47,21 +47,22 @@
 
  				<!-- NAVIGATION DESKTOP  --------------------------------------- -->
 
-				<ul class="nav navbar-nav hidden-xs">
-                    <li class="home-link"><a href="index.html">Home</a></li>
-		            <li class="dropdown">
+				<ul class="nav navbar-nav hidden-xs" role="list">
+                    <li role="listitem" aria-level="1" aria-setsize="8" class="home-link"><a href="index.html">Home</a></li>
+		            <li role="listitem" aria-level="1" aria-setsize="8" class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Practices <span class="caret"></span></a>
 		                <ul class="dropdown-menu">
-		            		<li><a href="Tax_Attorney.html" title="Miami &amp; South Florida Tax Law Firm" rel="law services" rev="law firm">Tax Law</a></li>
-		            		<li><a class="active page-scroll" href="#page-top" title="Miami &amp; South Florida Estate Planning Law Firm" rel="law services" rev="law firm">Estate Planning</a></li>
-		            		<li><a href="Contract_Law.html" title="Miami &amp; South Florida Contract Law Firm" rel="law services" rev="law firm">Contract Law</a></li>
+		            		<li role="listitem" aria-level="2" aria-setsize="4"><a href="Tax_Attorney.html" title="Miami &amp; South Florida Tax Law Firm" rel="law services" rev="law firm">Tax Law</a></li>
+		            		<li role="listitem" aria-level="2" aria-setsize="4"><a class="active page-scroll" href="#page-top" title="Miami &amp; South Florida Estate Planning Law Firm" rel="law services" rev="law firm">Estate Planning</a></li>
+		            		<li role="listitem" aria-level="2" aria-setsize="4"><a href="Contract_Law.html" title="Miami &amp; South Florida Contract Law Firm" rel="law services" rev="law firm">Contract Law</a></li>
 		            	</ul>
                     </li>
-		            <li><a class="page-scroll orange" href="#estate">Taxes &amp; Estate Planning</a></li>
-		            <li><a class="page-scroll brown" href="#trust">Trust Lawyer</a></li>
-		            <li><a class="page-scroll blue" href="#probate">Probate Lawyer</a></li>
-		            <li class="hidden"><a class="page-scroll" href="#miami">Miami</a></li>
-	            	<li><a class="page-scroll" href="#contact">Contact</a></li>
+		            <li role="listitem" aria-level="1" aria-setsize="8"><a class="page-scroll orange" href="#estate">Taxes &amp; Estate Planning</a></li>
+		            <li role="listitem" aria-level="1" aria-setsize="8"><a class="page-scroll brown" href="#trust">Trust Lawyer</a></li>
+		            <li role="listitem" aria-level="1" aria-setsize="8"><a class="page-scroll blue" href="#probate">Probate Lawyer</a></li>
+		            <li role="listitem" aria-level="1" aria-setsize="8" class="hidden"><a class="page-scroll" href="#miami">Miami</a></li>
+	            	<li role="listitem" aria-level="1" aria-setsize="8"><a class="page-scroll" href="#contact">Contact</a></li>
+		            <li role="listitem" aria-level="1" aria-setsize="8" class="hidden"><a class="page-scroll" href="#address" rel="Location" rev="law firm">Location Address</a></li>
                 </ul>
 
     			<!-- NAVIGATION MOBILE -->
@@ -78,11 +79,9 @@
 		            	</ul>
                     </li>
                     <li><a href="Contract_Law.html" title="Miami &amp; South Florida Contract Law Firm" rel="law services" rev="law firm">Contract Law</a></li>
-	            	<li class="dropdown"><a class="page-scroll" href="#contact" data-toggle="collapse" data-target=".navbar-ex1-collapse">Contact Us</a>
-		                <ul class="dropdown-menu">
-		            		<li><a class="page-scroll" href="#address" data-toggle="collapse" data-target=".navbar-ex1-collapse" title="Our Address And Location" rel="Location" rev="law firm">Location Address</a></li>
-		            	</ul>
-	            	</li>
+
+                	<li><a class="page-scroll" href="#contact" data-toggle="collapse" data-target=".navbar-ex1-collapse">Contact Us</a></li>
+            		<li><a class="page-scroll" href="#address" data-toggle="collapse" data-target=".navbar-ex1-collapse" title="Our Address And Location" rel="Location" rev="law firm">Location Address</a></li>
                 </ul>
             </div> <!-- /.navbar-collapse -->
         </div> <!-- /.container -->
