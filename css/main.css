@@ -13,7 +13,8 @@ h4, .carousel, .cta, nav.main, .highlight h1,
 .cta a:after, .promote h3 a:after,
 footer.main nav,
 .form-group, .btn-submit, .optionalFields, textarea, select,
-input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"] {
+input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"],
+.mobile-banner p.mobile-banner-title > span {
 	font-family: "Electrolize", "Share Tech Mono", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
 }
 .carousel p.telephone, address {
@@ -1350,7 +1351,7 @@ footer.main aside {
 	main {
 		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
 	}
-	h2 span.location, .sitemap a, nav.main a {
+	h2 span.location, .sitemap a {
 		font-family: "Electrolize", "Share Tech Mono", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
 	}
 
