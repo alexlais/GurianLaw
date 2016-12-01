@@ -995,17 +995,22 @@ footer.main aside {
 	z-index: 2;
 }
 */
-
-.backtotop a:after {
-    color: rgba(0,0,0,.4);
-    border: 1px solid rgba(0,0,0,.3);
-    background: rgba(255, 255, 255,.4);
+.backtotop a {
 	position: fixed;
 	bottom: 10px;
 	right: 10px;
-	display: block;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
 	z-index: 2;
-    content: "\27A1";
+
+	background: url("../top30px.png") center no-repeat;
+}
+  	/*
+    color: rgba(0,0,0,.4);
+    border: 1px solid rgba(0,0,0,.3);
+    background: rgba(255, 255, 255,.4);
+	content: "\27A1";
     content: "\276F";
     font-size: 25px;
     line-height: 35px;
@@ -1018,19 +1023,7 @@ footer.main aside {
 	-o-transform: rotate(-90deg);
 	transform: rotate(-90deg);
 }
-
-.backtotop a:hover:after {
-}
-
-
-
-
-
-
-
-
-
-
+*/
 
 /* === Q U E R I E S ===================================================
 ======================================================================== */
