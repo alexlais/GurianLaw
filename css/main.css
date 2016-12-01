@@ -1541,10 +1541,10 @@ footer.main aside {
 		padding: 90px 5% 20px;
 	}
 	.mobile-banner p.mobile-banner-title > span {
-		line-height: 23px;
+		line-height: 22px;
 		display: block;
 		padding: 0 0 20px;
-		font-size: 19px;
+		font-size: 17px;
 		color: white;
 		font-family: "Electrolize";
 	}
@@ -1554,12 +1554,14 @@ footer.main aside {
 	.mobile-banner p span.mobile-banner-caption {
 		line-height: 17px;
 		display: block;
-		font-size: 15px;
+		font-size: 14px;
 		color: white;
 		font-family: "tahoma";
 		color: #444;
-		background: rgba(255, 255, 255, 0.6);
+		background: rgba(255, 255, 255, 0.5);
 		padding: 2% 3%;
+		font-style: italic;
+		font-weight: bold;
 	}
 
     /* --- COPY --- MOBILE 1 ----------------------------- */
