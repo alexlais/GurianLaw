@@ -1536,15 +1536,15 @@ footer.main aside {
 		color: white;
 		min-height: 200px;
 		opacity: 1;
-		font-size: 27px;
+		font-size: 26px;
 		background-color: rgba(0,0,0,.3);
-		padding: 90px 5% 20px;
+		padding: 90px 5% 10px;
 	}
 	.mobile-banner p.mobile-banner-title > span {
-		line-height: 22px;
+		line-height: 20px;
 		display: block;
-		padding: 0 0 20px;
-		font-size: 17px;
+		padding: 0 0 10px;
+		font-size: 16px;
 		color: white;
 		font-family: "Electrolize";
 	}
@@ -1559,7 +1559,8 @@ footer.main aside {
 		font-family: "tahoma";
 		color: #444;
 		background: rgba(255, 255, 255, 0.5);
-		padding: 2% 3%;
+		padding: 2% 5%;
+		margin: 0 -5%;
 		font-style: italic;
 		font-weight: bold;
 	}
