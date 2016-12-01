@@ -1443,6 +1443,7 @@ footer.main aside {
 	}
 	.navbar-fixed-top .navbar-collapse {
 		overflow-y: scroll;
+		max-height: 70vh;
 	}
 
 	.navbar-fixed-top .navbar-collapse.in {
