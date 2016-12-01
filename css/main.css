@@ -1427,6 +1427,11 @@ footer.main aside {
 		color: #333;
 		background: rgba(255,255,255,0.97);
 	}
+	.navbar-fixed-top .navbar-collapse {
+		max-height: auto;
+		max-height: none;
+	}
+
 		.navbar-nav .dropdown-menu {
 			display: block;
 			position: relative;
