@@ -50,7 +50,7 @@ h4 {
 
 
 /* provisional */
-#google-map {display: none;}
+#google-map {}
 
 
 
@@ -342,7 +342,7 @@ address .content.phone-number a:hover, .sitemap a:hover {
     background: White;
 }
 .cta a:after, .promote h3 a:after {
-    margin-right: -2.2em;
+    margin-right: -2.3em;
     content:"\a0\2192"; /* "\a0" is used to generate a non braking space in html */
     padding-right: 15px;
     transition-property: padding;
@@ -1442,10 +1442,12 @@ footer.main aside {
 		background: rgba(255,255,255,0.97);
 	}
 	.navbar-fixed-top .navbar-collapse {
-		max-height: auto;
-		max-height: none;
+		overflow: auto;
 	}
 
+	.navbar-fixed-top .navbar-collapse.in {
+
+	}
 		.navbar-nav .dropdown-menu {
 			display: block;
 			position: relative;
@@ -1840,7 +1842,7 @@ footer.main aside {
     .cta {
     	margin: 0;
     	padding-top: 10px;
-		overflow: inherit;
+		overflow: visible;
 		text-align: left;
     }
     .cta a {

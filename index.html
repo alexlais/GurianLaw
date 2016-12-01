@@ -432,7 +432,7 @@
 	  	<aside id="contact" class="contact" role="seealso">
 			<div class="container">
 		        <header>
-		       		<address class="hidden-xs" itemscope itemtype="http://schema.org/LocalBusiness">
+		       		<address class="hidden-xs" itemscope itemtype="http://schema.org/LocalBusiness" role="region" aria-roledescription="Our Address">
 				        <div class="name">
 							<span class="content name" itemprop="name"><strong>Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></strong></span>
 							<span class="content title" itemprop="jobTitle">A South Florida Estate Planning, <br role="presentation">Tax &amp; Business Law&nbsp;Firm</span>
@@ -452,13 +452,16 @@
 						</div>
 						<div class="email"><span class="address-label email">Email:</span> <span class="content email" itemprop="email"><a href="mailto:email">Contact@GurianLaw.com</a></span></div>
 			    	</address>
-					<h2>Talk To Us</h2>
-					<p>Have your questions answered by scheduling an appointment with <span class="text-nowrap">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></span> <br>The firm can be reached online using <span class="text-nowrap">the email form below</span> or <span class="text-nowrap">by telephone at 305-290-1940.</span> <br>Spanish language services availabel. <span class="text-nowrap">Se habla espa&ntilde;ol</span>.</p>
+
+					<h2 id="ARIA_label_form">Talk To Us</h2>
+					<p id="ARIA_describe_form">Have your questions answered by scheduling an appointment with <span class="text-nowrap">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></span> <br>The firm can be reached online using <span class="text-nowrap">the email form below</span> or <span class="text-nowrap">by telephone at 305-290-1940.</span> <br>Spanish language services availabel. <span class="text-nowrap">Se habla espa&ntilde;ol</span>.</p>
 		        </header>
 
 				<!-- FORM ---------------------------------------- -->
 
-				<form id="main-contact-form" name="contact-form" method="post" action="#"  class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay="0">
+				<form id="main-contact-form" name="contact-form" method="post" action="#"  class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay="0"
+					role="form" aria-roledescription="contact us form" aria-labelledby="ARIA_label_form" aria-describedby="ARIA_describe_form">
+
 		        	<p><a class="optionalFields collapsed" role="button" data-toggle="collapse" href="#optionalFields" aria-expanded="false" aria-controls="optionalFields">Show Optional Fields</a></p>
 					<div class="row">
 					  	<div class="col-sm-6 col-md-3">
@@ -474,93 +477,93 @@
 					</div>
 
 					<div class="collapse" id="optionalFields">
-					<div class="row">
-					  	<div class="col-sm-6 col-md-3">
-						    <div class="form-group">
-						      	<input type="text" name="organization" class="form-control" placeholder="Organization or Sector" aria-label="Organization or Sector">
-						    </div>
-					 	</div>
-					  	<div class="col-sm-6 col-md-3">
-						    <div class="form-group">
-						      	<input type="text" name="telephone" class="form-control" placeholder="Telephone" aria-label="Telephone">
-						    </div>
-					 	</div>
-					</div>
-					<div class="row">
-					  	<div class="col-sm-6 col-md-8">
-							<div class="form-group">
-					  			<input type="text" name="subject" class="form-control" placeholder="Subject" aria-label="Subject">
-							</div>
+						<div class="row">
+						  	<div class="col-sm-6 col-md-3">
+							    <div class="form-group">
+							      	<input type="text" name="organization" class="form-control" placeholder="Organization or Sector" aria-label="Organization or Sector">
+							    </div>
+						 	</div>
+						  	<div class="col-sm-6 col-md-3">
+							    <div class="form-group">
+							      	<input type="text" name="telephone" class="form-control" placeholder="Telephone" aria-label="Telephone">
+							    </div>
+						 	</div>
 						</div>
-					  	<div class="col-sm-3 col-md-2">
-							<div class="form-group">
-						        <select name="Language" class="form-control" role="listbox" aria-label="language">
-									<option value=" ">Language:</option>
-									<option value="English" role="option" aria-selected="false">English</option>
-									<option value="Spanish" role="option" aria-selected="false">Spanish</option>
-								</select>
-						    </div>
-					  	</div>
-					  	<div class="col-sm-3 col-md-2">
-						    <div class="form-group" role="listbox">
-						        <select name="state" class="form-control" role="option" aria-label="State">
-									<option value=" ">State</option>
-									<option>Alabama</option>
-									<option>Alaska</option>
-									<option >Arizona</option>
-									<option >Arkansas</option>
-									<option >California</option>
-									<option >Colorado</option>
-									<option >Connecticut</option>
-									<option >Delaware</option>
-									<option >District of Columbia</option>
-									<option> Florida</option>
-									<option >Georgia</option>
-									<option >Hawaii</option>
-									<option >daho</option>
-									<option >Illinois</option>
-									<option >Indiana</option>
-									<option>Iowa</option>
-									<option> Kansas</option>
-									<option>Kentucky</option>
-									<option>Louisiana</option>
-									<option>Maine</option>
-									<option>Maryland</option>
-									<option>Massachusetts</option>
-									<option>Michigan</option>
-									<option>Minnesota</option>
-									<option>Mississippi</option>
-									<option>Missouri</option>
-									<option>Montana</option>
-									<option>Nebraska</option>
-									<option>Nevada</option>
-									<option>New Hampshire</option>
-									<option>New Jersey</option>
-									<option>New Mexico</option>
-									<option>New York</option>
-									<option>North Carolina</option>
-									<option>North Dakota</option>
-									<option>Ohio</option>
-									<option>Oklahoma</option>
-									<option>Oregon</option>
-									<option>Pennsylvania</option>
-									<option>Rhode Island</option>
-									<option>South Carolina</option>
-									<option>South Dakota</option>
-									<option>Tennessee</option>
-									<option>Texas</option>
-									<option> Uttah</option>
-									<option>Vermont</option>
-									<option>Virginia</option>
-									<option >Washington</option>
-									<option >West Virginia</option>
-									<option>Wisconsin</option>
-									<option >Wyoming</option>
-								</select>
-						    </div>
-					  	</div>
-					</div>
-					</div>
+						<div class="row">
+						  	<div class="col-sm-6 col-md-8">
+								<div class="form-group">
+						  			<input type="text" name="subject" class="form-control" placeholder="Subject" aria-label="Subject">
+								</div>
+							</div>
+						  	<div class="col-sm-3 col-md-2">
+								<div class="form-group">
+							        <select name="Language" class="form-control" role="listbox" aria-label="language">
+										<option value=" ">Language:</option>
+										<option value="English" role="option" aria-selected="false">English</option>
+										<option value="Spanish" role="option" aria-selected="false">Spanish</option>
+									</select>
+							    </div>
+						  	</div>
+						  	<div class="col-sm-3 col-md-2">
+							    <div class="form-group" role="listbox">
+							        <select name="state" class="form-control" role="option" aria-label="State">
+										<option value=" ">State</option>
+										<option value="AL">Alabama</option>
+										<option value="AK">Alaska</option>
+										<option value="AZ">Arizona</option>
+										<option value="AR">Arkansas</option>
+										<option value="CA">California</option>
+										<option value="CO">Colorado</option>
+										<option value="CT">Connecticut</option>
+										<option value="DE">Delaware</option>
+										<option value="DC">D. Of Columbia</option>
+										<option value="FL">Florida</option>
+										<option value="GA">Georgia</option>
+										<option value="HI">Hawaii</option>
+										<option value="ID">Idaho</option>
+										<option value="IL">Illinois</option>
+										<option value="IN">Indiana</option>
+										<option value="IA">Iowa</option>
+										<option value="KS">Kansas</option>
+										<option value="KY">Kentucky</option>
+										<option value="LA">Louisiana</option>
+										<option value="ME">Maine</option>
+										<option value="MD">Maryland</option>
+										<option value="MA">Massachusetts</option>
+										<option value="MI">Michigan</option>
+										<option value="MN">Minnesota</option>
+										<option value="MS">Mississippi</option>
+										<option value="MO">Missouri</option>
+										<option value="MT">Montana</option>
+										<option value="NE">Nebraska</option>
+										<option value="NV">Nevada</option>
+										<option value="NH">New Hampshire</option>
+										<option value="NJ">New Jersey</option>
+										<option value="NM">New Mexico</option>
+										<option value="NY">New York</option>
+										<option value="NC">North Carolina</option>
+										<option value="ND">North Dakota</option>
+										<option value="OH">Ohio</option>
+										<option value="OK">Oklahoma</option>
+										<option value="OR">Oregon</option>
+										<option value="PA">Pennsylvania</option>
+										<option value="RI">Rhode Island</option>
+										<option value="SC">South Carolina</option>
+										<option value="SD">South Dakota</option>
+										<option value="TN">Tennessee</option>
+										<option value="TX">Texas</option>
+										<option value="UT">Utah</option>
+										<option value="VT">Vermont</option>
+										<option value="VA">Virginia</option>
+										<option value="WA">Washington</option>
+										<option value="WV">West Virginia</option>
+										<option value="WI">Wisconsin</option>
+										<option value="WY">Wyoming</option>
+									</select>
+							    </div>
+						  	</div>
+						</div>
+					</div> <!-- /optionalFields -->
 
 					<div class="form-group">
 					  	<textarea name="message" id="message" class="form-control" rows="4" placeholder="Message (required)" aria-label="Message (required)" required="required"></textarea>
@@ -614,7 +617,7 @@
 				</div>
 			</div>
 
-		</section>
+		</aside>
 	</main>
 
 	<!-- FOOTER ------------------------------------ -->
