@@ -1192,9 +1192,11 @@ footer.main aside {
 	body {
 		font-size: 70%;
 	}
+	/*
 	.highlight .col-sm-4 h3, .highlight .col-md-3 h3, .btn-submit {
 		font-size: 200%;
 	}
+	*/
 	p, ul.native, ul.typeface, .highlight .col-sm-4 p, .highlight .col-md-3 p, .form-control {
 		font-size: 145%;
 		line-height: 140%;
@@ -1347,6 +1349,7 @@ footer.main aside {
 ====== XS (_MOBILE) ================================================== */
 
 @media (max-width: 767px) {
+
 /*
 	main {
 		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
@@ -1400,6 +1403,9 @@ footer.main aside {
 	}
 	.btn-submit {
 		width: 100%;
+	}
+	.promote-left h2, .promote-right h2, .promote-left h3, .promote-right h3 {
+		margin-top: .6em;
 	}
 	aside.miami {
 		padding-top: 6%;
@@ -1626,7 +1632,10 @@ footer.main aside {
 	.promote.thumb figure {
 		padding: 6px 0 6px 6px;
 	}
-	.promote.border, .callout {margin-top: 0; border: 0;}
+	.home-page .practices .promote img {
+		height: 75px;
+	}
+	/* .promote.border, .callout {margin-top: 0; border: 0;} */
 	.clearfix {padding-bottom: 0;}
 	p, ul.native, ul.typeface, h4 {margin-bottom: 0.5em;}
 	.container.callout > div {padding: 0;}
