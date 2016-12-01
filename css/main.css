@@ -1558,7 +1558,7 @@ footer.main aside {
 		font-size: 16px;
 		color: white;
 		font-family: "Electrolize";
-		background: rgba(255, 255, 255, 0.5);
+		background-color: rgba(0,0,0,.4);
 		padding: 2% 5%;
 		margin: 0 -5%;
 	}
