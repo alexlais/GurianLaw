@@ -1429,7 +1429,7 @@ footer.main aside {
 		line-height: 130%;
 	}
 
-	/* --- NAVIGATION --- _MOB I ------------------- */
+	/* --- _NAVIGATION --- _MOB I ------------------- */
 
 	nav.main {
 		font-size: 1.45em;
@@ -1452,6 +1452,10 @@ footer.main aside {
 			border: 0;
 			border-bottom: 1px solid #ccc;
 			background: transparent;
+		}
+		.navbar-nav > li.active > a, .navbar-nav a.active, .navbar-nav a.active:hover, .navbar-nav li:hover a.active, .navbar-nav .dropdown-menu li.active > a, .navbar-nav .dropdown-menu li.active > a:hover {
+			color: white;
+			background: #178267;
 		}
 	.navbar-brand {
 		padding: 13px 0 10px 10px;
@@ -1565,7 +1569,7 @@ footer.main aside {
 		color: white;
 		font-family: "Electrolize";
 		background-color: rgba(0,0,0,.4);
-		padding: 2% 5%;
+		padding: 15px 5%;
 		margin: 0 -5%;
 	}
 	.mobile-banner p.mobile-banner-title abbr {
