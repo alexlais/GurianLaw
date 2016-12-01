@@ -337,7 +337,7 @@ address .content.phone-number a:hover, .sitemap a:hover {
     background: White;
 }
 .cta a:after, .promote h3 a:after {
-    margin-right: -2.2em;
+    margin-right: -1.83rem;
     content:"\a0\2192"; /* "\a0" is used to generate a non braking space in html */
     padding-right: 15px;
     transition-property: padding;
@@ -1593,12 +1593,7 @@ footer.main aside {
 		text-align: left;
 		border-bottom: 1px solid #ddd;
 		padding: 8px 0 8px 5%;
-		text-decoration: none;
 		text-transform: uppercase;
-	}
-	.sitemap ul a:hover {
-		background: #d4f7ee;
-		text-decoration: none;
 	}
 	.sitemap ul ul {
 		padding: 0;
@@ -1612,8 +1607,8 @@ footer.main aside {
 		border-bottom: 1px solid #178267;
 	}
 	.sitemap ul a:hover {
-		background: rgb(23, 130, 103);
-		color: white;
+		color:#009973;
+		text-decoration: none;
 
 	}
 
