@@ -1381,7 +1381,9 @@ footer.main aside {
 	.home-page main > section > header {
 		padding-top: 0;
 	}
-
+	main > section {
+		padding-top: 30px;
+	}
 
 	/* --- FONT SIZE ----- MOBILE I ---------- */
 	h2, h3, .promote.promote-left h2, .promote.promote-right h2 {
@@ -1531,6 +1533,11 @@ footer.main aside {
 	.mobile-banner.tax {
 		background-image: url("../images/slider/3.jpg");
 		background-position: center top;
+	}
+
+	.mobile-banner.estate {
+		background-image: url("../images/slider/2.jpg");
+		background-position: center bottom;
 	}
 	p.mobile-banner-title {
 		color: white;
