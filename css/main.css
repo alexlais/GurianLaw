@@ -1348,13 +1348,18 @@ footer.main aside {
 ====== XS (_MOBILE) ================================================== */
 
 @media (max-width: 767px) {
+/*
 	main {
 		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
 	}
-	h2 span.location, .sitemap a {
+	h2 span.location,
+	.sitemap a,
+	.mobile-banner p.mobile-banner-title > span {
 		font-family: "Electrolize", "Share Tech Mono", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
 	}
-
+	.mobile-banner p span.mobile-banner-caption {
+		font-family: "tahoma", verdana, serif;
+*/
 	header.main, .sitemap-link, footer.main nav {
 		display: none;
 	}
@@ -1382,7 +1387,7 @@ footer.main aside {
 	.home-page main > section > header {
 		padding-top: 0;
 	}
-	main > section {
+	main > section:first-child {
 		padding-top: 30px;
 	}
 
@@ -1422,7 +1427,6 @@ footer.main aside {
 		text-transform: uppercase;
 		font-weight: normal;
 		letter-spacing: 2px;
-		font-family: "Electrolize", "Share Tech Mono", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
 	}
 	aside.contact header p {
 		font-size: 150%;
@@ -1567,7 +1571,6 @@ footer.main aside {
 		padding: 0 0 10px;
 		font-size: 16px;
 		color: white;
-		font-family: "Electrolize";
 		background-color: rgba(0,0,0,.4);
 		padding: 15px 5%;
 		margin: 0 -5%;
@@ -1579,7 +1582,6 @@ footer.main aside {
 		line-height: 17px;
 		display: block;
 		font-size: 14px;
-		font-family: "tahoma";
 		color: #444;
 		background: rgba(255, 255, 255, 0.5);
 		padding: 2% 5%;
