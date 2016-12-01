@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Vollkorn|Electrolize|Average');
 
 /* Vollkorn */
-h1, h2, h3, main {
+h1, h2, h3, main, p.mobile-banner-title {
 	font-family: "Vollkorn", Georgia, "Times New Roman", serif;
 	font-weight: normal;
 }
@@ -17,7 +17,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="url"], i
 	font-family: "Electrolize", "Share Tech Mono", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
 }
 .carousel p.telephone, address {
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+	font-family: "Times New Roman", serif
 }
 
 
@@ -150,7 +150,7 @@ p.cta {
 }
 /* --- carousel ONLY --- ----------------*/
 .carousel {
-	font-size: 1.9em;
+	font-size: 1.8em;
 }
 .carousel .caption p {
 	font-size: 1em;
@@ -187,7 +187,7 @@ address .content.phone-number {
 	font-size: 30px;
 }
 
-/* --- _COLORS ------- hover green #22c39b ---------------------------------------------------------- */
+/* --- _COLORS ------- hover green #22c39b ------- #22c39b ----------------------------------------------- */
 
 body {
 	color: #999;
@@ -195,8 +195,12 @@ body {
 }
 .form-control, input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"],
 textarea, select {
-	color: #999;}
-/* -- _WHITE ----------------- */
+	color: #999;
+}
+address .content.title, h4 {
+	color: #777;
+}
+/* -- COLOR _WHITE ----------------- */
 h1, .highlight h2, .highlight h3, .highlight a, .parallax.attorney a,
 .carousel, .carousel h1, .carousel h1 span, .carousel h1 abbr, .carousel h2, .carousel h3,
 .carousel-CTA, .carousel-CTA:hover, .carousel-CTA:focus,
@@ -204,49 +208,49 @@ h1, .highlight h2, .highlight h3, .highlight a, .parallax.attorney a,
 .left-control:active, .right-control:active, .left-control:after, .right-control:after,
 .highlight .cta a, .cta a:hover,
 .btn-submit, .parallax {
-	color: white;}
+	color: white;
+}
 .highlight, .highlight h1, .highlight p:not(callout) {
     color: rgba(255, 255, 255, 0.9);
 }
-a, header h2, ul.native.links {
-    color: rgb(34, 195, 155);
-}
-footer.main a {
-	color: #1fad8a;
+
+/* -- LINK COLOR ---------------------------- */
+
+/* ---- darker link ------------------------- */
+a, .highlight .promote .cta a:hover {
 	color: #1fad8a;
 }
 footer.main nav a:hover {
 	background: #1fad8a;
 }
-/* real hover */
-a:hover, .highlight .cta a:hover {
-    color: rgb(31, 173, 138);
+/* --- lighter links - REAL HOVER ---------- */
+a:hover, header h2, address a, nav.main a:hover, footer.main a:hover  {
     color: rgb(34, 195, 155);
+    color: #22c39b;
 }
-/* ------------------------- */
+/* ---- fake gray link ---------------------- */
 h3, h3 a, .promote h3 a:after, address, .form-control:focus {
-	color: #444;}
-/* fake hover */
-h3 a:hover, .promote h3 a:hover:after, figure:hover ~ hgroup h3 a, figure:hover ~ hgroup h3 a:after {
-    color: rgb(34, 195, 155);}
-address a {
-	rgba(23, 130, 103, 1);}
-address .content.title, h4 {
-	color: #777;}
+	color: #444;
+}
 /* nav --------------------- */
 .navbar-nav a, .navbar-nav .dropdown-menu li.active > a {
-    color: #666;}
+    color: #666;
+ }
+/* ---- lighter links - fake hover ---------- */
+h3 a:hover, .promote h3 a:hover:after, figure:hover ~ hgroup h3 a, figure:hover ~ hgroup h3 a:after,
 .navbar-nav a:hover, .navbar-nav li:hover > a, .navbar-nav .dropdown-menu li.active > a:hover {
-    color: #009973;}
+    color: rgb(34, 195, 155);
+ }
 .navbar-nav > li.active > a {
-    color: white;}
+    color: white;
+ }
 .navbar-nav > li.active > a, .nav .active.open > a:focus {
     background: #22c39b;/* NICE GREEN */
 	background: #da2525; /* NICE RED */
 	background: #178267;
 }
 .navbar-nav .dropdown-menu {
-    background-color: rgba(255, 255, 255,.95);
+    background-color: rgba(255, 255, 255,.9);
 }
 /* _highlight ----------------- */
 
@@ -297,7 +301,7 @@ a {
 }
 footer.main a, aside.highlight a, address .email a:hover, .highlight p:not(.cta) a {
 }
-.cta a, a:hover, h3 a, nav a, .carousel-CTA, address .content.phone-number a, footer.main .sitemap a {
+.cta a, a:hover, h3 a, nav a, .carousel-CTA, address .content.phone-number a, .sitemap a, .carousel a, h2 a {
     text-decoration: none;
 }
 address .content.phone-number a:hover, .sitemap a:hover {
@@ -337,7 +341,7 @@ address .content.phone-number a:hover, .sitemap a:hover {
     background: White;
 }
 .cta a:after, .promote h3 a:after {
-    margin-right: -1.83rem;
+    margin-right: -2.2em;
     content:"\a0\2192"; /* "\a0" is used to generate a non braking space in html */
     padding-right: 15px;
     transition-property: padding;
@@ -1181,6 +1185,9 @@ footer.main aside {
 /* === _SM ====================================================== */
 @media (max-width: 991px) {
 
+	.cta a:after, .promote h3 a:after {
+	    margin-right: -1.83rem;
+   	}
     /* --- FONT SIZE --- SMALL AND MOBILE!!!! --------------- */
 	body {
 		font-size: 70%;
@@ -1515,6 +1522,47 @@ footer.main aside {
 		border-bottom: 0;
 	}
 
+	/* ---- _banner ------------ */
+	.mobile-banner {
+		font-size: 14px;
+		margin-top: 40px;
+		background-color: black;
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		display: block;
+		background-image: url("../images/slider/1.jpg");
+	}
+	p.mobile-banner-title {
+		color: white;
+		min-height: 200px;
+		opacity: 1;
+		font-size: 32px;
+		background-color: rgba(0,0,0,.3);
+		padding: 90px 5% 20px;
+	}
+	.mobile-banner p.mobile-banner-title > span {
+		line-height: 23px;
+		display: block;
+		padding: 0 0 20px;
+		font-size: 19px;
+		color: white;
+		font-family: "Electrolize";
+	}
+	.mobile-banner p.mobile-banner-title abbr {
+		font-size: 19px;
+	}
+	.mobile-banner p span.mobile-banner-caption {
+		line-height: 19px;
+		display: block;
+		font-size: 15px;
+		color: white;
+		font-family: "tahoma";
+		color: #444;
+		background: rgba(255, 255, 255, 0.6);
+		padding: 2% 3%;
+		text-transform: uppercase;
+	}
+
     /* --- COPY --- MOBILE 1 ----------------------------- */
 
 	.cta a {
@@ -1607,7 +1655,6 @@ footer.main aside {
 		border-bottom: 1px solid #178267;
 	}
 	.sitemap ul a:hover {
-		color:#009973;
 		text-decoration: none;
 
 	}
