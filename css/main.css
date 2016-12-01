@@ -300,7 +300,7 @@ footer.main a, aside.highlight a, address .email a:hover, .highlight p:not(.cta)
 .cta a, a:hover, h3 a, nav a, .carousel-CTA, address .content.phone-number a, footer.main .sitemap a {
     text-decoration: none;
 }
-address .content.phone-number a:hover, footer.main .sitemap a:hover {
+address .content.phone-number a:hover, .sitemap a:hover {
     text-decoration: underline;
 }
 
@@ -1588,6 +1588,7 @@ footer.main aside {
 		font-size: 110%;
 	}
 	.sitemap ul a {
+		color: #178267;
 		display: block;
 		text-align: left;
 		border-bottom: 1px solid #ddd;
@@ -1597,6 +1598,7 @@ footer.main aside {
 	}
 	.sitemap ul a:hover {
 		background: #d4f7ee;
+		text-decoration: none;
 	}
 	.sitemap ul ul {
 		padding: 0;
@@ -1607,7 +1609,7 @@ footer.main aside {
 		text-transform: capitalize;
 	}
 	.sitemap ul ul li:last-child a {
-		border-bottom: 1px solid #22c39b;
+		border-bottom: 1px solid #178267;
 	}
 	.sitemap ul a:hover {
 		background: rgb(23, 130, 103);
