@@ -1536,7 +1536,7 @@ footer.main aside {
 		color: white;
 		min-height: 200px;
 		opacity: 1;
-		font-size: 32px;
+		font-size: 27px;
 		background-color: rgba(0,0,0,.3);
 		padding: 90px 5% 20px;
 	}
@@ -1552,7 +1552,7 @@ footer.main aside {
 		font-size: 19px;
 	}
 	.mobile-banner p span.mobile-banner-caption {
-		line-height: 19px;
+		line-height: 17px;
 		display: block;
 		font-size: 15px;
 		color: white;
@@ -1560,7 +1560,6 @@ footer.main aside {
 		color: #444;
 		background: rgba(255, 255, 255, 0.6);
 		padding: 2% 3%;
-		text-transform: uppercase;
 	}
 
     /* --- COPY --- MOBILE 1 ----------------------------- */
