@@ -1,7 +1,7 @@
 
 /* --- _FONTS ------------------------------------------------------------ */
 
-@import url('https://fonts.googleapis.com/css?family=Vollkorn|Electrolize|Average');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn|Doppio+One');
 
 /* Vollkorn */
 h1, h2, h3, main, .banner h1, .banner p.banner-title {
@@ -15,7 +15,7 @@ footer.main nav,
 .form-group, .btn-submit, .optionalFields, textarea, select,
 input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"],
 .banner p.banner-caption {
-	font-family: "Electrolize", "Share Tech Mono", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
+	font-family: "Doppio One", "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
 }
 address {
 	font-family: Arial, Helvetica, serif
@@ -27,7 +27,7 @@ p.telephone {
 
 
 /* --- FONT design -------------------------------------------------------- */
-.parallax a, .cta a, .cta, .carousel-CTA, .caption, .btn-submit, address .address-label {
+.parallax a, .cta a, .cta, .btn-submit, address .address-label {
 	font-weight: bold;
 }
 .caption .telephone {
@@ -37,12 +37,12 @@ p, ul.native, ul.typeface, h4 {
     margin: 0 0 1em;
 }
 p.cta {
-	margin-top: 2%;
+	margin-top: 1.5em;
 }
 h2, h3 {
-    margin: 0 0 0.3em;
+    margin: 0 0 0.6em;
 }
-figure + h2, h3 {
+figure:not(.visible-xs) + h2, h3 {
 	margin-top: 0.6em;
 }
 h4 {
@@ -107,7 +107,7 @@ p, ul.native, ul.typeface, .btn-submit {
 	font-size: 130%;
 }
 h4 {
-	font-size: 170%;
+	font-size: 160%;
 }
 h3 {
 	font-size: 200%;
@@ -163,7 +163,7 @@ p.cta {
 	font-size: 180%;
 }
 .caption p {
-	font-size: 1em;
+	font-size: 1.2em;
 }
 .caption .telephone {
 	font-size: 1.3em;
@@ -223,7 +223,7 @@ h1, .highlight h2, .highlight h3, .highlight a, .parallax.attorney a,
 .btn-submit, .parallax {
 	color: white;
 }
-.highlight, .highlight h1, .highlight p:not(callout) {
+.highlight, .highlight h1, .highlight p:not(.callout) {
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -622,7 +622,7 @@ nav.main, footer.main {
 /* NAV LINKS */
 .navbar-nav li a, .navbar-nav .dropdown-menu a {
 	text-transform: uppercase;
-	padding: 20px 9px 18px;
+	padding: 20px 12px 18px;
 	transition-property: padding;
 	transition-duration: 0.3s;
 	transition-timing-function: linear;
@@ -733,7 +733,7 @@ footer.main nav {
 	text-transform: uppercase;
 }
 footer.main nav a {
-	padding: 8px 12px 5px;
+	padding: 8px 12px 7px;
 }
 footer.main nav a:hover {
 	color: white;
@@ -843,7 +843,6 @@ footer.main aside {
     border-top: 1px solid rgba(255, 255, 255, .6);
 }
 .caption p {
-	text-transform: uppercase;
     animation-delay: 0.75s;
 }
 .carousel-CTA {
@@ -1175,16 +1174,13 @@ footer.main aside {
 	}
 }
 
-/* === _MD + ALL BELOW ================================== */
+/* === _MD + ALL BELOW =============================================== */
+/* @media (min-width: 992px) and (max-width: 1199px) { */
 @media (max-width: 1199px) {
 	body {
 		font-size: 90%;
 		color: #777;
 	}
-}
-/* === _MD =============================================== */
-/* @media (min-width: 992px) and (max-width: 1199px) { */
-@media (max-width: 1199px) {
 	.promote.promote-left img, .promote.promote-right img {
 	    width: 400px;
 	}
@@ -1196,6 +1192,10 @@ footer.main aside {
 	}
 	.navbar-brand img {
 		width: 200px;
+	}
+	.navbar-nav li a {
+		padding-right: 5px;
+		padding-left: 5px;
 	}
 }
 
