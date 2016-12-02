@@ -55,8 +55,11 @@ h4 {
 
 
 
-/* provisional */
-#google-map {}
+/* google maps */
+#map {
+	height: 250px;
+	width: 100%;
+}
 
 
 
@@ -502,7 +505,6 @@ form {
 	background-color: rgba(0,0,0,0.075);
 	margin-top: 2%;
 	padding: 3% 4% 1%;
-	text-align: justify;
 }
 .container.callout {
 	padding-right: 15px;
