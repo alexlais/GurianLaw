@@ -1625,19 +1625,20 @@ footer.main aside {
 	}
 	.banner .caption {
 		height: auto;
-		min-height: 260px;
-		padding-bottom: 20px;
+		padding-bottom: 30px;
 	}
 	.caption h1, .caption p.banner-title {
 		font-size: 26px;
-		padding-top: 120px;
+		padding-top: 110px;
+		margin: 0;
 		text-transform: capitalize;
 	}
 	.caption p.banner-caption {
+		text-shadow: none;
 		line-height: 15px;
 		font-size: 11px;
-		background-color: rgba(0,0,0,.4);
-		padding: 15px;
+		background-color: rgba(0,0,0,.6);
+		padding: 8px 15px;
 		margin: 0 -15px;
 	}
 	.caption h1 abbr {
@@ -1648,6 +1649,7 @@ footer.main aside {
 		font-size: 25px;
 		right: 10px;
 		padding: 5px;
+		font-weight: bold;
 		background: transparent;
 	}
 
