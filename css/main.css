@@ -1650,7 +1650,7 @@ footer.main aside {
 		text-shadow: none;
 		line-height: 15px;
 		font-size: 13px;
-		background-color: rgba(0,0,0,.6);
+		background-color: rgba(0,0,0,.4);
 		padding: 8px 15px;
 		margin: 0 -15px;
 	}
@@ -1658,12 +1658,7 @@ footer.main aside {
 		font-size: 19px;
 	}
 	.caption .telephone {
-		top: 20px;
-		font-size: 25px;
-		right: 10px;
-		padding: 5px;
-		font-weight: bold;
-		background: transparent;
+		display: none;
 	}
 
 
