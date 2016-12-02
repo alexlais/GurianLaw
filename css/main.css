@@ -1624,7 +1624,9 @@ footer.main aside {
 		background-position: center bottom;
 	}
 	.banner .caption {
-		height: 260px;
+		height: auto;
+		min-height: 260px;
+		padding-bottom: 20px;
 	}
 	.caption h1, .caption p.banner-title {
 		font-size: 26px;
@@ -1642,7 +1644,7 @@ footer.main aside {
 		font-size: 19px;
 	}
 	.caption .telephone {
-		top: 20px;
+		top: 30px;
 		font-size: 25px;
 		right: 10px;
 		padding: 5px;
