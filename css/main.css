@@ -1524,7 +1524,13 @@ footer.main aside {
 		}
 		.navbar-nav > li.active > a, .navbar-nav a.active, .navbar-nav a.active:hover, .navbar-nav li:hover a.active, .navbar-nav .dropdown-menu li.active > a, .navbar-nav .dropdown-menu li.active > a:hover {
 			color: white;
-			background: #178267;
+			background: #22c39b;
+		}
+		.navbar-nav a.current {
+			background: #178267 !important;
+		}
+		.navbar-nav a.current, .navbar-nav a.current:hover, .navbar-nav li:hover a.current {
+			color: white;
 		}
 	.navbar-brand {
 		padding: 13px 0 10px 10px;
