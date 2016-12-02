@@ -1628,7 +1628,7 @@ footer.main aside {
 	}
 	.caption h1, .caption p.banner-title {
 		font-size: 26px;
-		padding-top: 140px;
+		padding-top: 120px;
 		text-transform: capitalize;
 	}
 	.caption p.banner-caption {
@@ -1643,7 +1643,7 @@ footer.main aside {
 	}
 	.caption .telephone {
 		top: 20px;
-		font-size: 32px;
+		font-size: 25px;
 		right: 10px;
 		padding: 5px;
 		background: transparent;
