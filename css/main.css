@@ -401,7 +401,7 @@ abbr[data-original-title], abbr[title] {
 }
 .promote.border {
     border-top: 1px solid rgba(255, 255, 255, .4);
-    padding-top: 2em;
+    padding-top: 3em;
     margin-top: 2em;
 }
 
@@ -491,7 +491,7 @@ form {
     text-transform: uppercase;
     letter-spacing: 3px;
     border-bottom: 1px solid rgba(255, 255, 255, .4);
-    margin: 1% 0 4%;
+    margin: 1% 0 3em;
     padding: 0 0 0.6em;
     box-shadow: 0 15px 24px -5px rgba(0,0,0,0.075);
 }
@@ -1463,6 +1463,13 @@ footer.main aside {
 	}
 	.promote-left h2, .promote-right h2, .promote-left h3, .promote-right h3 {
 		margin-top: .6em;
+	}
+
+	.promote.border {
+	    padding-top: 1em;
+	}
+	.highlight h1 {
+		margin-bottom: 1em;
 	}
 	aside.miami {
 		padding-top: 6%;
