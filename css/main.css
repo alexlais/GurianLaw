@@ -1678,7 +1678,7 @@ footer.main aside {
 	.container.practices .promote {
 		border-top: 1px solid silver;
 	}
-	.container.practices .cta {
+	.container.practices .cta, .container.practices figure {
 		display: none;
 	}
 	.parallax h2, .parallax h3 {
