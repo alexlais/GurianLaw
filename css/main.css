@@ -1539,7 +1539,7 @@ footer.main aside {
 		}
 		.navbar-nav > li.active > a, .navbar-nav a.active, .navbar-nav a.active:hover, .navbar-nav li:hover a.active, .navbar-nav .dropdown-menu li.active > a, .navbar-nav .dropdown-menu li.active > a:hover {
 			color: white;
-			background: #22c39b;
+			background: #bbb;
 		}
 		.navbar-nav a.current {
 			background: #178267 !important;
