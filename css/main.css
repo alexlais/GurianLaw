@@ -1628,10 +1628,11 @@ footer.main aside {
 		padding-bottom: 30px;
 	}
 	.caption h1, .caption p.banner-title {
-		font-size: 26px;
+		font-size: 24px;
 		padding-top: 110px;
 		margin: 0;
 		text-transform: capitalize;
+		font-weight: bold;
 	}
 	.caption p.banner-caption {
 		text-shadow: none;
