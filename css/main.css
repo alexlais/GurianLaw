@@ -1675,6 +1675,12 @@ footer.main aside {
 
 	.parallax {
 	}
+	.container.practices .promote {
+		border-top: 1px solid silver;
+	}
+	.container.practices .cta {
+		display: none;
+	}
 	.parallax h2, .parallax h3 {
 		color: White;
 	}
