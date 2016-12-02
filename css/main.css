@@ -1475,6 +1475,9 @@ footer.main aside {
 		padding-right: 15px;
 		padding-left: 15px
 	}
+	.callout {
+		text-align: left;
+	}
 	h1 + h2 {
     	margin-top: 5px !important;
 	}
@@ -1629,8 +1632,8 @@ footer.main aside {
 		text-transform: capitalize;
 	}
 	.caption p.banner-caption {
-		line-height: 20px;
-		font-size: 12px;
+		line-height: 15px;
+		font-size: 11px;
 		background-color: rgba(0,0,0,.4);
 		padding: 15px;
 		margin: 0 -15px;
