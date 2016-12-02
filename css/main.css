@@ -1920,6 +1920,12 @@ footer.main aside {
     address .name {
     	text-align: left;
     }
-
+	.parallax.attorney:after {
+		display: none;
+	}
+	.parallax.attorney, .parallax.attorney h2, .parallax.attorney a {
+		background: white;
+		color: #666;
+	}
 
 }
