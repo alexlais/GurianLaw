@@ -11,7 +11,7 @@ h1, h2, h3, main, .banner h1, .banner p.banner-title {
 /* Electrolize */
 h4, .carousel, .cta, nav.main, .highlight h1,
 .cta a:after, .promote h3 a:after,
-footer.main nav,
+footer.main,
 .form-group, .btn-submit, .optionalFields, textarea, select,
 input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"],
 .banner p.banner-caption {
@@ -27,29 +27,23 @@ p.telephone {
 
 
 /* --- FONT design -------------------------------------------------------- */
+.h1, .h2, .h3, h1, h2, h3 {
+	margin: 0;
+}
 .parallax a, .cta a, .cta, .btn-submit, address .address-label {
 	font-weight: bold;
 }
 .caption .telephone {
 	font-weight: normal;
 }
-p, ul.native, ul.typeface, h4 {
-    margin: 0 0 1em;
-}
 p.cta {
 	margin-top: 1.5em;
 }
-h2, h3 {
-    margin: 0 0 0.6em;
-}
-figure:not(.visible-xs) + h2, h3 {
-	margin-top: 0.6em;
+figure:not(.visible-xs) + h2 {
+	margin-top: .6em;
 }
 h1 + h2 {
 	margin-top: 1em;
-}
-h4 {
-    margin-top: -.2em;
 }
 .promote-left h2, .promote-right h2, .promote-left h3, .promote-right h3 {
 	margin-top: 0;
@@ -67,7 +61,7 @@ h4 {
 
 
 /* ---  _NONSENSE: clearing unnecessary link manipulation that developers love to waste time with, everywhere! (just leave the focus alone!)---------------------------------------- */
-.dropdown-menu > li > a
+}.dropdown-menu > li > a
 	{font-weight: inherit;}
 }.form-control::-moz-placeholder, .form-control:-ms-input-placeholder
 	{color:inherit;}
@@ -111,15 +105,21 @@ body {
 }
 p, ul.native, ul.typeface, .btn-submit {
 	font-size: 130%;
+    margin-bottom: 1em;
 }
 h4 {
 	font-size: 160%;
+    margin-bottom: 1em;
+    margin-top: -.2em;
 }
 h3 {
-	font-size: 200%;
+	font-size: 190%;
+    margin-bottom: 0.6em;
+	margin-top: .6em;
 }
 h1, h2 {
 	font-size: 220%;
+    margin-bottom: .6em;
 }
 .promote.promote-left h2, .promote.promote-right h2 {
 	font-size: 250%;
@@ -127,10 +127,7 @@ h1, h2 {
 .parallax h2, main > section > header h2 {
 	font-size: 280%;
 }
-.contact h2 {
-	font-size: 300%;
-}
-.parallax.attorney h2 {
+.contact h2, .parallax.attorney h2 {
 	font-size: 350%;
 }
 .telephone {}
@@ -138,31 +135,33 @@ h1, h2 {
 nav.main, footer.main  {
     font-size: 95%;
 }
-.sitemap a, footer.main nav a {
-    font-size: 85%;
-}
-abbr[data-original-title], abbr[title] {
+.sitemap a, footer.main nav a, abbr[data-original-title], abbr[title] {
     font-size: 80%;
 }
 /* --- hgroup --- -----------------*/
-.col-sm-6.col-md-3 hgroup, footer aside /* tax law page */ {
+.col-sm-6.col-md-3 hgroup, footer aside, .optionalFields  /* tax law page */ {
     font-size: 70%;
 }
-.col-sm-4 hgroup, .optionalFields /* home and estate planning page */{
+.col-sm-4 hgroup/* home and estate planning page */{
     font-size: 90%;
 }
 p.cta {
-	font-size: 105%;
+	font-size: 90%;
 }
-/* --- highlight --- --------------*/
+aside.contact header > p {
+	font-size: 110%;
+}
+/* --- highlight --- --------------
 .callout h2  {
 	font-size: 150%;
 }
+*/
 .highlight .col-sm-4 p, .highlight .col-md-3 p {
 	font-size: 120%;
 }
 .highlight .col-sm-4 h3, .highlight .col-md-3 h3 {
 	font-size: 155%;
+	margin-bottom: 0.3em
 }
 /* --- carousel ONLY --- ----------------*/
 .carousel, .banner {
@@ -210,7 +209,7 @@ address .content.phone-number {
 
 body {
 	color: #999;
-	background-color: #f8f7ed;
+	background-color: rgb(248, 247, 237);
 }
 .form-control, input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"],
 textarea, select {
@@ -219,17 +218,15 @@ textarea, select {
 address .content.title, h4 {
 	color: #777;
 }
-/* -- COLOR _WHITE ----------------- */
-h1, .highlight h2, .highlight h3, .highlight a, .parallax.attorney a,
-.carousel, .carousel h1, .carousel h1 span, .carousel h1 abbr, .carousel h2, .carousel h3,
-.carousel-CTA, .carousel-CTA:hover, .carousel-CTA:focus,
-.left-control, .right-control, .left-control:hover, .right-control:hover,
-.left-control:active, .right-control:active, .left-control:after, .right-control:after,
+/* -- COLOR white _WHITE ----------------- */
+.parallax, .highlight, .highlight a, .parallax.attorney a,
+.carousel,
+.carousel a, .carousel a:hover,
 .banner, .highlight .cta a, .cta a:hover,
 .btn-submit, .parallax {
 	color: white;
 }
-.highlight, .highlight h1, .highlight p:not(.callout) {
+.highlight h1, .highlight p:not(.callout) {
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -243,27 +240,31 @@ footer.main nav a:hover {
 	background: #1fad8a;
 }
 /* --- lighter links - REAL HOVER ---------- */
-a:hover, header h2, address a, nav.main a:hover, footer.main a:hover  {
+a:hover, .practices h2, .contact h2, address a, nav.main a:hover, footer.main a:hover  {
     color: rgb(34, 195, 155);
     color: #22c39b;
 }
 /* ---- fake gray link ---------------------- */
-h3, h3 a, .promote h3 a:after, address, .form-control:focus {
+h1.native, h2.native, .practices h3, .practices h3 a, address, .form-control:focus {
 	color: #444;
 }
 /* nav --------------------- */
-.navbar-nav a, .navbar-nav .dropdown-menu li.active > a {
-    color: #666;
+nav.main a {
+    color: #888;
  }
 /* ---- lighter links - fake hover ---------- */
 h3 a:hover, .promote h3 a:hover:after, figure:hover ~ hgroup h3 a, figure:hover ~ hgroup h3 a:after,
-.navbar-nav a:hover, .navbar-nav li:hover > a, .navbar-nav .dropdown-menu li.active > a:hover {
+.navbar-nav a:hover, .navbar-nav li:hover > a {
     color: rgb(34, 195, 155);
  }
-.navbar-nav > li.active > a {
+.navbar-nav > li.active > a,
+.dropdown-menu li.active a, .dropdown-menu li.active a:hover,
+.dropdown-menu a.current, .dropdown-menu a.current:hover {
     color: white;
  }
-.navbar-nav > li.active > a, .nav .active.open > a:focus {
+.navbar-nav > li.active > a, .nav .active.open > a:focus,
+.dropdown-menu li.active a, .dropdown-menu li.active > a:hover,
+.dropdown-menu a.current, .dropdown-menu a.current:hover  {
     background: #22c39b;/* NICE GREEN */
 	background: #da2525; /* NICE RED */
 	background: #178267;
@@ -271,9 +272,11 @@ h3 a:hover, .promote h3 a:hover:after, figure:hover ~ hgroup h3 a, figure:hover 
 .navbar-nav .dropdown-menu {
     background-color: rgba(255, 255, 255,.9);
 }
+/*
 .navbar-nav a.current, .navbar-nav a.current:hover {
 	background: rgba(0,0,0, 0.1);
 }
+*/
 /* _highlight ----------------- */
 
 .highlight.transparent, .highlight.transparent p, .highlight.transparent h3 {
@@ -460,27 +463,65 @@ abbr[data-original-title], abbr[title] {
 	.home-page nav.main:not(.navbar-fixed-top) + main {
 		margin-top: -60px;
 	}
-
 section, .parallax {
     padding: 70px 0 4em;
 }
-aside, article > header, aside.contact .highlight {
+article > header, aside .highlight {
     padding: 60px 0 4em;
 }
-aside.contact {
-	padding-bottom: 0;
-	padding-top: 80px;
-	background: white;
+/* --- _PARALLAX -------------------------------------- */
+.parallax {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-color: Black;
 }
+.parallax.contact {
+	background-image: url("../images/slider/5.jpg");
+    background-color: White;
+    color: inherit;
+    color: #333;
+    padding-bottom: 0;
+}
+.parallax:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.2);
+    background: rgba(34, 195, 155, 0.3);
+    background: rgba(241, 94, 5, 0.6);
+    background: rgba(0,0,0,0.3);
+}
+.parallax.contact:after {
+	background-color: rgba(248, 247, 237, 0.95);
+	background-color: rgba(255, 255, 255, 0.95);
+	background-color: rgba(248, 247, 237, 0.95);
+
+}
+.parallax.attorney {
+    background-image: url(../images/page0/Attorney_1.jpg);
+}
+.parallax.miami {
+    background-image: url(../images/page0/Miami.jpg);
+}
+.parallax .container {
+    position: relative;
+    z-index: 1;
+}
+
 main > section > header, .highlight header {
 	padding-bottom: 2%;
 }
-form {
-	clear: both;
-	padding-bottom: 30px;
-}
 .home-page main > section > header {
     padding-top: 40px; /* aaa */
+}
+form {
+	clear: both;
 }
 .img-banner {
     margin: 2% 0 1%;
@@ -501,7 +542,7 @@ form {
     box-shadow: inset 0 40px 40px -50px rgba(0,0,0,.2);
 }
 */
-.highlight h1 {
+.highlight h1, h1.h1 {
     text-transform: uppercase;
     letter-spacing: 3px;
     border-bottom: 1px solid rgba(255, 255, 255, .4);
@@ -515,7 +556,7 @@ form {
 .callout {
 	background-color: rgba(0,0,0,0.075);
 	margin-top: 2%;
-	padding: 3% 4% 1%;
+	padding: 1.5em 4% 0.5em;
 }
 .container.callout {
 	padding-right: 15px;
@@ -535,38 +576,6 @@ p.callout {
 	padding-bottom: 1.5%;
 }
 
-/* --- PRALLAX -------------------------------------- */
-
-.parallax {
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
-    background-color: Black;
-}
-.parallax:after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0,0,0,.2);
-    background: rgba(34, 195, 155, 0.3);
-    background: rgba(241, 94, 5, 0.6);
-    background: rgba(0,0,0,0.3);
-}
-.parallax.attorney {
-    background-image: url(../images/page0/Attorney_1.jpg);
-}
-.parallax.miami {
-    background-image: url(../images/page0/Miami.jpg);
-}
-.parallax .container {
-    position: relative;
-    z-index: 1;
-}
 
 /* === _ULs ===================================================================================
 =============================================================================================== */
@@ -652,6 +661,16 @@ nav.main, footer.main {
     height: auto;
 }
 
+.caret {
+	display: block;
+	text-align: center;
+	margin: 3px auto 0;
+	position: absolute;
+	left: 41%;
+	border-top-width: 6px;
+	border-left-width: 8px;
+	border-right-width: 8px;
+}
 /* === CONTACT =====================================================================================================
 ==================================================================================================================== */
 
@@ -665,21 +684,23 @@ nav.main, footer.main {
 	display: none;
 }
 .form-control {
-    background-color: transparent;
-    border: 1px solid #ccc;
-    padding: 5px;
+	background: transparent;
+    border: 2px solid #ccc;
+    padding: 10px;
+    height: auto;
     box-shadow: none;
-}
+		height: 60px;
+	}
 .form-control[required="required"] {
-	border: 1px solid  #22c39b;
+	border: 2px solid  #22c39b;
 }
-.form-group {
+.form-control {
 }
 .form-group.submit {
 }
 .btn-submit {
     background: rgba(23, 130, 103, 1);
-    border: 1px solid #178267;
+    border: 2px solid #178267;
     border: 0;
     padding: 12px 30px 10px;
 }
@@ -702,9 +723,9 @@ nav.main, footer.main {
 address {
 	float: right;
 	border: 1px solid #f0f0f0;
-    padding: 40px 20px 10px 16px;
-    margin-top: -80px;
-    background: #f3f3f3;
+    padding: 30px 20px 10px 16px;
+    margin-top: -70px;
+	background: rgba(255, 255, 255, 0.7);
     border-radius: 0 0 8px 8px;
 }
 address > div, address .number div:first-child {
@@ -981,7 +1002,7 @@ footer.main aside {
 .banner {
 	padding-top: 55px;
 	background-color: black;
-	background-position: center bottom;
+	background-position:  center -100px;
 	background-repeat: no-repeat;
 	display: block;
 	background-image: url("../images/slider/1.jpg");
@@ -995,19 +1016,19 @@ footer.main aside {
 }
 .banner.estate {
 	background-image: url("../images/slider/2.jpg");
-	background-position: center -70px;
+	background-position: center -130px;
 }
 .banner.contract {
 	background-image: url("../images/slider/4.jpg");
-	background-position: center bottom;
+	background-position: center -130px;
 }
 .banner > div {
 	position: relative;
-	height: 450px;
+	height: 350px;
 	background-color: rgba(0,0,0,.2);
 }
 .banner h1, .banner p.banner-title {
-	padding-top: 150px;
+	padding-top: 100px;
 }
 .banner p.banner-caption {
 	padding: 0 0 10px;
@@ -1252,7 +1273,7 @@ footer.main aside {
 @media (max-width: 991px) {
 
 	.cta a:after, .promote h3 a:after {
-	    margin-right: -1.83rem;
+	    margin-right: -1.7rem;
    	}
     /* --- FONT SIZE --- SMALL AND MOBILE!!!! --------------- */
 	body {
@@ -1266,9 +1287,12 @@ footer.main aside {
 		font-size: 200%;
 	}
 	*/
-	p, ul.native, ul.typeface, .highlight .col-sm-4 p, .highlight .col-md-3 p, .form-control {
+	p, ul.native, ul.typeface, .form-control {
 		font-size: 145%;
 		line-height: 140%;
+	}
+	p.cta, .highlight .col-sm-4 p, .highlight .col-md-3 p {
+		font-size: 130%;
 	}
 	.col-sm-6.col-md-3 hgroup, .col-sm-4 hgroup {
 		font-size: 100%;
@@ -1314,7 +1338,6 @@ footer.main aside {
 	}
 
 	.banner .caption {
-		height: 400px;
 	}
 	.banner h1 {
 		padding-top: 150px;
@@ -1432,7 +1455,7 @@ footer.main aside {
 		font-family: "Electrolize", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
 	}
 
-	header.main, .sitemap-link, footer.main nav, .caption .telephone:before {
+	header.main, .sitemap-link, footer.main nav, .caption .telephone:before, .container.practices figure {
 		display: none;
 	}
 	.sitemap {
@@ -1441,16 +1464,13 @@ footer.main aside {
 	aside.contact {
 		color: Black;
 	}
-	h3, h3 a, .promote h3 a:after, address, .form-control:focus {
+	.practices h3 a, .form-control:focus {
 		color: rgb(34, 195, 155);
 	}
 	.form-control::-moz-placeholder, .form-control,
 	input[type="text"], input[type="email"], input[type="url"], input[type="password"],
 	textarea, select {
 		color: #444;
-	}
-	.form-control {
-		height: 45px;
 	}
 	.backtotop {
 		display: block;
@@ -1467,11 +1487,11 @@ footer.main aside {
 	}
 
 	/* --- FONT SIZE ----- MOBILE I ---------- */
-	h2, h3, .promote.promote-left h2, .promote.promote-right h2 {
-		font-size: 190%
+	h2, .promote.promote-left h2, .promote.promote-right h2 {
+		font-size: 200%
 	}
-	footer h3 {
-		font-size: 160%
+	h3 {
+		font-size: 180%
 	}
 	main > section > header h2 {
 		font-size: 220%;
@@ -1637,6 +1657,7 @@ footer.main aside {
 	.banner {
 		margin-top: 40px;
 		background-attachment: scroll;
+	background-position:  center;
 		padding: 0;
 		border: 0;
 	}
@@ -1691,12 +1712,6 @@ footer.main aside {
 	}
 	.container.practices .promote {
 		border-top: 1px solid #ddd;
-	}
-	.container.practices .cta, .container.practices figure {
-		display: none;
-	}
-	.parallax h2, .parallax h3 {
-		color: White;
 	}
 	.promote, .promote .overflow-auto {
 		overflow: visible;
@@ -1951,10 +1966,10 @@ footer.main aside {
     address .name {
     	text-align: left;
     }
-	.parallax.attorney:after {
+	.parallax.attorney:after, .parallax.contact:after {
 		display: none;
 	}
-	.parallax.attorney, .parallax.attorney h2, .parallax.attorney a {
+	.parallax.attorney, .parallax.contact, .parallax.attorney a {
 		background: white;
 		color: #666;
 	}
