@@ -130,17 +130,20 @@ h1, h2 {
 }
 .telephone {}
 /* --- smaller --- ----------------------*/
-nav.main, footer.main  {
-    font-size: 95%;
+footer.main  {
+    font-size: 75%;
+}
+nav.main  {
+    font-size: 85%;
 }
 .highlight h1 {
 	font-size: 90%;
 }
-.sitemap a, footer.main nav a, abbr[data-original-title], abbr[title] {
+abbr[data-original-title], abbr[title] {
     font-size: 80%;
 }
 /* --- hgroup --- -----------------*/
-.col-sm-6.col-md-3 hgroup, footer aside, .optionalFields  /* tax law page */ {
+.col-sm-6.col-md-3 hgroup, optionalFields  /* tax law page */ {
     font-size: 70%;
 }
 .col-sm-4 hgroup/* home and estate planning page */{
@@ -798,9 +801,6 @@ footer.main nav a:hover {
 	float: left;
 	width: 19%;
 }
-.sitemap > ul > li > a {
-	font-size: 90%;
-}
 .sitemap li.sitemap-larger {
 	width: 26%;
 }
@@ -1021,11 +1021,11 @@ footer.main aside {
 }
 .banner.estate {
 	background-image: url("../images/slider/2.jpg");
-	background-position: center -130px;
+	background-position: center -200px;
 }
 .banner.contract {
 	background-image: url("../images/slider/4.jpg");
-	background-position: center -130px;
+	background-position: center -100px;
 }
 .banner > div {
 	position: relative;
