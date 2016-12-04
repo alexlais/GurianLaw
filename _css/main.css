@@ -1,6 +1,7 @@
 
 /* --- _FONTS ------------------------------------------------------------ */
 
+
 @import url('https://fonts.googleapis.com/css?family=Vollkorn|Doppio+One');
 
 /* Vollkorn */
@@ -27,7 +28,7 @@ p.telephone {
 
 
 /* --- FONT design -------------------------------------------------------- */
-.h1, .h2, .h3, h1, h2, h3 {
+.h1, .h2, .h3, h1, h2, h3, dl, dt, dd {
 	margin: 0;
 }
 .parallax a, .cta a, .cta, .btn-submit, address .address-label {
@@ -100,9 +101,6 @@ h2, h3, h3 span, h4								{line-height: 135%;}
 body {
 	font-size: 100%;}
 /* ---------------------- */
-.highlight h1, .form-control {
-	font-size: 90%;
-}
 p, ul.native, ul.typeface, .btn-submit {
 	font-size: 130%;
     margin-bottom: 1em;
@@ -135,6 +133,9 @@ h1, h2 {
 nav.main, footer.main  {
     font-size: 95%;
 }
+.highlight h1 {
+	font-size: 90%;
+}
 .sitemap a, footer.main nav a, abbr[data-original-title], abbr[title] {
     font-size: 80%;
 }
@@ -148,14 +149,9 @@ nav.main, footer.main  {
 p.cta {
 	font-size: 90%;
 }
-aside.contact header > p {
+.form-control {
 	font-size: 110%;
 }
-/* --- highlight --- --------------
-.callout h2  {
-	font-size: 150%;
-}
-*/
 .highlight .col-sm-4 p, .highlight .col-md-3 p {
 	font-size: 120%;
 }
@@ -189,19 +185,19 @@ a.carousel-CTA {
 footer.main aside p.copyright {
 	font-size: 10px;
 }
-address .address-label {
+address {
+	font-size: 18px;
+}
+address dt {
     font-size: 13px;
 }
-address .content.name strong {
+address dl.name dt strong {
     font-size: 23px; font-weight: normal;
 }
-address .content.title {
-	font-size: 11px; line-height: 14px;
+address dl.name dd {
+    font-size: 11px; line-height: 14px;
 }
-address .content.address, address .content.fax-number, address .content.email {
-	font-size: 16px;
-}
-address .content.phone-number {
+address dl.phone-number dd {
 	font-size: 30px;
 }
 
@@ -212,10 +208,10 @@ body {
 	background-color: rgb(248, 247, 237);
 }
 .form-control, input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"],
-textarea, select {
+textarea, select, address dl.name dd {
 	color: #999;
 }
-address .content.title, h4 {
+h4 {
 	color: #777;
 }
 /* -- COLOR white _WHITE ----------------- */
@@ -223,10 +219,10 @@ address .content.title, h4 {
 .carousel,
 .carousel a, .carousel a:hover,
 .banner, .highlight .cta a, .cta a:hover,
-.btn-submit, .parallax {
+.btn-submit {
 	color: white;
 }
-.highlight h1, .highlight p:not(.callout) {
+.highlight h1, .highlight p:not(.cta) {
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -245,7 +241,8 @@ a:hover, .practices h2, .contact h2, address a, nav.main a:hover, footer.main a:
     color: #22c39b;
 }
 /* ---- fake gray link ---------------------- */
-h1.native, h2.native, .practices h3, .practices h3 a, address, .form-control:focus {
+h1.native, h2.native, .practices h3, .practices h3 a, address, .form-control:focus,
+.parallax.contact {
 	color: #444;
 }
 /* nav --------------------- */
@@ -309,7 +306,7 @@ background: #6d7722;
 
 /* --- BORDER _RADIUS --------------------------------- */
 
-.form-control, .btn-submit, img, address {
+.form-control, .btn-submit, img {
 	border-radius: 4px;}
 .cta a {
 	border-radius: 5px;}
@@ -317,6 +314,8 @@ background: #6d7722;
 	border-radius: 8px;}
 footer.main nav a {
 	border-radius: 20px;}
+address {
+    border-radius: 0 0 8px 8px;}
 
 /* --- _A -------------------------------------------------- */
 a {
@@ -481,8 +480,6 @@ article > header, aside .highlight {
 .parallax.contact {
 	background-image: url("../images/slider/5.jpg");
     background-color: White;
-    color: inherit;
-    color: #333;
     padding-bottom: 0;
 }
 .parallax:after {
@@ -498,11 +495,14 @@ article > header, aside .highlight {
     background: rgba(0,0,0,0.3);
 }
 .parallax.contact:after {
-	background-color: rgba(248, 247, 237, 0.95);
-	background-color: rgba(255, 255, 255, 0.95);
-	background-color: rgba(248, 247, 237, 0.95);
+	background-color: rgba(248, 247, 237, 0.93);
+	background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(248, 247, 237, 0.9);
 
 }
+	.form-control {
+		background: rgba(255, 255, 255, 0.6);
+	}
 .parallax.attorney {
     background-image: url(../images/page0/Attorney_1.jpg);
 }
@@ -684,12 +684,11 @@ nav.main, footer.main {
 	display: none;
 }
 .form-control {
-	background: transparent;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
     padding: 10px;
     height: auto;
     box-shadow: none;
-		height: 60px;
+	height: 60px;
 	}
 .form-control[required="required"] {
 	border: 2px solid  #22c39b;
@@ -705,6 +704,7 @@ nav.main, footer.main {
     padding: 12px 30px 10px;
 }
 .form-control:focus {
+	background:  White;
 	border-color: #22c39b;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(34, 195, 155, 1);
 }
@@ -724,35 +724,40 @@ address {
 	float: right;
 	border: 1px solid #f0f0f0;
     padding: 30px 20px 10px 16px;
-    margin-top: -70px;
-	background: rgba(255, 255, 255, 0.7);
-    border-radius: 0 0 8px 8px;
+    margin: -70px 0 15px 15px;
+	background: rgba(255, 255, 255, 0.8);
 }
-address > div, address .number div:first-child {
+address dl {
 	padding-bottom: 10px;
 }
-address .name {
+address dl.name {
 	text-align: center;
 }
-address .content.name {
+address dd {
+	display: inline;
+}
+address dl.address dd {
+	display: block;
+}
+address dl.name dt {
     border-bottom: 1px solid #bbb;
     display: inline-block;
 }
-address .content.title {
+address dl.name dd {
     text-transform: uppercase;
 	display: block;
 }
-address .number div, address .content.address {
+address dl.float-dt.address dd {
 	overflow: auto;
 }
-address .address-label {
+address dl.float-dt dt {
     float: left;
     min-width: 70px;
     text-align: right;
-    padding: 3px 12px 0 0;
+    padding: 5px 10px 0 0;
 }
-address .address-label.phone-number {
-	padding-top: 16px;
+address dl.float-dt.phone-number dt {
+    padding-top: 18px;
 }
 
 /* === _FOOTER =============================================== */
@@ -1273,11 +1278,11 @@ footer.main aside {
 @media (max-width: 991px) {
 
 	.cta a:after, .promote h3 a:after {
-	    margin-right: -1.7rem;
+	    margin-right: -2.2rem;
    	}
     /* --- FONT SIZE --- SMALL AND MOBILE!!!! --------------- */
 	body {
-		font-size: 70%;
+		font-size: 75%;
 	}
 	.carousel, .banner {
 		font-size: 200%;
@@ -1302,10 +1307,6 @@ footer.main aside {
 	.clearfix {
 		padding-bottom: 1%;
 	}
-
-	.cta a:after, .promote h3 a:after {
-	    /* margin-right: -2.3em; */
-   	}
 	.promote {
 		margin-bottom: 1%;
 	}
@@ -1809,30 +1810,13 @@ footer.main aside {
 		display: block;
 		margin: 0
 	}
-	address .address-label {
+	address dl.float-dt dt {
 	    min-width: auto;
 	    min-width: none;
 	    float: none;
 	    display: block;
 	    text-align: left;
 	    padding-top: 0;
-	}
-
-	address .number .address-label {
-		padding-top: 0;
-	}
-	address .content.name strong {
-		font-weight: bold;
-	}
-	address span {
-    	clear: left;
-    }
-	address .content.phone-number {
-		padding-bottom: 6px;
-		display: block;
-	}
-	address .content.address, address .content.fax-number, address .content.email {
-		font-size: 19px;
 	}
 }
 

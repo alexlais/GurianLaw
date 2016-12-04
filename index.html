@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+	id="webpage"
+    itemscope itemtype="http://schema.org/WebPage"
+    itemref="page-top">
 
 <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-	<title>Miami Dade Tax Attorney Business Contract Real State, Jorge L. Gurian, P.A.</title>
+	<title>Miami-Dade Tax Attorney Business Contract Real State, Jorge L. Gurian, P.A.</title>
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="_css/bootstrap.min.css" rel="stylesheet">
+	<link href="_css/animate.min.css" rel="stylesheet">
+    <link href="_css/main.css" rel="stylesheet">
 	<!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -24,23 +27,29 @@
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-<body id="page-top" class="home-page" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" class="home-page"
+	data-spy="scroll" data-target=".navbar-fixed-top"
+	itemprop="specialty"
+	itemscope itemtype="http://schema.org/LegalService"
+	itemref="logo address practices">
 
-	<div class="preloader"><img src="loading.gif"></div>
-	<div class="backtotop"><a href="#page-top"></a></div>
+	<div class="preloader" role="presentation"><img src="images/loading.gif"></div>
+	<div class="backtotop" role="presentation"><a href="#page-top"></a></div>
 
 	<!-- HOME PAGE CAROUSEL ------------------------------- -->
 
 	<header id="home" class="main"
-	role="banner" aria-roledescription="5 slide banner" aria-labelledby="ARIA_label_banner" aria-describedby="ARIA_describe_banner">
+	role="banner" aria-roledescription="our practices banner" aria-labelledby="ARIA_label_banner" aria-describedby="ARIA_describe_banner">
 
 	    <div id="home-slider" class="carousel slide carousel-fade"  data-pause=""  data-ride="carousel">
 			<div class="carousel-inner">
 				<div class="item active" style="background-image: url(images/slider/1.jpg)">
-					<div class="caption" itemscope itemtype="http://schema.org/Organization">
+					<div class="caption">
 		            	<div class="container">
-						    <h1 class="animated fadeInDown" id="ARIA_label_banner" itemprop="name">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr> <span class="title"><span>A South Florida Estate Planning, Tax &amp; Business Law Firm</span></span></h1>
-						    <p class="animated fadeInUp" id="ARIA_describe_banner" itemprop="description">Helping You Secure Your Financial Future <br role="presentation">For Over 20 Years.</p>
+						    <h1 class="animated fadeInDown" id="ARIA_label_banner"
+						    	itemprop="name">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr> <span class="title"><span>A South Florida Estate Planning, Tax &amp; Business Law Firm</span></span></h1>
+						    <p class="animated fadeInUp" id="ARIA_describe_banner"
+						    	itemprop="description">Helping You Secure Your Financial Future <br role="presentation">For Over 20 Years.</p>
 
 						    <a class="primary carousel-CTA page-scroll animated bounceInUp" href="#practices">Explore Our Practice Areas</a>
 						</div>
@@ -98,18 +107,17 @@
 	    </div>
 	</header>
 
-	<!-- SUB PAGE BANNER ------------------------------- -->
+	<!-- MOBILE BANNER ------------------------------- -->
 
-	<header class="visible-xs-block banner"
-	role="presentation" aria-roledescription="Estate Planning Lawyer banner" aria-labelledby="ARIA_label_banner" aria-describedby="ARIA_describe_banner">
+	<div class="visible-xs-block banner" role="presentation">
 		<div class="caption">
 			<div class="container">
-			    <p class="banner-title" id="ARIA_label_banner">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></h1>
-			    <p class="banner-caption" id="ARIA_describe_banner">Helping You Secure Your Financial&nbsp;Future <br role="presentation">For Over 20 Years.</p>
+			    <p class="banner-title">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></h1>
+			    <p class="banner-caption">Helping You Secure Your Financial&nbsp;Future <br>For Over 20 Years.</p>
 			</div>
-			<p class="telephone" itemprop="telephone">305-290-1940</p>
+			<p class="telephone">305-290-1940</p>
 		</div>
-	</header>
+	</div>
 
     <!-- MAIN NAVIGATION WRAPPER ----------------------------------- -->
 
@@ -123,7 +131,11 @@
                     <span class="icon-bar"></span>
                 </button>
 	          	<a class="navbar-brand page-scroll" href="#page-top">
-	            	<img src="images/logo.png" alt="Jorge L. Gurian, P.A. - A South Florida Estate Planning, Tax &amp; Business Law Firm">
+	            	<img
+	            		id="logo"
+	            		src="images/logo.png"
+	            		alt="Jorge L. Gurian, P.A. - A South Florida Estate Planning, Tax &amp; Business Law Firm"
+	            		itemprop="logo">
 	          	</a>
             </div>
 
@@ -160,9 +172,9 @@
 		                    <li><a class="page-scroll" href="#advice" data-toggle="collapse" data-target=".navbar-ex1-collapse">Legal Advice</a></li>
 		            	</ul>
                     </li>
-            		<li><a href="Tax_Attorney.html" title="Miami &amp; South Florida Tax Law Firm Services" rel="law services" rev="law firm">Tax Law</a></li>
-            		<li><a href="Estate_Planning.html" title="Miami &amp; South Florida Estate Planning Law Firm Services" rel="law services" rev="law firm">Estate Planning</a></li>
-            		<li><a href="Contract_Law.html" title="Miami &amp; South Florida Contract Law Firm Services" rel="law services" rev="law firm">Contract Law</a></li>
+            		<li><a href="Tax_Attorney.html" title="Miami &amp; South Florida Tax Law Firm Services">Tax Law</a></li>
+            		<li><a href="Estate_Planning.html" title="Miami &amp; South Florida Estate Planning Law Firm Services">Estate Planning</a></li>
+            		<li><a href="Contract_Law.html" title="Miami &amp; South Florida Contract Law Firm Services">Contract Law</a></li>
 
                 	<li><a class="page-scroll" href="#contact" data-toggle="collapse" data-target=".navbar-ex1-collapse">Contact Us</a></li>
             		<li><a class="page-scroll" href="#address" data-toggle="collapse" data-target=".navbar-ex1-collapse" title="Our Address And Location" rel="Location" rev="law firm">Location Address</a></li>
@@ -185,7 +197,7 @@
 	                <div class="col-lg-8">
 	                    <h2 id="ARIA_label_1" role="heading" aria-level="2">
 	                    	Our Practice Areas</h2>
-	                    <p id="ARIA_describe_1">At the <mark>law firm</mark> of <span class="text-nowrap">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></span>, we represent clients in <mark class="text-nowrap">Miami Dade</mark> and throughout <mark class="text-nowrap">South Florida</mark> in a wide range of investment issues and property protection matters.</p>
+	                    <p id="ARIA_describe_1">At the <mark>law firm</mark> of <span class="text-nowrap">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></span>, we represent clients in <mark class="text-nowrap">Miami-Dade</mark> and throughout <mark class="text-nowrap">South Florida</mark> in a wide range of investment issues and property protection matters.</p>
 	                </div>
 	            </div>
 	        </header>
@@ -264,7 +276,7 @@
 	    aria-details="ARIA-details-10 ARIA-details-11">
 
 	    	<div class="container">
-	    		<h1 id="ARIA_label_10" role="heading" aria-level="1">Miami Dade &amp; <span class="text-nowrap">South Florida</span> <span class="text-nowrap">Business Law</span></h1>
+	    		<h1 id="ARIA_label_10" role="heading" aria-level="1">Miami-Dade &amp; <span class="text-nowrap">South Florida</span> <span class="text-nowrap">Business Law</span></h1>
 			</div>
             <div class="container">
 			    <div class="promote promote-left">
@@ -438,25 +450,54 @@
 	  	<aside id="contact" class="parallax contact" role="seealso">
 			<div class="container">
 		        <header>
-		       		<address class="hidden-xs" itemscope itemtype="http://schema.org/LocalBusiness" role="region" aria-roledescription="Our Address">
-				        <div class="name">
-							<span class="content name" itemprop="name"><strong>Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></strong></span>
-							<span class="content title" itemprop="jobTitle">A South Florida Estate Planning, <br role="presentation">Tax &amp; Business Law&nbsp;Firm</span>
-				        </div>
-				        <div class="number">
-							<div><span class="address-label phone-number">Phone:</span> <span class="content phone-number" itemprop="telephone" content="+13052901940"><a href="tel:+1305-290-1940">305-290-1940</a></span></div>
-							<div><span class="address-label fax-number">Fax:</span> <span class="content fax-number" itemprop="faxNumber">305-279-1489</span></div>
-						</div>
-				        <div class="address">
-							<div><span class="address-label address">Address:</span></div>
-							<div class="content address" itemscope itemtype="http://schema.org/PostalAddress">
-								<span itemprop="streetAddress">2665 S. Bayshore Dr. <br role="presentation">Suite 800</span>
-								<br role="presentation"><span itemprop="addressLocality">Miami</span>,
-								<span itemprop="addressRegion">FL</span>
-								<span itemprop="postalCode">33133</span>
-							</div>
-						</div>
-						<div class="email"><span class="address-label email">Email:</span> <span class="content email" itemprop="email"><a href="mailto:email">Contact@GurianLaw.com</a></span></div>
+		       		<address id="addressDesktop" class="hidden-xs"
+		 				role="region" aria-roledescription="Our Address">
+
+				        <dl class="name">
+							<dt itemprop="founder name"><strong>Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></strong></dt>
+							<dd itemprop="description">A South Florida Estate Planning, <br role="presentation">Tax &amp; Business Law Firm</span></dd>
+				        </dl>
+
+						<dl class="float-dt phone-number">
+							<dt>Phone:</dt>
+							<dd itemprop="telephone" content="+13052901940"><a href="tel:+1305-290-1940">305-290-1940</a></dd>
+						</dl>
+
+						<dl class="float-dt fax-number">
+							<dt>Fax:</dt>
+							<dd itemprop="faxNumber" content="+3052791489">305-279-1489</dd>
+						</dl>
+
+				        <dl class="float-dt address"
+				        	itemprop="location"
+				        	itemscope itemtype="http://schema.org/Place">
+
+							<dt>Address:</dt>
+							<dd itemprop="geo"
+								itemscope itemtype="http://schema.org/GeoCircle">
+		        				<span
+		        					itemprop="geoMidpoint"
+		        					itemscope itemtype="http://schema.org/GeoCoordinates">
+									<meta itemprop="latitude" content="25.731454" />
+									<meta itemprop="longitude" content="-80.236751" />
+								</span>
+								<meta itemprop="geoRadius" content="120000" />
+								<span
+									itemprop="address"
+									itemscope itemtype="http://schema.org/PostalAddress">
+									<span itemprop="streetAddress">2665 S. Bayshore Dr. <br role="presentation">Suite 800</span>
+									<br role="presentation">
+									<span itemprop="addressLocality">Miami</span>,
+									<span itemprop="addressRegion">FL</span>
+									<span itemprop="postalCode">33133</span>
+								</span>
+							</dd>
+						</dl>
+
+						<dl class="float-dt email">
+							<dt>Email:</dt>
+							<dd itemprop="email"><a href="mailto:email">Contact@GurianLaw.com</a></dd>
+						</dl>
 			    	</address>
 
 					<h2 id="ARIA_label_form">Talk To Us</h2>
@@ -584,28 +625,60 @@
 		<!-- MOBILE ADDRESS -->
 
 		<aside class="visible-xs-block">
-       		<address id="address" class="container-fluid" itemscope itemtype="http://schema.org/LocalBusiness">
-		        <div class="name">
-					<span class="content name" itemprop="name"><strong>Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></strong></span>
-					<span class="content title" itemprop="jobTitle">A South Florida Estate Planning, <br role="presentation">Tax &amp; Business Law&nbsp;Firm</span>
-		        </div>
-		        <div class="number">
-					<div><span class="address-label phone-number">Phone:</span> <span class="content phone-number" itemprop="telephone" content="+13052901940"><a href="tel:+1305-290-1940">305-290-1940</a></span></div>
-					<div><span class="address-label fax-number">Fax:</span> <span class="content fax-number" itemprop="faxNumber">305-279-1489</span></div>
-				</div>
-		        <div class="address">
-					<div><span class="address-label address">Address:</span></div>
-					<div class="content address" itemscope itemtype="http://schema.org/PostalAddress">
-						<span itemprop="streetAddress">2665 S. Bayshore Dr. <br role="presentation">Suite 800</span>
-						<br role="presentation"><span itemprop="addressLocality">Miami</span>,
-						<span itemprop="addressRegion">FL</span>
-						<span itemprop="postalCode">33133</span>
-					</div>
-				</div>
-				<div class="email"><span class="address-label email">Email:</span> <span class="content email" itemprop="email"><a href="mailto:email">Contact@GurianLaw.com</a></span></div>
+       		<address id="address" class="container-fluid"
+ 				role="region" aria-roledescription="Our Address">
+
+		        <dl class="name">
+					<dt itemprop="founder name"><strong>Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></strong></dt>
+					<dd itemprop="description">A South Florida Estate Planning, <br role="presentation">Tax &amp; Business Law Firm</span></dd>
+		        </dl>
+
+				<dl class="float-dt phone-number">
+					<dt>Phone:</dt>
+					<dd itemprop="telephone" content="+13052901940"><a href="tel:+1305-290-1940">305-290-1940</a></dd>
+				</dl>
+
+				<dl class="float-dt fax-number">
+					<dt>Fax:</dt>
+					<dd itemprop="faxNumber" content="+3052791489">305-279-1489</dd>
+				</dl>
+
+		        <dl class="float-dt address"
+		        	itemprop="location"
+		        	itemscope itemtype="http://schema.org/Place">
+
+					<dt>Address:</dt>
+					<dd itemprop="geo"
+						itemscope itemtype="http://schema.org/GeoCircle">
+        				<span
+        					itemprop="geoMidpoint"
+        					itemscope itemtype="http://schema.org/GeoCoordinates">
+							<meta itemprop="latitude" content="25.731454" />
+							<meta itemprop="longitude" content="-80.236751" />
+						</span>
+						<meta itemprop="geoRadius" content="120000" />
+						<span
+							itemprop="address"
+							itemscope itemtype="http://schema.org/PostalAddress">
+							<span itemprop="streetAddress">2665 S. Bayshore Dr. <br role="presentation">Suite 800</span>
+							<br role="presentation">
+							<span itemprop="addressLocality">Miami</span>,
+							<span itemprop="addressRegion">FL</span>
+							<span itemprop="postalCode">33133</span>
+						</span>
+					</dd>
+				</dl>
+
+				<dl class="float-dt email">
+					<dt>Email:</dt>
+					<dd itemprop="email"><a href="mailto:email">Contact@GurianLaw.com</a></dd>
+				</dl>
 	    	</address>
 	    </aside>
-    	<aside role=""><div id="map"></div></aside>
+
+    	<aside role="">
+    		<div id="map"></div>
+    	</aside>
 
 		<!-- CONTACT HIGHLIGHT -->
 
@@ -687,18 +760,18 @@
 	 	</aside>
 	</footer>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.inview.min.js"></script>
-	<script src="js/wow.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="_js/jquery.js"></script>
+    <script src="_js/bootstrap.min.js"></script>
+	<script src="_js/jquery.inview.min.js"></script>
+	<script src="_js/wow.min.js"></script>
+    <script src="_js/main.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFN2xCmdzr52luyFP0QFROp0kldgCYgUk&callback=initMap"></script>
 
 
-	<!-- script type="text/javascript" src="js/jquery.inview.min.js"></script>
-	<script type="text/javascript" src="js/wow.min.js"></script>
-	<script type="text/javascript" src="js/mousescroll.js"></script>
-	<script type="text/javascript" src="js/smoothscroll.js"></script>
+	<!-- script type="text/javascript" src="_js/jquery.inview.min.js"></script>
+	<script type="text/javascript" src="_js/wow.min.js"></script>
+	<script type="text/javascript" src="_js/mousescroll.js"></script>
+	<script type="text/javascript" src="_js/smoothscroll.js"></script -->
 
 </body>
 </html>
