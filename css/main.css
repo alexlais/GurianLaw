@@ -355,7 +355,7 @@ address .content.phone-number a:hover, .sitemap a:hover {
 }
 .cta a:after, .promote h3 a:after {
     content:"\a0\2192"; /* "\a0" is used to generate a non braking space in html */
-    padding-right: 25px;
+    padding-right: 15px;
     transition-property: padding;
     transition-duration: 0.3s;
     transition-timing-function: linear;
@@ -363,7 +363,7 @@ address .content.phone-number a:hover, .sitemap a:hover {
 .promote h3 a:after {
 }
 .cta a:hover:after, .promote h3 a:hover:after, figure:hover ~ hgroup h3 a:after {
-    padding-left: 25px;
+    padding-left: 15px;
     padding-right: 0;
 }
 
@@ -542,13 +542,6 @@ form {
 	background-color: rgba(0,0,0,0.075);
 	margin-top: 2%;
 	padding: 1.5em 4% 0.5em;
-}
-.container.callout {
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.container.callout > div {
-	padding: 0 1%;
 }
 p.callout {
 	font-style: italic;
@@ -1735,7 +1728,6 @@ footer.main aside {
 	/* .promote.border, .callout {margin-top: 0; border: 0;}
 	p, ul.native, ul.typeface, h4 {margin-bottom: 0.5em;} */
 	.clearfix {padding-bottom: 0;}
-	.container.callout > div {padding: 0;}
 
 	/* PAGE BOTTOM --- MOBILE I ------------------- */
 
