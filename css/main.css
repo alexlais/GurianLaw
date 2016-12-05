@@ -17,6 +17,7 @@ footer.main,
 input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"],
 .banner p.banner-caption {
 	font-family: "Doppio One", "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+	font-weight: normal;
 }
 address {
 	font-family: Arial, Helvetica, serif
@@ -31,7 +32,7 @@ p.telephone {
 .h1, .h2, .h3, h1, h2, h3, dl, dt, dd {
 	margin: 0;
 }
-.parallax a, .cta a, .cta, .btn-submit, address .address-label {
+.parallax a, address .address-label {
 	font-weight: bold;
 }
 .caption .telephone {
@@ -53,16 +54,14 @@ h1 + h2 {
 
 
 
-/* google maps */
+/* MAP */
 #map {
 	height: 250px;
 	width: 100%;
 }
 
-
-
-/* ---  _NONSENSE: clearing unnecessary link manipulation that developers love to waste time with, everywhere! (just leave the focus alone!)---------------------------------------- */
-}.dropdown-menu > li > a
+/* ---  _NONSENSE clearing unnecessary link manipulation and leave the :focus alone --------------------------------------- */
+.dropdown-menu > li > a
 	{font-weight: inherit;}
 }.form-control::-moz-placeholder, .form-control:-ms-input-placeholder
 	{color:inherit;}
@@ -106,7 +105,7 @@ p, ul.native, ul.typeface, .btn-submit {
     margin-bottom: 1em;
 }
 h4 {
-	font-size: 160%;
+	font-size: 130%;
     margin-bottom: 1em;
     margin-top: -.2em;
 }
@@ -115,6 +114,11 @@ h3 {
     margin-bottom: 0.6em;
 	margin-top: .6em;
 }
+.col-sm-4 h3, .col-md-3 h3 {
+	font-size: 160%;
+	margin-bottom: 0.2em;
+}
+
 h1, h2 {
 	font-size: 220%;
     margin-bottom: .6em;
@@ -142,25 +146,14 @@ nav.main  {
 abbr[data-original-title], abbr[title] {
     font-size: 80%;
 }
-/* --- hgroup --- -----------------*/
-.col-sm-6.col-md-3 hgroup, optionalFields  /* tax law page */ {
-    font-size: 70%;
-}
-.col-sm-4 hgroup/* home and estate planning page */{
-    font-size: 90%;
-}
 p.cta {
-	font-size: 90%;
+	font-size: 100%;
+}
+.optionalFields {
+    font-size: 70%;
 }
 .form-control {
 	font-size: 110%;
-}
-.highlight .col-sm-4 p, .highlight .col-md-3 p {
-	font-size: 120%;
-}
-.highlight .col-sm-4 h3, .highlight .col-md-3 h3 {
-	font-size: 155%;
-	margin-bottom: 0.3em
 }
 /* --- carousel ONLY --- ----------------*/
 .carousel, .banner {
@@ -214,9 +207,6 @@ body {
 textarea, select, address dl.name dd {
 	color: #999;
 }
-h4 {
-	color: #777;
-}
 /* -- COLOR white _WHITE ----------------- */
 .parallax, .highlight, .highlight a, .parallax.attorney a,
 .carousel,
@@ -225,7 +215,7 @@ h4 {
 .btn-submit {
 	color: white;
 }
-.highlight h1, .highlight p:not(.cta) {
+.highlight h1, .highlight p:not(.cta), .highlight ul {
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -348,21 +338,15 @@ address .content.phone-number a:hover, .sitemap a:hover {
     overflow: auto;
 }
 .cta a {
-    text-align: right;
-    display: block;
-    padding: 9px 3em 9px 10px;
-    transition-property: background, color;
+    display: inline-block;
+    padding: .5em .5em .5em .8em;
+    transition-property: background, color, padding;
     transition-duration: 0.15s;
     transition-timing-function: linear;
 }
 .highlight .cta a {
-    padding-top: 10px;
-    display: inline-block;
-    float: none;
-    white-space: nowrap;
     border: 1px solid #fff;
-    padding-left: 15px;
- }
+}
 .cta a:hover {
     background: #1fad8a;
 }
@@ -370,18 +354,16 @@ address .content.phone-number a:hover, .sitemap a:hover {
     background: White;
 }
 .cta a:after, .promote h3 a:after {
-    margin-right: -2.3em;
     content:"\a0\2192"; /* "\a0" is used to generate a non braking space in html */
-    padding-right: 15px;
+    padding-right: 25px;
     transition-property: padding;
     transition-duration: 0.3s;
     transition-timing-function: linear;
 }
 .promote h3 a:after {
-    margin-right: 0;
 }
 .cta a:hover:after, .promote h3 a:hover:after, figure:hover ~ hgroup h3 a:after {
-    padding-left: 15px;
+    padding-left: 25px;
     padding-right: 0;
 }
 
@@ -452,7 +434,7 @@ abbr[data-original-title], abbr[title] {
     display: block;
 }
 .promote figure a img {
-    transition: all 5s ease-out;
+    transition: all 7s cubic-bezier(0,0.5,1,1);
 }
 .promote figure a:hover img, figure.hover img {
     transform: scale(1.2);
@@ -788,6 +770,7 @@ footer.main nav a:hover {
 	background: #f8f8f8;
 	border-top: 1px solid #22c39b;
 	padding: 10px 0 10px 2%;
+	line-height: 180%;
 }
 .sitemap.collapse.in {
 	overflow: auto;
@@ -812,6 +795,9 @@ footer.main nav a:hover {
 }
 .sitemap ul ul {
 	padding-left: 18px;
+}
+.sitemap li {
+	line-height: 200%;
 }
 footer.main aside {
 	border-top: 1px solid #22c39b;
@@ -1102,7 +1088,7 @@ footer.main aside {
 	display: inline-block;
 	z-index: 2;
 
-	background: url("../top30px.png") center no-repeat;
+	background: url("../images/top30px.png") center no-repeat;
 }
   	/*
     color: rgba(0,0,0,.4);
@@ -1277,9 +1263,6 @@ footer.main aside {
 /* === _SM ====================================================== */
 @media (max-width: 991px) {
 
-	.cta a:after, .promote h3 a:after {
-	    margin-right: -2.2rem;
-   	}
     /* --- FONT SIZE --- SMALL AND MOBILE!!!! --------------- */
 	body {
 		font-size: 75%;
@@ -1287,20 +1270,21 @@ footer.main aside {
 	.carousel, .banner {
 		font-size: 200%;
 	}
+	p, ul.native, ul.typeface, .form-control {
+		font-size: 145%;
+		line-height: 140%;
+	}
+	p.cta {
+		font-size: 115%;
+	}
 	/*
 	.highlight .col-sm-4 h3, .highlight .col-md-3 h3, .btn-submit {
 		font-size: 200%;
 	}
 	*/
-	p, ul.native, ul.typeface, .form-control {
-		font-size: 145%;
-		line-height: 140%;
-	}
-	p.cta, .highlight .col-sm-4 p, .highlight .col-md-3 p {
-		font-size: 130%;
+	p.cta, .col-sm-4, .col-md-3 {
 	}
 	.col-sm-6.col-md-3 hgroup, .col-sm-4 hgroup {
-		font-size: 100%;
 	}
 
     /* -------------------------- */
@@ -1346,10 +1330,6 @@ footer.main aside {
 
     /* --- __SECTION --- SMALL -------------------------- */
 
-    .cta a {
-        float: right;
-        padding-left: 20px;
-    }
 
     /* --- CONTACT --- SMALL------------------------ */
 
@@ -1446,7 +1426,9 @@ footer.main aside {
 ====== XS (_MOBILE) ================================================== */
 
 @media (max-width: 767px) {
-
+	h1, h2, h3, h4, p, span, a, ul, li {
+		word-wrap: break-word;
+	}
 
 	main {
 		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
@@ -1456,7 +1438,7 @@ footer.main aside {
 		font-family: "Electrolize", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
 	}
 
-	header.main, .sitemap-link, footer.main nav, .caption .telephone:before, .container.practices figure {
+	header.main, .sitemap-link, footer.main nav, .caption .telephone:before, .container.practices figure, .practices .cta {
 		display: none;
 	}
 	.sitemap {
@@ -1489,15 +1471,19 @@ footer.main aside {
 
 	/* --- FONT SIZE ----- MOBILE I ---------- */
 	h2, .promote.promote-left h2, .promote.promote-right h2 {
-		font-size: 200%
 	}
 	h3 {
-		font-size: 180%
 	}
 	main > section > header h2 {
 		font-size: 220%;
 		font-weight: bold;
 	}
+
+	.practices .col-sm-4 h3, .practices .col-md-3 h3 {
+		font-size: 190%;
+		margin-bottom: 0.6em;
+	}
+
 	.btn-submit {
 		width: 100%;
 	}
@@ -1713,6 +1699,7 @@ footer.main aside {
 	}
 	.container.practices .promote {
 		border-top: 1px solid #ddd;
+		margin-top: 2em;
 	}
 	.promote, .promote .overflow-auto {
 		overflow: visible;
@@ -1937,7 +1924,6 @@ footer.main aside {
 
     .cta {
     	margin: 0;
-    	padding-top: 10px;
 		overflow: visible;
 		text-align: left;
     }

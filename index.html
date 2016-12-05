@@ -2,9 +2,10 @@
 <html lang="en"
 	id="webpage"
     itemscope itemtype="http://schema.org/WebPage"
-    itemref="page-top">
+    itemref="page-top MDATA_findlaw">
 
 <head>
+	<meta itemprop="primaryImageOfPage" content="images/slider/1.jpg" />
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,9 +30,8 @@
 
 <body id="page-top" class="home-page"
 	data-spy="scroll" data-target=".navbar-fixed-top"
-	itemprop="specialty"
 	itemscope itemtype="http://schema.org/LegalService"
-	itemref="logo address practices">
+	itemref="MDATA_logo MDATA_findlaw MDATA_coverArea address practices">
 
 	<div class="preloader" role="presentation"><img src="images/loading.gif"></div>
 	<div class="backtotop" role="presentation"><a href="#page-top"></a></div>
@@ -45,7 +45,7 @@
 			<div class="carousel-inner">
 				<div class="item active" style="background-image: url(images/slider/1.jpg)">
 					<div class="caption">
-		            	<div class="container">
+		            	<div class="container" itemprop="specialty">
 						    <h1 class="animated fadeInDown" id="ARIA_label_banner"
 						    	itemprop="name">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr> <span class="title"><span>A South Florida Estate Planning, Tax &amp; Business Law Firm</span></span></h1>
 						    <p class="animated fadeInUp" id="ARIA_describe_banner"
@@ -132,7 +132,7 @@
                 </button>
 	          	<a class="navbar-brand page-scroll" href="#page-top">
 	            	<img
-	            		id="logo"
+	            		id="MDATA_logo"
 	            		src="images/logo.png"
 	            		alt="Jorge L. Gurian, P.A. - A South Florida Estate Planning, Tax &amp; Business Law Firm"
 	            		itemprop="logo">
@@ -183,8 +183,9 @@
         </div> <!-- /container -->
     </nav>
 
-
-  	<main role="main" aria-label="Jorge L. Gurian P.A. Law Firm Home Page: Our Practice Areas">
+  	<main
+  		itemprop="mainContentOfPage"
+  		role="main" aria-label="Jorge L. Gurian P.A. Law Firm Home Page: Our Practice Areas">
 
     	<!-- HEADER ------------------------------------ -->
 
@@ -439,9 +440,27 @@
 			</div>
 	    </section>
 
-	    <aside id="miami" class="parallax miami" role="seealso geography">
+	    <aside id="miami" class="parallax miami" role="seealso">
            	<div class="container">
-				<h2><a href="http://pview.findlaw.com/cmd/view?wld_id=1980873&amp;pid=1" target="_blank"><span class="text-nowrap">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></span></a>, represents clients throughout the <span class="text-nowrap">Miami area</span> and <span class="text-nowrap">South Florida</span>. This includes those in <span class="text-nowrap">Dade County</span>, <span class="text-nowrap">Monroe County</span>, <span class="text-nowrap">Broward County</span> and <span class="text-nowrap">Palm Beach County</span> and the cities of <span class="text-nowrap">Fort Lauderdale</span>, Hialeah, Hollywood, <span class="text-nowrap">Pompano Beach</span> <span class="text-nowrap">and Kendall</span>.</h2>
+				<h2>
+					<a id="MDATA_findlaw" itemprop="relatedLink sameAs" href="http://pview.findlaw.com/cmd/view?wld_id=1980873&amp;pid=1" target="_blank"><span class="text-nowrap">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></span></a>, represents clients throughout the
+					<span itemprop="areaServed" itemscope itemtype="http://schema.org/State">
+						<span itemprop="name">Miami-Dade</span> area and
+						<span class="text-nowrap" itemprop="name">South Florida</span>. This includes those in
+						<span class="text-nowrap" itemprop="name">Dade County</span>,
+						<span class="text-nowrap" itemprop="name">Monroe County</span>,
+						<span class="text-nowrap" itemprop="name">Broward County</span> and
+						<span class="text-nowrap" itemprop="name">Palm Beach County</span> and the cities of
+					</span>
+					<span itemprop="areaServed" itemscope itemtype="http://schema.org/City">
+						<span itemprop="name">Miami</span>,
+						<span class="text-nowrap" itemprop="name">Fort Lauderdale</span>,
+						<span itemprop="name">Hialeah</span>,
+						<span itemprop="name">Hollywood</span>,
+						<span class="text-nowrap" itemprop="name">Pompano Beach</span>
+						<span class="text-nowrap">and <span itemprop="name">Kendall</span></span>.
+					</span>
+				</h2>
 			</div>
 		</aside>
 
@@ -473,7 +492,7 @@
 				        	itemscope itemtype="http://schema.org/Place">
 
 							<dt>Address:</dt>
-							<dd itemprop="geo"
+							<dd itemprop="geo areaServed"
 								itemscope itemtype="http://schema.org/GeoCircle">
 		        				<span
 		        					itemprop="geoMidpoint"
@@ -482,6 +501,7 @@
 									<meta itemprop="longitude" content="-80.236751" />
 								</span>
 								<meta itemprop="geoRadius" content="120000" />
+
 								<span
 									itemprop="address"
 									itemscope itemtype="http://schema.org/PostalAddress">
@@ -492,6 +512,7 @@
 									<span itemprop="postalCode">33133</span>
 								</span>
 							</dd>
+							<link itemprop=”hasMap” href=”https://goo.gl/maps/Ko9vX”>
 						</dl>
 
 						<dl class="float-dt email">
