@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Vollkorn|Doppio+One');
 
 /* Vollkorn */
-h1, h2, h3, main, .banner h1, .banner p.banner-title {
+h1, h2, h3, main, .banner h1, .banner p.banner-title, label.font-size{
 	font-family: "Vollkorn", Georgia, "Times New Roman", serif;
 	font-weight: normal;
 }
@@ -29,7 +29,7 @@ p.telephone {
 
 
 /* --- FONT design -------------------------------------------------------- */
-.h1, .h2, .h3, h1, h2, h3, dl, dt, dd {
+.h1, .h2, .h3, h1, h2, h3, dl, dt, dd, label {
 	margin: 0;
 }
 .parallax a, address .address-label {
@@ -61,9 +61,11 @@ h1 + h2 {
 }
 
 /* ---  _NONSENSE clearing unnecessary link manipulation and leave the :focus alone --------------------------------------- */
+label {display: inherit; max-width: auto; max-width: none; font-weight: inherit;}
+
 .dropdown-menu > li > a
 	{font-weight: inherit;}
-}.form-control::-moz-placeholder, .form-control:-ms-input-placeholder
+.form-control::-moz-placeholder, .form-control:-ms-input-placeholder
 	{color:inherit;}
 .navbar-default ul.navbar-nav > li > a:focus, .navbar-default ul.navbar-nav > li > a:hover
 	{color:inherit;}
@@ -103,6 +105,12 @@ body {
 p, ul.native, ul.typeface, .btn-submit {
 	font-size: 130%;
     margin-bottom: 1em;
+}
+body.font-size-2 main p:not(.cta), body.font-size-2 main ul.native {
+	font-size: 150%;
+}
+body.font-size-3 main p:not(.cta), body.font-size-3 main ul.native {
+	font-size: 180%;
 }
 h4 {
 	font-size: 130%;
@@ -197,11 +205,14 @@ address dl.phone-number dd {
 	font-size: 30px;
 }
 
-/* --- _COLORS ------- hover green #22c39b ------- #22c39b ----------------------------------------------- */
+/* --- _COLORS ------- hover green #22c39b ------- rgb(23, 130, 103) ----------------------------------------- */
 
 body {
 	color: #999;
 	background-color: rgb(248, 247, 237);
+}
+body.font-size-3, label.font-size {
+	color: #666;
 }
 .form-control, input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"],
 textarea, select, address dl.name dd {
@@ -652,6 +663,36 @@ nav.main, footer.main {
 }
 /* === CONTACT =====================================================================================================
 ==================================================================================================================== */
+label.font-size {
+	font-size: 16px;
+	background: rgb(23, 130, 103);
+	background: transparent;
+	border-bottom-left-radius: 20px;
+	padding: 8px 12px;
+	float: right;
+	line-height: 20px;
+}
+.home-page label.font-size {
+	margin-top: 60px;
+}
+label.font-size > span {
+	padding-left: 4px;
+}
+.font-size-1 label.font-size span.default, .font-size-2 label.font-size span.larger, .font-size-3 label.font-size span.largest {
+	color: #22c39b;
+}
+label.font-size span.largest {
+	padding-left: 2px;
+}
+label.font-size span.plus-sign {
+	font-size: 11px;
+	vertical-align: text-top;
+	font-weight: bold;
+}
+label.font-size input {
+	width: 65px;
+	cursor: pointer;
+}
 
 #google-map {
     height: 300px;
@@ -1431,7 +1472,7 @@ footer.main aside {
 		font-family: "Electrolize", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
 	}
 
-	header.main, .sitemap-link, footer.main nav, .caption .telephone:before, .container.practices figure, .practices .cta {
+	.font-size, header.main, .sitemap-link, footer.main nav, .caption .telephone:before, .container.practices figure, .practices .cta {
 		display: none;
 	}
 	.backtotop, .sitemap {

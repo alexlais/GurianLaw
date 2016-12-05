@@ -2,6 +2,31 @@
 var preloader = $('.preloader');
 $(window).load(function(){
 	preloader.remove();
+
+	if ('localStorage' in window && window['localStorage'] !== null) {
+		document.body.classList.add('font-size-' + localStorage.fontSizeSet);
+		document.getElementById('fontSizeSelector').value = localStorage.fontSizeSet;
+	}
+});
+
+// font size
+
+$('#fontSizeSelector').change(function(){
+if ('localStorage' in window && window['localStorage'] !== null) {
+	try {
+		var fontSize = document.getElementById('fontSizeSelector').value;
+		// The setItem(‘key’,’value’) allows us to write the data into the local storage.
+		localStorage.setItem('fontSizeSet', fontSize);
+		document.body.classList.remove('font-size-1', 'font-size-2', 'font-size-3', 'font-size-4');
+		document.body.classList.add('font-size-' + fontSize);
+	} catch (e) {
+		if (e == QUOTA_EXCEEDED_ERR) {
+			alert('Quota exceeded!');
+		}
+	}
+	} else {
+		alert('Error: Cannot set font size as your browser do not support local storage');
+	}
 });
 
 // --------------------------------------------------------------
@@ -117,15 +142,35 @@ $('.home-page .carousel .item .caption').css({
 
 
 
+
+// counter
+function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+            localStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+		document.body.classList.add(localStorage.clickcount);
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
+function clearSettings() {
+	localStorage.clickcount = 1;
+}
+
+
 function initMap() {
-	var uluru = {lat: 25.731454, lng: -80.236751};
+	var gurianLaw = {lat: 25.731454, lng: -80.236751};
 	var map = new google.maps.Map(document.getElementById('map'), {
 	  zoom: 15,
 	  scrollwheel: false,
-	  center: uluru
+	  center: gurianLaw
 	});
 	var marker = new google.maps.Marker({
-	  position: uluru,
+	  position: gurianLaw,
 	  map: map
 	});
 }
