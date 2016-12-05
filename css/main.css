@@ -116,7 +116,7 @@ h3 {
 }
 .col-sm-4 h3, .col-md-3 h3 {
 	font-size: 160%;
-	margin-bottom: 0.2em;
+	margin-bottom: 0.4em;
 }
 
 h1, h2 {
@@ -1471,7 +1471,7 @@ footer.main aside {
 
 	/* --- FONT SIZE ----- MOBILE I ---------- */
 	h2, .promote.promote-left h2, .promote.promote-right h2 {
-		font-size: 220%;
+		font-size: 200%;
 	}
 	h3 {
 	}
