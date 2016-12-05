@@ -1928,11 +1928,11 @@ footer.main aside {
     address .name {
     	text-align: left;
     }
-	.parallax.attorney:after, .parallax.contact:after {
+	.parallax:after {
 		display: none;
 	}
-	.parallax.attorney, .parallax.contact, .parallax.attorney a {
-		background: white;
-		color: #666;
+	.parallax {
+		background: white !important;
+		color: #444;
 	}
 }
