@@ -2,7 +2,7 @@
 <html lang="en"
 	id="webpage"
     itemscope itemtype="http://schema.org/WebPage"
-    itemref="MDATA_main MDATA_findlaw MDATA_specialty1">
+    itemref="MDATA_main MDATA_findlaw">
 
 <head>
 	<meta itemprop="primaryImageOfPage" content="images/slider/1.jpg" />
@@ -32,7 +32,7 @@
 	data-spy="scroll" data-target=".navbar-fixed-top"
 	itemprop="mainEntity"
 	itemscope itemtype="http://schema.org/LegalService"
-	itemref="MDATA_logo MDATA_findlaw MDATA_coverArea address practices">
+	itemref="MDATA_logo MDATA_findlaw address practices">
 
 	<div class="preloader" role="presentation"><img src="images/loading.gif"></div>
 	<div class="backtotop" role="presentation"><a href="#page-top"></a></div>
@@ -46,7 +46,7 @@
 			<div class="carousel-inner">
 				<div class="item active" style="background-image: url(images/slider/1.jpg)">
 					<div class="caption">
-		            	<div class="container" ID="MDATA_specialty1" itemprop="specialty">
+		            	<div class="container">
 						    <h1 class="animated fadeInDown" id="ARIA_label_banner"
 						    	itemprop="name">Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr> <span class="title"><span>A South Florida Estate Planning, Tax &amp; Business Law Firm</span></span></h1>
 						    <p class="animated fadeInUp" id="ARIA_describe_banner"
@@ -471,7 +471,9 @@
 			<div class="container">
 		        <header>
 		       		<address id="addressDesktop" class="hidden-xs"
-		 				role="region" aria-roledescription="Our Address">
+		 				role="region" aria-roledescription="Our Address"
+						itemprop="location"
+						itemscope itemtype="http://schema.org/LegalService">
 
 				        <dl class="name">
 							<dt itemprop="founder name"><strong>Jorge L. Gurian, <abbr title="Attorney designations">P.A.</abbr></strong></dt>
