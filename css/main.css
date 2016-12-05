@@ -1471,7 +1471,7 @@ footer.main aside {
 		font-size: 160%;
 	}
 	h3 {
-		font-size: 130%;
+		font-size: 150%;
 	}
 	main > section > header h2 {
 		font-size: 220%;
@@ -1691,7 +1691,6 @@ footer.main aside {
 	}
 	.container.practices .promote {
 		border-top: 1px solid #ddd;
-		margin-top: 2em;
 	}
 	.promote, .promote .overflow-auto {
 		overflow: visible;
