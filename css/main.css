@@ -1450,14 +1450,13 @@ footer.main aside {
 	.practices h3 a, .form-control:focus {
 		color: rgb(34, 195, 155);
 	}
-	.form-control,
+	body, .form-control,
 	input[type="text"], input[type="email"], input[type="url"], input[type="password"],
 	textarea, select {
 		color: #444;
 	}
 	body {
-		padding-top: 40px;
-		color: #444;
+		padding-top: 50px;
 	}
 	.home-page main > section > header {
 		padding-top: 0;
@@ -1639,9 +1638,10 @@ footer.main aside {
 		background-position:  center;
 		padding: 0;
 		border: 0;
+		height: auto;
 	}
 	.banner.tax {
-		background-position: center top;
+		background-position: center bottom;
 	}
 	.banner.estate {
 		background-position: center;
@@ -1651,12 +1651,11 @@ footer.main aside {
 	}
 	.banner .caption {
 		height: auto;
-		padding-bottom: 30px;
 	}
 	.caption h1, .caption p.banner-title {
-		font-size: 22px;
-		padding-top: 95px;
-		margin: 0 0 10px;
+		font-size: 24px;
+		padding-top: 110px;
+		margin: 0;
 		text-transform: capitalize;
 		font-weight: bold;
 	}
@@ -1664,9 +1663,7 @@ footer.main aside {
 		text-shadow: none;
 		line-height: 15px;
 		font-size: 13px;
-		background-color: rgba(0,0,0,.4);
-		padding: 8px 15px;
-		margin: 0 -15px;
+		padding: 8px 0;
 	}
 	.caption h1 abbr {
 		font-size: 19px;
