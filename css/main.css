@@ -1434,15 +1434,14 @@ footer.main aside {
 	main {
 		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
 	}
-	h2 span.location,
-	.sitemap a  {
+	h2 span.location, .sitemap a  {
 		font-family: "Electrolize", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
 	}
 
 	header.main, .sitemap-link, footer.main nav, .caption .telephone:before, .container.practices figure, .practices .cta {
 		display: none;
 	}
-	.sitemap {
+	.backtotop, .sitemap {
 		display: block;
 	}
 	aside.contact {
@@ -1451,17 +1450,14 @@ footer.main aside {
 	.practices h3 a, .form-control:focus {
 		color: rgb(34, 195, 155);
 	}
-	.form-control::-moz-placeholder, .form-control,
+	.form-control,
 	input[type="text"], input[type="email"], input[type="url"], input[type="password"],
 	textarea, select {
 		color: #444;
 	}
-	.backtotop {
-		display: block;
-	}
 	body {
-		padding-top: 10px;
-		color: #666;
+		padding-top: 40px;
+		color: #444;
 	}
 	.home-page main > section > header {
 		padding-top: 0;
@@ -1472,19 +1468,16 @@ footer.main aside {
 
 	/* --- FONT SIZE ----- MOBILE I ---------- */
 	h2, .promote.promote-left h2, .promote.promote-right h2 {
-		font-size: 200%;
+		font-size: 160%;
 	}
 	h3 {
+		font-size: 130%;
 	}
 	main > section > header h2 {
 		font-size: 220%;
 		font-weight: bold;
 	}
 
-	.practices .col-sm-4 h3, .practices .col-md-3 h3 {
-		font-size: 190%;
-		margin-bottom: 0.6em;
-	}
 
 	.btn-submit {
 		width: 100%;
@@ -1642,9 +1635,8 @@ footer.main aside {
 
 	/* ---- _banner ------------------------------------- */
 	.banner {
-		margin-top: 40px;
 		background-attachment: scroll;
-	background-position:  center;
+		background-position:  center;
 		padding: 0;
 		border: 0;
 	}
