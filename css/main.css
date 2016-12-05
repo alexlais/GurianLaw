@@ -1687,8 +1687,23 @@ footer.main aside {
 	}
 	*/
 
-	.parallax {
+
+	.parallax:after {
+		display: none;
 	}
+	.parallax, .parallax.attorney, .parallax.contact {
+		background: white;
+		color: #444;
+	}
+	.parallax.attorney a {
+		color: rgb(23, 130, 103);
+	}
+	.parallax.miami, address {
+		background: #f6f6f6;
+	}
+
+
+
 	.container.practices .promote {
 		border-top: 1px solid #ddd;
 	}
@@ -1928,11 +1943,4 @@ footer.main aside {
     address .name {
     	text-align: left;
     }
-	.parallax:after {
-		display: none;
-	}
-	.parallax {
-		background: white !important;
-		color: #444;
-	}
 }
