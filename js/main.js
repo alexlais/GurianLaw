@@ -4,26 +4,33 @@ $(window).load(function(){
 	preloader.remove();
 
 	if ('localStorage' in window && window['localStorage'] !== null) {
-		document.body.classList.add('font-size-' + localStorage.fontSizeSet);
-		document.getElementById('fontSizeSelector').value = localStorage.fontSizeSet;
+		if (localStorage.fontSizeSet) {
+			document.body.classList.add('font-size-' + localStorage.fontSizeSet);
+			document.getElementById('fontSizeSelector').value = localStorage.fontSizeSet;
+		}
+		else {
+			document.body.classList.add('font-size-1');
+			document.getElementById('fontSizeSelector').value = '1';
+		}
 	}
 });
 
 // font size
 
 $('#fontSizeSelector').change(function(){
-if ('localStorage' in window && window['localStorage'] !== null) {
-	try {
-		var fontSize = document.getElementById('fontSizeSelector').value;
-		// The setItem(‘key’,’value’) allows us to write the data into the local storage.
-		localStorage.setItem('fontSizeSet', fontSize);
-		document.body.classList.remove('font-size-1', 'font-size-2', 'font-size-3', 'font-size-4');
-		document.body.classList.add('font-size-' + fontSize);
-	} catch (e) {
-		if (e == QUOTA_EXCEEDED_ERR) {
-			alert('Quota exceeded!');
+	if ('localStorage' in window && window['localStorage'] !== null) {
+		try {
+			var fontSize = document.getElementById('fontSizeSelector').value;
+			// The setItem(‘key’,’value’) allows us to write the data into the local storage.
+			localStorage.setItem('fontSizeSet', fontSize);
+			document.body.classList.remove('font-size-1', 'font-size-2', 'font-size-3', 'font-size-4');
+			document.body.classList.add('font-size-' + fontSize);
 		}
-	}
+		catch (e) {
+			if (e == QUOTA_EXCEEDED_ERR) {
+				alert('Quota exceeded!');
+			}
+		}
 	} else {
 		alert('Error: Cannot set font size as your browser do not support local storage');
 	}
