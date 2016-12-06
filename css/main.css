@@ -1868,7 +1868,7 @@ footer.main aside {
 		display: block
 	}
 	.sitemap ul ul a, .sitemap ul ul a:hover {
-		padding: 8px 0 8px 15%;
+		padding: 6px 0 6px 15%;
 		text-transform: capitalize;
 	}
 	.sitemap ul ul li:last-child a {
