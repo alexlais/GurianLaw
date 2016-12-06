@@ -16,7 +16,6 @@ $(window).load(function(){
 });
 
 // font size
-
 $('#fontSizeSelector').change(function(){
 	if ('localStorage' in window && window['localStorage'] !== null) {
 		try {
@@ -35,6 +34,23 @@ $('#fontSizeSelector').change(function(){
 		alert('Error: Cannot set font size as your browser do not support local storage');
 	}
 });
+$('label.font-size .default').click(function() {
+	$("#fontSizeSelector").val(1);
+	$("#fontSizeSelector").trigger('change');
+});
+$('label.font-size .larger').click(function() {
+	$("#fontSizeSelector").val(2);
+	$("#fontSizeSelector").trigger('change');
+});
+$('label.font-size .largest').click(function() {
+	$("#fontSizeSelector").val(3);
+	$("#fontSizeSelector").trigger('change');
+});
+
+
+
+
+
 
 // --------------------------------------------------------------
 

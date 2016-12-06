@@ -50,7 +50,9 @@ h1 + h2 {
 .promote-left h2, .promote-right h2, .promote-left h3, .promote-right h3 {
 	margin-top: 0;
 }
-
+figure {
+	margin-top: 0.5em;
+}
 
 
 
@@ -515,7 +517,7 @@ article > header, aside .highlight {
 }
 
 main > section > header, .highlight header {
-	padding-bottom: 2%;
+	padding-bottom: 1%;
 }
 .home-page main > section > header {
     padding-top: 40px; /* aaa */
@@ -693,28 +695,35 @@ label.font-size {
 label.font-size > span {
 	padding-left: 4px;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 .font-size-1 label.font-size span.default, .font-size-2 label.font-size span.larger, .font-size-3 label.font-size span.largest {
 	color: #22c39b;
 }
-label.font-size span.default {
+label.font-size .default {
 	font-size: 16px;
 	color: #222;
 }
-label.font-size span.larger {
+label.font-size .larger {
 	font-size: 19px;
 }
-label.font-size span.largest {
+label.font-size .largest {
 	font-size: 23px;
-	padding-left: 0
+	padding-left: 2px;
 }
-label.font-size span.plus-sign {
-	font-size: 11px;
-	vertical-align: text-top;
+label.font-size .plus-sign {
+	font-size: 12px;
+	vertical-align: middle;
+	display: inline-block;
+	margin: 0 0 5px -1px;
 	font-weight: bold;
 }
+label.font-size .largest .plus-sign {
+	margin: 0 0 8px -1px;
+	font-size: 12px;
+}
 label.font-size input {
-	width: 67px;
+	width: 68px;
 	cursor: pointer;
 }
 
