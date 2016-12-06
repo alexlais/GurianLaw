@@ -212,11 +212,8 @@ address dl.phone-number dd {
 	font-size: 30px;
 }
 
-/* --- _COLORS --------------------------
-hover green - #22c39b - rgb(23, 130, 103)
-dark green text for mobile - #178267
-green background - rgb(23, 130, 103)
------------------------------------------ */
+/* --- _COLORS ------- hover green #22c39b ------- rgb(23, 130, 103) ------------------------ */
+
 
 body {
 	color: #999;
@@ -230,6 +227,7 @@ textarea, select, address dl.name dd {
 	color: #999;
 }
 /* -- COLOR white _WHITE ----------------- */
+
 .parallax, .highlight, .highlight a, .parallax.attorney a,
 .carousel,
 .carousel a, .carousel a:hover,
@@ -1512,6 +1510,12 @@ footer.main aside {
 /* === M O B I L E  =  I  ===========================================
 ====== XS (_MOBILE) ================================================== */
 
+/* --- _green --------------------------
+hover green - 					rgb(23, 130, 103) - 22c39b
+green background
+dark green text for mobile - 	rgb(23, 130, 103) - 178267
+NAV hover - 					rgb(34, 195, 155)
+----------------------------------------- */
 @media (max-width: 767px) {
 	h1, h2, h3, h4, p, span, a, ul, li {
 		word-wrap: break-word;
@@ -1539,7 +1543,7 @@ footer.main aside {
 	aside.contact {
 		color: Black;
 	}
-	.practices h3 a, .form-control:focus {
+	.sitemap ul a, .practices h3 a, .form-control:focus {
 		color: #178267;
 	}
 	body, .form-control,
@@ -1860,7 +1864,6 @@ footer.main aside {
 		font-size: 110%;
 	}
 	.sitemap ul a {
-		color: #178267;
 		display: block;
 		text-align: left;
 		border-bottom: 1px solid #ddd;
