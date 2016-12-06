@@ -488,21 +488,21 @@
 			</div>
 		</aside>
 
-    	<!-- CONTACT ---------------------------------------- -->
+    	<!-- _CONTACT ---------------------------------------- -->
 
 	  	<aside id="contact" class="parallax contact" role="seealso"
 	    	itemscope itemtype="https://schema.org/ContactPage">
 
-			<div class="container"
-				itemscope itemtype="http://schema.org/LocalBusiness">
+			<div class="container">
 		        <header>
 		       		<address id="address" class="hidden-xs"
 		 				role="region" aria-roledescription="business address and contact info"
-						itemprop="location"
+						itemprop=""
 						itemscope itemtype="http://schema.org/LegalService">
 
-						<img src="https://alexlais.github.io/GurianLaw/images/logo.png" alt="Jorge L. Gurian, P.A. - A South Florida Estate Planning, Tax &amp; Business Law Firm"
-			            	itemprop="logo" />
+						<a href="http://www.GurianLaw.com" itemprop="url"><img src="https://alexlais.github.io/GurianLaw/images/logo.png" alt="Jorge L. Gurian, P.A. - A South Florida Estate Planning, Tax &amp; Business Law Firm"
+			            	itemprop="logo" /></a>
+
 						<meta content="https://alexlais.github.io/GurianLaw/images/slider/1.jpg"
 							itemprop="image" />
 
@@ -521,21 +521,22 @@
 							<dd itemprop="faxNumber" content="+3052791489">305-279-1489</dd>
 						</dl>
 
-				        <dl class="float-dt address"
-				        	itemprop="">
+	        			<span
+	        				itemprop="geo areaServed"
+							itemscope itemtype="http://schema.org/GeoCircle">
+	        				<span
+	        					itemprop="geoMidpoint"
+	        					itemscope itemtype="http://schema.org/GeoCoordinates">
+								<meta itemprop="latitude" content="25.731454" />
+								<meta itemprop="longitude" content="-80.236751" />
+							</span>
+							<meta itemprop="geoRadius" content="120000" />
+						</span>
+
+				        <dl class="float-dt address">
+
 							<dt>Address:</dt>
 							<dd>
-			        			<span
-			        				itemprop="geo areaServed"
-									itemscope itemtype="http://schema.org/GeoCircle">
-			        				<span
-			        					itemprop="geoMidpoint"
-			        					itemscope itemtype="http://schema.org/GeoCoordinates">
-										<meta itemprop="latitude" content="25.731454" />
-										<meta itemprop="longitude" content="-80.236751" />
-									</span>
-									<meta itemprop="geoRadius" content="120000" />
-								</span>
 								<span
 									itemprop="address"
 									itemscope itemtype="http://schema.org/PostalAddress">
