@@ -786,18 +786,33 @@ address {
 address dl {
 	padding-bottom: 10px;
 }
+address dl.email {
+	padding-bottom: 5px;
+}
 address dl.name {
 	text-align: center;
+}
+address dl.float-dt dt {
+    float: left;
+    min-width: 70px;
+    text-align: right;
+    padding: 5px 10px 0 0;
+}
+address dl.name dt {
+    border-bottom: 1px solid #bbb;
+    display: inline-block;
+}
+address dl.phone-number dt {
+    padding-top: 18px;
+}
+address dl.hours dt {
+    padding-top: 3px;
 }
 address dd {
 	display: inline;
 }
 address dl.address dd {
 	display: block;
-}
-address dl.name dt {
-    border-bottom: 1px solid #bbb;
-    display: inline-block;
 }
 address dl.name dd {
     text-transform: uppercase;
@@ -806,14 +821,9 @@ address dl.name dd {
 address dl.float-dt.address dd {
 	overflow: auto;
 }
-address dl.float-dt dt {
-    float: left;
-    min-width: 70px;
-    text-align: right;
-    padding: 5px 10px 0 0;
-}
-address dl.float-dt.phone-number dt {
-    padding-top: 18px;
+address dl.email dd, address dl.hours dd {
+    font-size: 14px;
+    line-height: 17px;
 }
 
 /* === _FOOTER =============================================== */
