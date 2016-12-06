@@ -212,7 +212,11 @@ address dl.phone-number dd {
 	font-size: 30px;
 }
 
-/* --- _COLORS ------- hover green #22c39b ------- rgb(23, 130, 103) ----------------------------------------- */
+/* --- _COLORS --------------------------
+hover green - #22c39b - rgb(23, 130, 103)
+dark green text for mobile - #178267
+green background - rgb(23, 130, 103)
+----------------------------------------- */
 
 body {
 	color: #999;
@@ -1536,7 +1540,7 @@ footer.main aside {
 		color: Black;
 	}
 	.practices h3 a, .form-control:focus {
-		color: rgb(34, 195, 155);
+		color: #178267;
 	}
 	body, .form-control,
 	input[type="text"], input[type="email"], input[type="url"], input[type="password"],
