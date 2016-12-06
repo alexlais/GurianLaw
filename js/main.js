@@ -15,7 +15,7 @@ $(window).load(function(){
 	}
 });
 
-// font size
+// font size local storage
 $('#fontSizeSelector').change(function(){
 	if ('localStorage' in window && window['localStorage'] !== null) {
 		try {

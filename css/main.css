@@ -60,6 +60,7 @@ figure {
 #map {
 	height: 250px;
 	width: 100%;
+	border: 2px solid white;
 }
 
 /* ---  _NONSENSE clearing unnecessary link manipulation and leave the :focus alone --------------------------------------- */
@@ -1365,11 +1366,6 @@ footer.main aside {
 	.promote {
 		margin-bottom: 1%;
 	}
-	/* .column {
-	    -webkit-column-count: 1;
-	    -moz-column-count: 1;
-	    column-count: 1;
-   	} */
     /* --- NAVIGATION --- SMALL------------------------ */
 
 	.navbar-nav li a {
@@ -1518,6 +1514,12 @@ footer.main aside {
 	.backtotop, .sitemap {
 		display: block;
 	}
+	.column {
+	    -webkit-column-count: 1;
+	    -moz-column-count: 1;
+	    column-count: 1;
+   	}
+
 	aside.contact {
 		color: Black;
 	}
@@ -1762,7 +1764,7 @@ footer.main aside {
 	.parallax:after {
 		display: none;
 	}
-	.parallax, .parallax.attorney, .parallax.contact {
+	.parallax, .parallax.attorney, .parallax.attorney p, .parallax.contact {
 		background: white;
 		color: #444;
 	}
