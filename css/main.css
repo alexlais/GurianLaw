@@ -120,10 +120,10 @@ h1, h2 {
 .promote.promote-left h2, .promote.promote-right h2 {
 	font-size: 250%;
 }
-.parallax h2, main > section > header h2 {
+.parallax h2, h2.larger {
 	font-size: 280%;
 }
-.contact h2, .parallax.attorney h2 {
+h2.largest {
 	font-size: 350%;
 }
 h3 {
@@ -534,6 +534,10 @@ article > header, aside .highlight {
 }
 .parallax.miami {
     background-image: url(../images/page0/Miami.jpg);
+}
+.parallax.miami h2 img {
+	float: right;
+	width: 130px;
 }
 .parallax .container {
     position: relative;
@@ -1365,6 +1369,10 @@ address {
 	.col-md-3 h3 {
 		font-size: 190%;
 	}
+	.parallax.miami h2 img {
+		width: 90px;
+	}
+
 	/*
 	.highlight .col-sm-4 h3, .highlight .col-md-3 h3, .btn-submit {
 		font-size: 200%;
@@ -1518,7 +1526,7 @@ address {
 @media (max-width: 767px) {
 
 	/* --- DISPLAY NONE ------- MOBILE I -------   */
-	.font-size, header.main, .sitemap-link, footer.main nav, .caption .telephone:before, .container.practices figure, .practices .cta, address dl.float-dt.map-link dt {
+	.font-size, header.main, .sitemap-link, footer.main nav, .caption .telephone:before, .container.practices figure, .practices .cta, address dl.float-dt.map-link dt, .parallax.miami h2 img {
 		display: none;
 	}
 	.backtotop, .sitemap {
@@ -1548,12 +1556,12 @@ address {
 	h2, .promote.promote-left h2, .promote.promote-right h2 {
 		font-size: 160%;
 	}
-	h3, .col-sm-4 h3, .col-md-3 h3 {
-		font-size: 150%;
-	}
-	main > section > header h2 {
+	h2.larger {
 		font-size: 220%;
 		font-weight: bold;
+	}
+	h3, .col-sm-4 h3, .col-md-3 h3 {
+		font-size: 150%;
 	}
 	.highlight h1 {
 		font-size: 80%;
