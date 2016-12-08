@@ -152,7 +152,7 @@ h1, h2 {
 }
 .telephone {}
 /* --- smaller --- ----------------------*/
-footer.main  {
+footer.main {
     font-size: 75%;
 }
 nav.main  {
@@ -214,7 +214,10 @@ address dl.name dd {
 address dl.phone-number dd {
 	font-size: 30px;
 }
-
+address dl.email dd, address dl.hours dd, address dl.map-link dd {
+    font-size: 14px;
+    line-height: 17px;
+}
 
 
 
@@ -547,7 +550,6 @@ main > section > header, .highlight header {
     column-gap: 4em;
 }
 form {
-	clear: both;
 }
 .img-banner {
     margin: 2% 0 1%;
@@ -696,9 +698,7 @@ nav.main, footer.main {
 	height: 250px;
 	width: 100%;
 	border: 2px solid white;
-}
-
-label.font-size {
+}label.font-size {
 	font-size: 16px;
 	background: transparent;
 	border-bottom-left-radius: 20px;
@@ -800,6 +800,9 @@ address {
 address dl {
 	padding-bottom: 10px;
 }
+address dl.address {
+	padding-bottom: 0;
+}
 address dl.email {
 	padding-bottom: 5px;
 }
@@ -810,7 +813,10 @@ address dl.float-dt dt {
     float: left;
     min-width: 70px;
     text-align: right;
-    padding: 5px 10px 0 0;
+    padding: 4px 10px 0 0;
+}
+address dl.float-dt.map-link dt {
+    padding-top: 0;
 }
 address dl.name dt {
     border-bottom: 1px solid #bbb;
@@ -833,10 +839,6 @@ address dl.name dd {
 }
 address dl.float-dt.address dd {
 	overflow: auto;
-}
-address dl.email dd, address dl.hours dd {
-    font-size: 14px;
-    line-height: 17px;
 }
 
 /* === _FOOTER =============================================== */
@@ -1405,6 +1407,9 @@ address {
 
     /* --- CONTACT --- SMALL------------------------ */
 
+	form {
+		clear: both;
+	}
     textarea.form-control {
     	min-height: 180px;
 	}
