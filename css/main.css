@@ -788,8 +788,6 @@ label.font-size input {
 
 /* === _ADDRESS =============================================== */
 
-address img {display: none;}
-
 address {
 	float: right;
 	border: 1px solid #f0f0f0;
@@ -818,9 +816,15 @@ address dl.float-dt dt {
 address dl.float-dt.map-link dt {
     padding-top: 0;
 }
-address dl.name dt {
+address dl.name dt strong {
     border-bottom: 1px solid #bbb;
     display: inline-block;
+	display: none;
+}
+address dl.name dt img {
+	width: 250px;
+	height: auto;
+    border-bottom: 1px solid #bbb;
 }
 address dl.phone-number dt {
     padding-top: 18px;
@@ -836,6 +840,7 @@ address dl.address dd {
 }
 address dl.name dd {
 	display: block;
+	padding-top: 5px;
 }
 address dl.float-dt.address dd {
 	overflow: auto;
