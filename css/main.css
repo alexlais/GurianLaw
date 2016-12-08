@@ -1514,7 +1514,7 @@ address {
 		font-family: "Electrolize", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
 	}
 
-	.font-size, header.main, .sitemap-link, footer.main nav, .caption .telephone:before, .container.practices figure, .practices .cta {
+	.font-size, header.main, .sitemap-link, footer.main nav, .caption .telephone:before, .container.practices figure, .practices .cta, address dl.float-dt.map-link dt {
 		display: none;
 	}
 	.backtotop, .sitemap {
@@ -1545,6 +1545,11 @@ address {
 	}
 	main > section:first-child {
 		padding-top: 30px;
+	}
+
+	.clearfix {padding-bottom: 0;}
+	.col-sm-6 {
+		overflow: auto;
 	}
 
 	/* --- FONT SIZE ----- MOBILE I ---------- */
@@ -1647,28 +1652,6 @@ address {
 	.navbar-brand img {
 		width: 240px;
 	}
-/*
-	.navbar-toggle {
-	    background-color: rgb(23, 130, 103);
-	    border: 0;
-	    margin: 8px 6px 2px 0;
-	    padding: 4px 5px 6px 7px;
-	    border-radius: 0;
-	}
-	.navbar-toggle, .navbar-toggle.collapse, .navbar-toggle.collapsing {
-		display: block !important;
-		height: auto !important;
-	    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.8), inset 1px 1px 1px 0 rgba(255,255,255,1);
-	}
-	.navbar-toggle.collapse.in {
-		display: block !important;
-		height: auto !important;
-		margin-right: 5px;
-		margin-top: 11px;
-		padding: 1px 6px 7px 4px;
-	    box-shadow: -1px -1px 1px 0px rgba(0,0,0,0.8), inset -1px -1px 1px 0 rgba(255,255,255,1);
-	}
-*/
 	.navbar-header {
 		border-bottom: 1px solid black;
 	}
@@ -1683,20 +1666,11 @@ address {
 		height: 2px;
 		margin-top: 5px;
 	}
-/*
-	.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
-		max-height: auto;
-		max-height: none;
-		background: transparent;
-
-	}
-*/
 	.navbar-nav {
 		margin-top: 0;
 		margin-bottom: 0;
 		border-bottom: 2px solid black;
 	}
-
 	 .navbar-nav li a {
 		border-bottom: 1px solid #ccc;
 		padding: 11px 5%;
@@ -1714,7 +1688,8 @@ address {
 	}
 
 
-	/* ---- _banner ------------------------------------- */
+	/* ---- _BANNER ---- MOBILE ----------------------------- */
+
 	.banner {
 		background-attachment: scroll;
 		background-position:  center;
@@ -1767,6 +1742,8 @@ address {
 	*/
 
 
+    /* --- PARALLAX --- MOBILE 1 ----------------------------- */
+
 	.parallax:after {
 		display: none;
 	}
@@ -1783,6 +1760,8 @@ address {
 
 
 
+    /* --- PROMOTE --- MOBILE 1 ----------------------------- */
+
 	.container.practices .promote {
 		border-top: 1px solid #ddd;
 	}
@@ -1792,10 +1771,6 @@ address {
 	.promote:not(.thumb) figure {
 		padding: 4% 0;
 		margin: 0 -15px;
-	}
-
-	.col-sm-6 {
-		overflow: auto;
 	}
 
     /* --- __PROMOTE --- MOBILE I -------------------------- */
@@ -1814,9 +1789,6 @@ address {
 	.home-page .practices .promote img {
 		height: 150px;
 	}
-	/* .promote.border, .callout {margin-top: 0; border: 0;}
-	p, ul.native, ul.typeface, h4 {margin-bottom: 0.5em;} */
-	.clearfix {padding-bottom: 0;}
 
 	/* PAGE BOTTOM --- MOBILE I ------------------- */
 
@@ -1888,6 +1860,12 @@ address {
 	    display: block;
 	    text-align: left;
 	    padding-top: 0;
+	}
+	address dl.float-dt {
+		padding-bottom: 15px;
+	}
+	address dl.float-dt.address {
+		padding-bottom: 0;
 	}
 }
 
