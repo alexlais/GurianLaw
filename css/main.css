@@ -603,6 +603,7 @@ p.callout {
 /* --- _NATIVE ---------- */
 ul.native {
     padding: 0 0 0 20px;
+    overflow: auto;
 }
 ul.native ul {
     list-style-type: none;
