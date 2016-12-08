@@ -62,18 +62,6 @@ address .address-label {
 .caption .telephone {
 	font-weight: normal;
 }
-p.cta {
-	margin-top: 1.5em;
-}
-figure:not(.visible-xs) + h2 {
-	margin-top: .6em;
-}
-h1 + h2 {
-	margin-top: 1em;
-}
-.promote-left h2, .promote-right h2, .promote-left h3, .promote-right h3 {
-	margin-top: 0;
-}
 figure {
 	margin-top: 0.5em;
 }
@@ -110,7 +98,15 @@ body {
 /* ---------------------- */
 p, ul.native, ul.typeface, .btn-submit {
 	font-size: 130%;
+}
+p, ul.native, ul.typeface, .btn-submit, h4 {
     margin-bottom: 1em;
+}
+.callout {
+	margin: 2em 0 1.5em;
+}
+p.cta {
+	margin: 1.5em 0 1.3em;
 }
 body.font-size-2 main p:not(.cta), body.font-size-2 main ul.native {
 	font-size: 150%;
@@ -118,28 +114,8 @@ body.font-size-2 main p:not(.cta), body.font-size-2 main ul.native {
 body.font-size-3 main p:not(.cta), body.font-size-3 main ul.native {
 	font-size: 180%;
 }
-h4 {
-	font-size: 130%;
-    margin-bottom: 1em;
-    margin-top: -.2em;
-}
-h3 {
-	font-size: 190%;
-    margin-bottom: 0.6em;
-	margin-top: .6em;
-}
-.col-sm-4 h3 {
-	font-size: 160%;
-	margin-bottom: 0.4em;
-}
-.col-md-3 h3 {
-	font-size: 140%;
-	margin-bottom: 0.2em;
-}
-
 h1, h2 {
 	font-size: 220%;
-    margin-bottom: .6em;
 }
 .promote.promote-left h2, .promote.promote-right h2 {
 	font-size: 250%;
@@ -149,6 +125,30 @@ h1, h2 {
 }
 .contact h2, .parallax.attorney h2 {
 	font-size: 350%;
+}
+h3 {
+	font-size: 190%;
+}
+h1, h2, h3, .promote.border figure + h2 {
+	margin: .6em 0;
+}
+.practices h2, .contact h2,
+.promote.border > h2,
+.promote-left h2, .promote-right h2, .promote-left h3, .promote-right h3,
+.promote-left .overflow-auto h2, .promote-right .overflow-auto h2, .promote-left .overflow-auto h3, .promote-right .overflow-auto h3 {
+	margin-top: 0;
+}
+.col-sm-4 h3 {
+	font-size: 160%;
+	margin-bottom: 0.4em;
+}
+.col-md-3 h3 {
+	font-size: 140%;
+	margin-bottom: 0.2em;
+}
+h4 {
+	font-size: 130%;
+    margin-top: -.2em;
 }
 .telephone {}
 /* --- smaller --- ----------------------*/
@@ -234,6 +234,13 @@ ___________________________
 BACKGROUND_GREEM 				rgb(23, 130, 103) - 178267
 dark green text for mobile
 NAV hover background
+___________________________
+BODY BACKGROUND 				rgb(248, 247, 237)
+___________________________
+DARKER BODY BACKGROUND			rgba(241, 239, 218, 0.9)
+contact us
+
+
 
 
 background: #f4f5f0;
@@ -262,7 +269,7 @@ footer.main nav a:hover {
 
 /* --- SILVER text --- -------------------------- */
 body {
-	color: #999;
+	color: #888;
 	background-color: rgb(248, 247, 237);
 }
 .form-control, input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"],
@@ -424,7 +431,7 @@ abbr[data-original-title], abbr[title] {
 	overflow: auto;
 }
 .promote.first {
-	padding-top: 40px;
+    padding-top: 3em;
 }
 .promote.border {
     border-top: 1px solid rgba(255, 255, 255, .4);
@@ -516,6 +523,7 @@ article > header, aside .highlight {
 	background-color: rgba(248, 247, 237, 0.93);
 	background-color: rgba(255, 255, 255, 0.6);
 	background-color: rgba(248, 247, 237, 0.9);
+	background-color: rgba(241, 239, 218, 0.9);
 
 }
 	.form-control {
@@ -559,8 +567,8 @@ form {
 
 .highlight footer {
     border-top: 1px solid rgba(255, 255, 255, .2);
-    margin-top: 4%;
-    padding-top: 2%;
+    margin-top: 3em;
+    padding-top: 2em;
     /*
     box-shadow: inset 0 40px 40px -50px rgba(0,0,0,.1);
     */
@@ -582,7 +590,6 @@ form {
 }
 .callout {
 	background-color: rgba(0,0,0,0.075);
-	margin-top: 2%;
 	padding: 1.5em 4% 0.5em;
 }
 p.callout {
@@ -868,7 +875,7 @@ footer.main nav a:hover {
 	*/
 }
 .sitemap {
-	background: #f8f8f8;
+	/* background: #f8f8f8; */
 	border-top: 1px solid #22c39b;
 	padding: 10px 0 10px 2%;
 	line-height: 180%;
@@ -1509,17 +1516,8 @@ address {
 ====== XS (_MOBILE) ================================================== */
 
 @media (max-width: 767px) {
-	h1, h2, h3, h4, p, span, a, ul, li {
-		word-wrap: break-word;
-	}
 
-	main {
-		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
-	}
-	h2 span.location, .sitemap a  {
-		font-family: "Electrolize", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
-	}
-
+	/* --- DISPLAY NONE ------- MOBILE I -------   */
 	.font-size, header.main, .sitemap-link, footer.main nav, .caption .telephone:before, .container.practices figure, .practices .cta, address dl.float-dt.map-link dt {
 		display: none;
 	}
@@ -1532,6 +1530,47 @@ address {
 	    column-count: 1;
    	}
 
+	h1, h2, h3, h4, p, span, a, ul, li {
+		word-wrap: break-word;
+	}
+
+	/* --- FONT FAMILY ------- MOBILE I -------   */
+
+	main {
+		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+	}
+	h2 span.location, .sitemap a  {
+		font-family: "Electrolize", "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
+	}
+
+	/* --- FONT SIZE ----- MOBILE I ---------- */
+
+	h2, .promote.promote-left h2, .promote.promote-right h2 {
+		font-size: 160%;
+	}
+	h3, .col-sm-4 h3, .col-md-3 h3 {
+		font-size: 150%;
+	}
+	main > section > header h2 {
+		font-size: 220%;
+		font-weight: bold;
+	}
+	.highlight h1 {
+		font-size: 80%;
+		margin-left: -15px;
+		margin-right: -15px;
+		padding-right: 15px;
+		padding-left: 15px
+	}
+	h2 {
+		margin-top: 0 !important;
+	}
+	figure:not(.hidden-xs) + h2, figure:not(.hidden-xs) + .overflow-auto h2 {
+		margin-top: .6em !important;
+	}
+
+	/* --- _COLOR ------- MOBILE I -------   */
+
 	aside.contact {
 		color: Black;
 	}
@@ -1543,6 +1582,9 @@ address {
 	textarea, select {
 		color: #444;
 	}
+
+	/* --- SECTIONS ------- MOBILE I -------   */
+
 	body {
 		padding-top: 50px;
 	}
@@ -1552,46 +1594,13 @@ address {
 	main > section:first-child {
 		padding-top: 30px;
 	}
-
 	.clearfix {padding-bottom: 0;}
 	.col-sm-6 {
 		overflow: auto;
 	}
-
-	/* --- FONT SIZE ----- MOBILE I ---------- */
-	h2, .promote.promote-left h2, .promote.promote-right h2 {
-		font-size: 160%;
-	}
-	h3, .col-sm-4 h3, .col-md-3 h3 {
-		font-size: 150%;
-	}
-	main > section > header h2 {
-		font-size: 220%;
-		font-weight: bold;
-	}
-
-
-	.btn-submit {
-		width: 100%;
-	}
-	.promote-left h2, .promote-right h2, .promote-left h3, .promote-right h3 {
-		margin-top: .6em;
-	}
-
-	.promote.border {
-	    padding-top: 1em;
-	}
 	aside.miami {
 		padding-top: 6%;
 		font-size: 50%;
-	}
-	.highlight h1 {
-		margin-bottom: 1em;
-		font-size: 80%;
-		margin-left: -15px;
-		margin-right: -15px;
-		padding-right: 15px;
-		padding-left: 15px
 	}
 	.callout {
 		text-align: left;
@@ -1613,6 +1622,30 @@ address {
 	aside.contact header p {
 		font-size: 130%;
 		line-height: 130%;
+	}
+
+    /* --- PROMOTE --- MOBILE 1 ----------------------------- */
+
+	.container.practices .promote {
+		border-top: 1px solid #ddd;
+	}
+	.promote, .promote .overflow-auto {
+		overflow: visible;
+	}
+	.promote:not(.thumb) figure {
+		padding: 4% 0;
+		margin: 0 -15px;
+	}
+    .promote.promote-left:not(.thumb) img, .promote.promote-right:not(.thumb) img {
+		float: none;
+		width: 100%;
+		padding: 20px 0 0;
+	}
+	.promote.thumb figure {
+		padding: 6px 0 6px 6px;
+	}
+	.promote.thumb img {
+		width: 145px;
 	}
 
 	/* --- _NAVIGATION --- _MOB I ------------------- */
@@ -1764,38 +1797,6 @@ address {
 		background: #f6f6f6;
 	}
 
-
-
-    /* --- PROMOTE --- MOBILE 1 ----------------------------- */
-
-	.container.practices .promote {
-		border-top: 1px solid #ddd;
-	}
-	.promote, .promote .overflow-auto {
-		overflow: visible;
-	}
-	.promote:not(.thumb) figure {
-		padding: 4% 0;
-		margin: 0 -15px;
-	}
-
-    /* --- __PROMOTE --- MOBILE I -------------------------- */
-
-    .promote.promote-left:not(.thumb) img, .promote.promote-right:not(.thumb) img {
-		float: none;
-		width: 100%;
-		padding: 20px 0 0;
-	}
-	.promote.thumb img {
-		width: 145px;
-	}
-	.promote.thumb figure {
-		padding: 6px 0 6px 6px;
-	}
-	.home-page .practices .promote img {
-		height: 150px;
-	}
-
 	/* PAGE BOTTOM --- MOBILE I ------------------- */
 
 	.form-group {
@@ -1804,6 +1805,9 @@ address {
 	footer.main {
 		padding-top: 0;
 		border-top: 1px solid black;
+	}
+	.btn-submit {
+		width: 100%;
 	}
 
 	/* --- _SITEMAP --- MOBILE I ------------------- */
@@ -1988,9 +1992,7 @@ address {
 	}
 
     .cta {
-    	margin: 0;
 		overflow: visible;
-		text-align: left;
     }
     .cta a {
 		float: none;
