@@ -1864,9 +1864,6 @@ address {
 	address dl.float-dt {
 		padding-bottom: 15px;
 	}
-	address dl.float-dt.address {
-		padding-bottom: 0;
-	}
 }
 
 
