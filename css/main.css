@@ -132,8 +132,7 @@ h3 {
 h1, h2, h3, .promote.border figure + h2 {
 	margin: .6em 0;
 }
-.practices h2, .contact h2,
-.promote.border > h2,
+.promote.border > h2, h2.largest,
 .promote-left h2, .promote-right h2, .promote-left h3, .promote-right h3,
 .promote-left .overflow-auto h2, .promote-right .overflow-auto h2, .promote-left .overflow-auto h3, .promote-right .overflow-auto h3 {
 	margin-top: 0;
@@ -156,7 +155,7 @@ footer.main {
     font-size: 75%;
 }
 nav.main  {
-    font-size: 85%;
+    font-size: 95%;
 }
 .highlight h1 {
 	font-size: 90%;
@@ -474,10 +473,10 @@ abbr[data-original-title], abbr[title] {
     display: block;
 }
 .promote figure a img {
-    transition: all 7s cubic-bezier(0,0.5,1,1);
+    transition: all 10s cubic-bezier(0,1,1,1);
 }
 .promote figure a:hover img, figure.hover img {
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 
 
@@ -491,7 +490,7 @@ abbr[data-original-title], abbr[title] {
 		margin-top: -60px;
 	}
 section, .parallax {
-    padding: 70px 0 4em;
+    padding: 4em 0 4em;
 }
 article > header, aside .highlight {
     padding: 60px 0 4em;
@@ -710,7 +709,8 @@ nav.main, footer.main {
 	height: 250px;
 	width: 100%;
 	border: 2px solid white;
-}label.font-size {
+}
+label.font-size {
 	font-size: 16px;
 	background: transparent;
 	border-bottom-left-radius: 20px;
@@ -759,7 +759,7 @@ label.font-size input {
     height: 300px;
 }
 .optionalFields.collapsed {
-	display: block;
+	display: inline;
 }
 .optionalFields:not(.collapsed) {
 	display: none;
@@ -804,11 +804,11 @@ address {
 	float: right;
 	border: 1px solid #f0f0f0;
     padding: 30px 20px 10px 16px;
-    margin: -70px 0 15px 15px;
+    margin: -64px 0 40px 15px;
 	background: rgba(255, 255, 255, 0.8);
 }
 address dl {
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 }
 address dl.address {
 	padding-bottom: 0;
@@ -1092,11 +1092,11 @@ footer.main aside {
 }
 .banner.estate {
 	background-image: url("../images/slider/2.jpg");
-	background-position: center -200px;
+	background-position: center -150px;
 }
 .banner.contract {
 	background-image: url("../images/slider/4.jpg");
-	background-position: center -100px;
+	background-position: center -130px;
 }
 .banner > div {
 	position: relative;
@@ -1292,6 +1292,9 @@ address {
 	nav.main  {
 	    font-size: 95%;
 	}
+	.parallax.miami h2 img {
+		width: 110px;
+	}
 	.promote.promote-left img, .promote.promote-right img {
 	    width: 400px;
 	}
@@ -1307,6 +1310,9 @@ address {
 	.navbar-nav li a {
 		padding-right: 5px;
 		padding-left: 5px;
+	}
+	address {
+		margin-top: -58px;
 	}
 }
 
@@ -1372,7 +1378,10 @@ address {
 	.parallax.miami h2 img {
 		width: 90px;
 	}
-
+	address {
+		font-size: 15px;
+		margin-top: -48px;
+	}
 	/*
 	.highlight .col-sm-4 h3, .highlight .col-md-3 h3, .btn-submit {
 		font-size: 200%;
@@ -1532,6 +1541,9 @@ address {
 	.backtotop, .sitemap {
 		display: block;
 	}
+	img {
+		border-radius: 0;
+	}
 	.column {
 	    -webkit-column-count: 1;
 	    -moz-column-count: 1;
@@ -1576,6 +1588,9 @@ address {
 	figure:not(.hidden-xs) + h2, figure:not(.hidden-xs) + .overflow-auto h2 {
 		margin-top: .6em !important;
 	}
+	parallax.miami {
+		font-size: 50%;
+	}
 
 	/* --- _COLOR ------- MOBILE I -------   */
 
@@ -1605,10 +1620,6 @@ address {
 	.clearfix {padding-bottom: 0;}
 	.col-sm-6 {
 		overflow: auto;
-	}
-	aside.miami {
-		padding-top: 6%;
-		font-size: 50%;
 	}
 	.callout {
 		text-align: left;
@@ -1745,7 +1756,6 @@ address {
 		height: auto;
 	}
 	.banner.tax {
-		background-position: center bottom;
 	}
 	.banner.estate {
 		background-position: center;
