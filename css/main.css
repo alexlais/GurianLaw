@@ -212,6 +212,7 @@ address dl.name dd {
 }
 address dl.phone-number dd {
 	font-size: 30px;
+	line-height: 34px;
 }
 address dl.email dd, address dl.hours dd, address dl.map-link dd {
     font-size: 14px;
@@ -507,7 +508,7 @@ article > header, aside .highlight {
 .parallax.contact {
 	background-image: url("../images/slider/5.jpg");
     background-color: White;
-    padding-bottom: 0;
+    padding-bottom: 3em;
 }
 .parallax:after {
     content: " ";
@@ -1575,6 +1576,9 @@ address {
 	h3, .col-sm-4 h3, .col-md-3 h3 {
 		font-size: 150%;
 	}
+	.parallax.miami {
+		font-size: 50%;
+	}
 	.highlight h1 {
 		font-size: 80%;
 		margin-left: -15px;
@@ -1587,9 +1591,6 @@ address {
 	}
 	figure:not(.hidden-xs) + h2, figure:not(.hidden-xs) + .overflow-auto h2 {
 		margin-top: .6em !important;
-	}
-	parallax.miami {
-		font-size: 50%;
 	}
 
 	/* --- _COLOR ------- MOBILE I -------   */
