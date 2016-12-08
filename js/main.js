@@ -186,7 +186,7 @@ function clearSettings() {
 
 
 function initMap() {
-	var gurianLaw = {lat: 25.731454, lng: -80.236751};
+	var gurianLaw = {lat: 25.755721, lng: -80.258193};
 	var map = new google.maps.Map(document.getElementById('map'), {
 	  zoom: 15,
 	  scrollwheel: false,

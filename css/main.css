@@ -28,6 +28,30 @@ p.telephone {
 
 
 
+
+/* --- _NONSENSE clearing all unnecessary link manipulation and leave the :focus alone for edasier coding --- */
+label {display: inherit; max-width: auto; max-width: none; font-weight: inherit;}
+
+.dropdown-menu > li > a
+	{font-weight: inherit;}
+.form-control::-moz-placeholder, .form-control:-ms-input-placeholder
+	{color:inherit;}
+.navbar-default ul.navbar-nav > li > a:focus, .navbar-default ul.navbar-nav > li > a:hover
+	{color:inherit;}
+a:focus,
+.nav li a:focus, .nav li a:hover, .nav li:hover > a,
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover
+	{background-color: inherit;}
+navbar-nav > li > .dropdown-menu
+	{border-top-left-radius: inherit; border-top-right-radius: inherit;}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
+	background: inherit; color: inherit; text-decoration: inherit;}
+
+
+
+
+
 /* --- FONT design -------------------------------------------------------- */
 .h1, .h2, .h3, h1, h2, h3, dl, dt, dd, label {
 	margin: 0;
@@ -55,39 +79,17 @@ figure {
 }
 
 
-
-/* MAP */
-#map {
-	height: 250px;
-	width: 100%;
-	border: 2px solid white;
+/* --- uppercase --------------- */
+.cta, .carousel-CTA,
+.highlight h1, h1.h1,
+.navbar-nav li a, .navbar-nav .dropdown-menu a,
+address dl.name dd, footer.main nav, .caption h1 span.title,
+label.font-size > span  {
+	text-transform: uppercase;
 }
 
-/* ---  _NONSENSE clearing unnecessary link manipulation and leave the :focus alone --------------------------------------- */
-label {display: inherit; max-width: auto; max-width: none; font-weight: inherit;}
 
-.dropdown-menu > li > a
-	{font-weight: inherit;}
-.form-control::-moz-placeholder, .form-control:-ms-input-placeholder
-	{color:inherit;}
-.navbar-default ul.navbar-nav > li > a:focus, .navbar-default ul.navbar-nav > li > a:hover
-	{color:inherit;}
-a:focus,
-.nav li a:focus, .nav li a:hover, .nav li:hover > a,
-.nav .open > a, .nav .open > a:focus, .nav .open > a:hover
-	{background-color: inherit;}
-navbar-nav > li > .dropdown-menu
-	{border-top-left-radius: inherit; border-top-right-radius: inherit;}
-/*
-.dropdown-menu > li > a {
-	font-weight: inherit;}
-.dropdown-menu {font-size: inherit;}
-*/
-.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
-	background: inherit; color: inherit; text-decoration: inherit;}
-
-/* --- _LINE HEIGHT ----------------------------------------------------- */
-
+/* === _LINE_HEIGHT =========================================================== */
 body, address, h1, h1, h3, h4, span, a 			{line-height: inherit;}
 p, li											{line-height: 155%;}
 .home-page .col-sm-4 p							{line-height: 140%;}
@@ -97,11 +99,12 @@ h2, h3, h3 span, h4								{line-height: 135%;}
 .caption h1							  		{line-height: 0.9;}
 .caption p 									{line-height: 1.3;}
 
-/* --- _FONT_SIZE -------------------------------------------------- */
 
-.dropdown-menu, html, body, h1, h2, h3, h4, p, span, a, ul, li, .form-control, button, input, optgroup, select, textarea
-/* input[type="text"], input[type="email"], input[type="url"], input[type="password"]  */ {
+
+/* === _FONT_SIZE =========================================================== */
+.dropdown-menu, html, body, h1, h2, h3, h4, p, span, a, ul, li, .form-control, button, input, optgroup, select, textarea {
 	font-size: inherit;}
+
 body {
 	font-size: 100%;}
 /* ---------------------- */
@@ -212,22 +215,62 @@ address dl.phone-number dd {
 	font-size: 30px;
 }
 
-/* --- _COLORS ------- hover green #22c39b ------- rgb(23, 130, 103) ------------------------ */
 
 
+
+
+
+/* === _COLORS =========================================================== */
+/* _green
+___________________________
+LINK_GREEN						rgb(31, 173, 138) - 1fad8a
+___________________________
+HOVER_GREEN	(lighter)			rgb(34, 195, 155) - 22c39b
+NAV hover
+___________________________
+BACKGROUND_GREEM 				rgb(23, 130, 103) - 178267
+dark green text for mobile
+NAV hover background
+
+
+background: #f4f5f0;
+background: #da2525;  nav red
+background: #da8025;
+background: #004e7a;  blue
+background: #F15E05;
+background: #74862d;
+background: #676b47;  brown 103, 107, 71
+background: #6d7722;
+
+
+#22c39b; NICE GREEN
+#da2525; NICE RED
+*/
+
+/* --- GREEN BACKGROUND --- */
+.highlight.native, .btn-submit {
+    background: rgb(23, 130, 103);
+}
+footer.main nav a:hover {
+	background: rgb(31, 173, 138);
+}
+
+
+
+/* --- SILVER text --- -------------------------- */
 body {
 	color: #999;
 	background-color: rgb(248, 247, 237);
-}
-body.font-size-3, label.font-size {
-	color: #666;
 }
 .form-control, input[type="text"], input[type="email"], input[type="url"], input[type="url"], input[type="password"],
 textarea, select, address dl.name dd {
 	color: #999;
 }
-/* -- COLOR white _WHITE ----------------- */
-
+/* --- GRAY text --- */
+body.font-size-3, label.font-size {
+	color: #666;
+}
+/* --- WHITE --- COLOR_WHITE --- */
 .parallax, .highlight, .highlight a, .parallax.attorney a,
 .carousel,
 .carousel a, .carousel a:hover,
@@ -239,44 +282,39 @@ textarea, select, address dl.name dd {
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* -- LINK COLOR ---------------------------- */
 
-/* ---- darker link ------------------------- */
+/* --- LINK_GREEN ----------- -------------------- */
 a, .highlight .promote .cta a:hover {
 	color: #1fad8a;
 }
-footer.main nav a:hover {
-	background: #1fad8a;
-}
-/* --- lighter links - REAL HOVER ---------- */
+/* --- HOVER_GREEN ---------- */
 a:hover, .practices h2, .contact h2, address a, nav.main a:hover, footer.main a:hover  {
     color: rgb(34, 195, 155);
     color: #22c39b;
 }
-/* ---- fake gray link ---------------------- */
+
+
+/* --- GRAY LINK ----------- */
 h1.native, h2.native, .practices h3, .practices h3 a, address, .form-control:focus,
 .parallax.contact {
 	color: #444;
 }
-/* nav --------------------- */
-nav.main a {
-    color: #888;
- }
-/* ---- lighter links - fake hover ---------- */
+/* --- HOVER_GREEN fake ----- */
 h3 a:hover, .promote h3 a:hover:after, figure:hover ~ hgroup h3 a, figure:hover ~ hgroup h3 a:after,
 .navbar-nav a:hover, .navbar-nav li:hover > a {
     color: rgb(34, 195, 155);
- }
-.navbar-nav > li.active > a,
+}
+
+
+/* --- NAV LINKS ------------ */
+nav.main a {
+    color: #777;
+}
+/* --- NAV HOVER (WHITE) ---- */
+.navbar-nav > li.active > a, .nav .active.open > a:focus,
 .dropdown-menu li.active a, .dropdown-menu li.active a:hover,
 .dropdown-menu a.current, .dropdown-menu a.current:hover {
     color: white;
- }
-.navbar-nav > li.active > a, .nav .active.open > a:focus,
-.dropdown-menu li.active a, .dropdown-menu li.active > a:hover,
-.dropdown-menu a.current, .dropdown-menu a.current:hover  {
-    background: #22c39b;/* NICE GREEN */
-	background: #da2525; /* NICE RED */
 	background: #178267;
 }
 .navbar-nav .dropdown-menu {
@@ -287,14 +325,13 @@ h3 a:hover, .promote h3 a:hover:after, figure:hover ~ hgroup h3 a, figure:hover 
 	background: rgba(0,0,0, 0.1);
 }
 */
-/* _highlight ----------------- */
 
+
+/* _highlight -------------- */
 .highlight.transparent, .highlight.transparent p, .highlight.transparent h3 {
 	background: White;
 	color: inherit;}
-.highlight.native {
-	background: #178267;
-	background: rgb(23, 130, 103)} /* green */
+
 .highlight.blue, li.active a.page-scroll.blue {
 	background: #004e7a;} /* blue */
 .highlight.orange, li.active a.page-scroll.orange {
@@ -306,39 +343,16 @@ h3 a:hover, .promote h3 a:hover:after, figure:hover ~ hgroup h3 a, figure:hover 
 .highlight.burgundy {
 	background: #7d3103;}
 
-/*
-background: #f4f5f0;
-background: #da2525;  nav red
-background: #da8025;
-background: #004e7a;  blue
-background: #F15E05;
-background: #74862d;
-background: #676b47;  brown 103, 107, 71
-background: #6d7722;
-*/
 
-/* --- BORDER _RADIUS --------------------------------- */
 
-.form-control, .btn-submit, img {
-	border-radius: 4px;}
-.cta a {
-	border-radius: 5px;}
-.carousel-CTA, .telephone, .callout {
-	border-radius: 8px;}
-footer.main nav a {
-	border-radius: 20px;}
-address {
-    border-radius: 0 0 8px 8px;}
 
-/* --- _A -------------------------------------------------- */
+/* === _A _DECORATION =========================================================== */
 a {
     -webkit-transition: 0.1s;
     -moz-transition: 0.1s;
     -o-transition: 0.1s;
     transition: 0.1s;
     text-decoration: underline;
-}
-footer.main a, aside.highlight a, address .email a:hover, .highlight p:not(.cta) a {
 }
 .cta a, a:hover, h3 a, nav a, .carousel-CTA, address .content.phone-number a, .sitemap a, .carousel a, h2 a {
     text-decoration: none;
@@ -347,12 +361,9 @@ address .content.phone-number a:hover, .sitemap a:hover {
     text-decoration: underline;
 }
 
-/* --- _CTA ----------------------------------------------- */
+/* --- _CTA ----------------- */
 .highlight a:hover {
 	color: white;
-}
-.cta, .carousel-CTA  {
-	text-transform: uppercase;
 }
 .cta {
     overflow: auto;
@@ -387,21 +398,15 @@ address .content.phone-number a:hover, .sitemap a:hover {
     padding-right: 0;
 }
 
-/* ============================================================================================================== */
 
-/* --- _HEADINGS and _PARAGRAPH ------------------------------- */
+
+
+/* === _HEADINGS and _PARAGRAPH ================================================= */
 p, h1, h2, h3, h4, h5, h6, div, ul, li {
 	cursor: default;
 }
-/*
-h1 + h2 {
-	margin-top: -10px !important;
-}
-*/
 
-
-/* --- ABBR -------------------------------------------- */
-
+/* --- ABBR --- */
 abbr[data-original-title], abbr[title] {
     border: 0;
     text-decoration: inherit;
@@ -409,8 +414,9 @@ abbr[data-original-title], abbr[title] {
 }
 
 
-/* --- _PROMOTE ------------------------------- */
 
+
+/* === _PROMOTE ================================================================= */
 .promote, .promote .overflow-auto {
 	overflow: auto;
 }
@@ -423,7 +429,11 @@ abbr[data-original-title], abbr[title] {
     margin-top: 2em;
 }
 
-/* --- _IMAGES -------------------------------------------- */
+
+
+
+
+/* === _IMAGES ==================================================================== */
 
 .promote img, .img-responsive {
     width: 100%;
@@ -460,6 +470,9 @@ abbr[data-original-title], abbr[title] {
     transform: scale(1.2);
 }
 
+
+
+
 /* =====================================================================================
 ===   _SECTIONS   ======================================================================
 ======================================================================================== */
@@ -494,10 +507,7 @@ article > header, aside .highlight {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0,0,0,.2);
-    background: rgba(34, 195, 155, 0.3);
-    background: rgba(241, 94, 5, 0.6);
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.4);
 }
 .parallax.contact:after {
 	background-color: rgba(248, 247, 237, 0.93);
@@ -522,7 +532,7 @@ article > header, aside .highlight {
 main > section > header, .highlight header {
 	padding-bottom: 1%;
 }
-.home-page main > section > header {
+.home-page main > section > span > header {
     padding-top: 40px; /* aaa */
 }
 .column {
@@ -559,7 +569,6 @@ form {
 }
 */
 .highlight h1, h1.h1 {
-    text-transform: uppercase;
     letter-spacing: 3px;
     border-bottom: 1px solid rgba(255, 255, 255, .4);
     margin: 1% 0 3em;
@@ -652,7 +661,6 @@ nav.main, footer.main {
 
 /* NAV LINKS */
 .navbar-nav li a, .navbar-nav .dropdown-menu a {
-	text-transform: uppercase;
 	padding: 20px 12px 18px;
 	transition-property: padding;
 	transition-duration: 0.3s;
@@ -681,11 +689,17 @@ nav.main, footer.main {
 	border-right-width: 8px;
 	*/
 }
-/* === CONTACT =====================================================================================================
+/* === _CONTACT =====================================================================================================
 ==================================================================================================================== */
+
+#map {
+	height: 250px;
+	width: 100%;
+	border: 2px solid white;
+}
+
 label.font-size {
 	font-size: 16px;
-	background: rgb(23, 130, 103);
 	background: transparent;
 	border-bottom-left-radius: 20px;
 	padding: 8px 12px;
@@ -697,7 +711,6 @@ label.font-size {
 }
 label.font-size > span {
 	padding-left: 4px;
-	text-transform: uppercase;
 	cursor: pointer;
 }
 .font-size-1 label.font-size span.default, .font-size-2 label.font-size span.larger, .font-size-3 label.font-size span.largest {
@@ -754,7 +767,6 @@ label.font-size input {
 .form-group.submit {
 }
 .btn-submit {
-    background: rgba(23, 130, 103, 1);
     border: 2px solid #178267;
     border: 0;
     padding: 12px 30px 10px;
@@ -817,7 +829,6 @@ address dl.address dd {
 	display: block;
 }
 address dl.name dd {
-    text-transform: uppercase;
 	display: block;
 }
 address dl.float-dt.address dd {
@@ -837,7 +848,6 @@ footer.main {
 }
 footer.main nav {
 	padding-bottom: 90px;
-	text-transform: uppercase;
 }
 footer.main nav a {
 	padding: 8px 12px 7px;
@@ -900,15 +910,13 @@ footer.main aside {
 }
 */
 
-/* === _CAROUSEL ================================================================================================================
-================================================================================================================ */
 
+/* === _CAROUSEL =========================================================== */
 .carousel {
   overflow: hidden;
 }
 
 /* --- CAROUSEL CAPTION AND CONTROLS -------------------- */
-
 .carousel .caption  {
     position: absolute;
     padding: 0;
@@ -916,20 +924,9 @@ footer.main aside {
     right: 0;
     z-index: 15;
 }
-/*
-.sub-page .carousel .caption {
-	bottom: 20%;
-	padding-left: 0;
-}
-*/
 .carousel .caption.contact {
 	text-align: center;
 }
-/*
-    H1 for first slide
-    H3 for last slide (Contact Us)
-    H2 for all others
-*/
 .caption h1, .caption h2, .caption h3, .caption p  {
     text-shadow: 2px 2px rgba(0,0,0,0.5);
 }
@@ -943,7 +940,6 @@ footer.main aside {
 .caption h1 span.title {
     display: block;
     padding-top: 6px;
-    text-transform: uppercase;
     font-weight: normal;
 }
 .caption h1 span.title span {
@@ -1009,28 +1005,10 @@ footer.main aside {
     content: "\276C";
 }
 
-/*
-#home-slider .fa-angle-down {
-  position: absolute;
-  left: 50%;
-  bottom: 10px;
-  color: #fff;
-  display: inline-block;
-  width: 24px;
-  margin-left: -12px;
-  font-size: 24px;
-  line-height: 24px;
-  z-index: 999;
-  -webkit-animation: bounce 3000ms infinite;
-  animation: bounce 3000ms infinite;
-}
-*/
 /* --- CAROUSEL FADING ITEMS --------------------- */
-
 .carousel-inner > .item.active, .carousel-inner > .item.next.left, .carousel-inner > .item.prev.right {
 	transform: none;
 }
-
 .carousel-inner {
 	/*
 	position: relative;
@@ -1072,7 +1050,12 @@ footer.main aside {
   z-index: 2;
 }
 
-/* ---- _BANNER ------------ */
+
+
+
+
+
+/* === _BANNER =========================================================== */
 .banner {
 	padding-top: 55px;
 	background-color: black;
@@ -1113,8 +1096,10 @@ footer.main aside {
 }
 
 
-/* --- PRELOADER & BACKTOTOP ----------------------------------------- */
 
+
+
+/* === PRELOADER & BACKTOTOP =========================================================== */
 .preloader {
 	position: fixed;
 	top: 0;
@@ -1173,24 +1158,20 @@ footer.main aside {
 
 	background: url("../images/top30px.png") center no-repeat;
 }
-  	/*
-    color: rgba(0,0,0,.4);
-    border: 1px solid rgba(0,0,0,.3);
-    background: rgba(255, 255, 255,.4);
-	content: "\27A1";
-    content: "\276F";
-    font-size: 25px;
-    line-height: 35px;
-    font-weight: bold;
-    padding: 0 10px 6px 10px;
-    border-radius: 50%;
-	-webkit-transform: rotate(-90deg);
-	-moz-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-	transform: rotate(-90deg);
-}
-*/
+
+
+/* === BORDER _RADIUS =========================================================== */
+.form-control, .btn-submit, img {
+	border-radius: 4px;}
+.cta a {
+	border-radius: 5px;}
+.carousel-CTA, .telephone, .callout {
+	border-radius: 8px;}
+footer.main nav a {
+	border-radius: 20px;}
+address {
+    border-radius: 0 0 8px 8px;}
+
 
 /* === Q U E R I E S ===================================================
 ======================================================================== */
@@ -1289,6 +1270,9 @@ footer.main aside {
 		font-size: 90%;
 		color: #777;
 	}
+	nav.main  {
+	    font-size: 95%;
+	}
 	.promote.promote-left img, .promote.promote-right img {
 	    width: 400px;
 	}
@@ -1349,6 +1333,9 @@ footer.main aside {
     /* --- FONT SIZE --- SMALL AND MOBILE!!!! --------------- */
 	body {
 		font-size: 75%;
+	}
+	nav.main  {
+	    font-size: 85%;
 	}
 	.carousel, .banner {
 		font-size: 200%;
@@ -1510,12 +1497,6 @@ footer.main aside {
 /* === M O B I L E  =  I  ===========================================
 ====== XS (_MOBILE) ================================================== */
 
-/* --- _green --------------------------
-hover green - 					rgb(23, 130, 103) - 22c39b
-green background
-dark green text for mobile - 	rgb(23, 130, 103) - 178267
-NAV hover - 					rgb(34, 195, 155)
------------------------------------------ */
 @media (max-width: 767px) {
 	h1, h2, h3, h4, p, span, a, ul, li {
 		word-wrap: break-word;
@@ -1554,7 +1535,7 @@ NAV hover - 					rgb(34, 195, 155)
 	body {
 		padding-top: 50px;
 	}
-	.home-page main > section > header {
+	.home-page main > section > span > header {
 		padding-top: 0;
 	}
 	main > section:first-child {
